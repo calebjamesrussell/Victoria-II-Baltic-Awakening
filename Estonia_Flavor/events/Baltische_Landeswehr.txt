@@ -13,6 +13,7 @@ country_event = {
 
 	trigger = {
 		NOT = { tag = BLW }
+		nationalism_n_imperialism = 1
 		owns = 349
 		OR = {
 			owns = 354
@@ -40,7 +41,14 @@ country_event = {
 
 		modifier = {
 			factor = 0.5
-			revolution = yes
+			GER = {
+				exists = yes
+			}
+		}
+
+		modifier = {
+			factor = 4.0
+			has_country_flag = baltic_germans_integrated
 		}
 	}
 
@@ -48,6 +56,10 @@ country_event = {
 		name = "EVTOPTA95531"
 		ai_chance = {
 			factor = 85
+			modifier = {
+				factor = 0.1
+				has_country_flag = baltic_germans_integrated
+			}
 		}
 		release_vassal = BLW
 		set_country_flag = baltische_landeswehr_rising
@@ -62,6 +74,10 @@ country_event = {
 		name = "EVTOPTB95531"
 		ai_chance = {
 			factor = 15
+			modifier = {
+				factor = 3
+				has_country_flag = baltic_germans_integrated
+			}
 		}
 		set_country_flag = baltische_landeswehr_rising
 		any_owned_province = {

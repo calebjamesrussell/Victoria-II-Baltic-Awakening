@@ -19,7 +19,8 @@ political_decisions = {
 		}
 
 		effect = {
-			add_accepted_culture = north_german
+			add_accepted_culture = north_germanadd_accepted_culture = north_german
+			set_country_flag = baltic_germans_integrated
 			plurality = 0.05
 
 			# Estonian majority feels betrayed by the compromise
@@ -352,6 +353,7 @@ political_decisions = {
 			public_meetings = no_meeting
 			ruling_party_ideology = conservative
 			remove_accepted_culture = north_german
+			clr_country_flag = baltic_germans_integrated
 			any_pop = {
 				militancy = -4
 				consciousness = -2
