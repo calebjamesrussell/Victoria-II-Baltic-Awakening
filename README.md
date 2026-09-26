@@ -33,4 +33,20 @@ The Soomusrong (Armored Train): A custom 3D model event in 1919+ commemorates th
 
 New Religion: Atheism:
 
-Atheist is now a real religion POPs can convert to (instead of e.g. Protestant), with its own icon on the religion strip. The chain begins with the Darwin debates at the University of Tartu (1880s) and the Tartu freethinkers; secular schools then quietly empty the pews, and from 1925 the state may separate church and state entirely - after which POPs convert to Atheism daily through the vanilla religious-conversion engine. A Concordat decision can restore the church settlement, and a Great Awakening event can force the issue if unrest grows.
+Atheist is now a real religion POPs can convert to (instead of e.g. Protestant), with its own icon on the religion strip. Estonia starts with a historically realistic tiny atheist fringe: educated German freethinkers in Reval and rationalist circles around the University of Dorpat. The chain begins with the Darwin debates at the University of Tartu (1880s) and the Tartu freethinkers; secular schools then quietly empty the pews, and from 1925 the state may separate church and state entirely - after which POPs convert to Atheism daily through the vanilla religious-conversion engine. A Concordat decision can restore the church settlement, and a Great Awakening event can force the issue if unrest grows.
+
+The National Awakening (19th century):
+
+Estonia's long 19th century is now playable: Jannsen's Perno Postimees (1857) and Eesti Postimees, the Kalevipoeg readings, the song festivals, Jakobson's Sakala generation, the Alexander School movement, the Orthodox mission of the 1840s, peasant farm purchases, the Tallinn-Tartu telegraph, the parish school law, the Kreenholm strike of 1872, the temperance crusades, Russification of the schools, the Revolution of 1905, the Volhynia Swedes coming home, and Jaan Tõnisson's progress party. New decisions: Found the Vanemuine Society (1865, the national theatre), Charter the Loan-and-Savings Societies (1882, peasant credit), Found the Volunteer Fire Brigades (1862), and Found the Estonian Writers' Society (1872).
+
+Culture, Science and Sport:
+
+The Struve Geodetic Arc (1852) puts Tartu's observatory on the world map; Koidula and the National Stage (1869) gives the awakening its voice; the Old Believers of Lake Peipus ask for toleration of their ancient rites; Tammsaare's Truth and Justice (1926) becomes the novel of the people; and Antwerp 1920 sends the first Olympic team behind its own flag.
+
+Industry and the Co-operative Economy:
+
+Build the Kunda Cement Works (1868) on the Viru coast, Expand Luther's Furniture Factory (1877) in Tallinn, and from 1908 Charter the Co-operative Creameries - the butter-export economy that made Estonian farmers rich.
+
+The Young Republic (1917-1939):
+
+Tõnisson's Postimees, the Vaps Movement, the Armored Train Doctrine, the December Rising, the Cultural Autonomy Law, the Coastal Swedes' petition, the New Constitution, the World Depression, the Bases Ultimatum, Brothers Across the Gulf (Finland), plus decisions to Establish the Estonian Mark (the currency), Found Eesti Pank (the central bank), Fortify the Narva Line, Build the Coastal Defences, Expand Kreenholm, Estify the University of Tartu, Enact Women's Suffrage, Found the Noored Kotkad, Organize Setomaa, and Expand the Kaitseliit.
