@@ -400,31 +400,6 @@ political_decisions = {
 	# NEW DECISIONS
 	#########################################################################
 
-	# Declaration of Independence - the February Manifesto
-	declare_independence = {
-		picture = "independence"
-
-		potential = {
-			tag = EST
-			not = { has_country_flag = independence_declared }
-			NOT = { tag = RUS }
-		}
-
-		allow = {
-			year = 1917
-			war_with = RUS
-		}
-
-		effect = {
-			set_country_flag = independence_declared
-			prestige = 15
-			any_pop = {
-				limit = { culture = estonian }
-				militancy = -3
-				consciousness = 2
-			}
-		}
-	}
 
 	# Land reform follow-up: settling the Veterans of the War of Independence
 	found_soomusrong_corps = {
@@ -467,7 +442,6 @@ political_decisions = {
 
 		potential = {
 			tag = EST
-			has_country_flag = independence_declared
 			not = { has_country_flag = estonian_mark_established }
 		}
 
@@ -710,7 +684,6 @@ political_decisions = {
 
 		potential = {
 			tag = EST
-			has_country_flag = independence_declared
 			not = { has_country_flag = tartu_estified }
 		}
 
@@ -741,40 +714,6 @@ political_decisions = {
 		}
 	}
 
-	# National figures: Jaan Tõnisson's newspaper Postimees as the voice of the nation
-	found_postimees = {
-		picture = "postimees"
-
-		potential = {
-			tag = EST
-			not = { has_country_flag = postimees_founded }
-		}
-
-		allow = {
-			year = 1891
-			owns = 352 # Tartu
-		}
-
-		effect = {
-			set_country_flag = postimees_founded
-			prestige = 3
-			any_pop = {
-				limit = {
-					culture = estonian
-					NOT = { type = aristocrats }
-				}
-				consciousness = 1
-			}
-			add_country_modifier = {
-				name = estonian_choral_tradition
-				duration = 3650
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	# Women's suffrage ahead of time - Estonian women voted in 1917-1918
 	enact_womens_suffrage = {
@@ -782,7 +721,6 @@ political_decisions = {
 
 		potential = {
 			tag = EST
-			has_country_flag = independence_declared
 			not = { has_country_flag = womens_suffrage_estonia }
 		}
 
@@ -815,7 +753,6 @@ political_decisions = {
 
 		potential = {
 			tag = EST
-			has_country_flag = independence_declared
 			not = { has_country_flag = eesti_pank_founded }
 		}
 
@@ -834,6 +771,69 @@ political_decisions = {
 			add_tax_relative_income = 1
 		}
 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+# Vanemuine: the national theatre society (1865)
+	found_vanemuine = {
+		picture = "vanemuine"
+		potential = {
+			tag = EST
+			has_country_flag = national_awakening_begun
+			not = { has_country_flag = vanemuine_founded }
+		}
+		allow = {
+			year = 1865
+			owns = 352 # Tartu
+		}
+		effect = {
+			set_country_flag = vanemuine_founded
+			prestige = 5
+			any_pop = {
+				limit = {
+					culture = estonian
+					type = clerks
+				}
+				consciousness = 2
+			}
+			add_country_modifier = {
+				name = estonian_national_stage
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# The loan-and-savings societies: capital in peasant hands (1882)
+	found_credit_union = {
+		picture = "credit_union"
+		potential = {
+			tag = EST
+			not = { has_country_flag = credit_union_founded }
+		}
+		allow = {
+			year = 1882
+		}
+		effect = {
+			set_country_flag = credit_union_founded
+			money = 5000
+			any_pop = {
+				limit = {
+					culture = estonian
+					type = farmers
+				}
+				consciousness = 1
+				militancy = -1
+			}
+			add_country_modifier = {
+				name = peasant_credit_unions
+				duration = 3650
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}

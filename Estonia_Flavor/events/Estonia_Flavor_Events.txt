@@ -3,7 +3,7 @@
 # IDs 95500-95599 are reserved for this mod.
 
 #########################################################################
-# 95502 - The National Awakening: BEP's pstevused (1861)
+# 95502 - The National Awakening: Jannsen and the first Estonian newspaper (1857)
 #########################################################################
 country_event = {
 	id = 95502
@@ -47,7 +47,7 @@ country_event = {
 }
 
 #########################################################################
-# 95503 - Johann Voldemar Vesteberg and the Estonian-language press
+# 95503 - Eesti Postimees and the network of readers' circles (1864)
 #########################################################################
 country_event = {
 	id = 95503
@@ -438,38 +438,6 @@ country_event = {
 	}
 }
 
-#########################################################################
-# 95513 - The Estonian Provisional Government declares itself
-#########################################################################
-country_event = {
-	id = 95513
-	title = "EVTNAME95513"
-	desc = "EVTDESC95513"
-	picture = "treaty"
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = EST
-		year = 1917
-		war_with = RUS
-	}
-
-	mean_time_to_happen = {
-		months = 6
-	}
-
-	option = {
-		name = "EVTOPTA95513"
-		set_country_flag = provisional_government
-		prestige = 10
-		any_pop = {
-			limit = { culture = estonian }
-			militancy = -3
-			consciousness = 2
-		}
-	}
-}
 
 #########################################################################
 # 95514 - Coastal Swedes petition for cultural autonomy

@@ -1,10 +1,10 @@
-EVTNAME95502;The National Awakening;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-EVTDESC95502;The estophiles of the Learned Estonian Society have begun collecting the songs and folkways of the common people. In Tartu and Tallinn, Estonians are reading newspapers in their own tongue and asking why the land they till is ruled by others. A national awakening is stirring.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95502;The First Estonian Newspaper;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95502;In Parnu, the schoolmaster Johann Voldemar Jannsen has begun publishing Perno Postimees - the first newspaper in the Estonian tongue. Farmers read it aloud in the township houses; the words of the nation now travel faster than the manor lords can count. A national awakening is stirring.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTA95502;Mu isamaa on minu arm!;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTB95502;It is but peasant sentiment.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-EVTNAME95503;The Estonian-Language Press;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-EVTDESC95503;Permission has been granted to publish newspapers in Estonian. The first presses roll in Tallinn, and with them the words of the nation reach every parish within the week.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-EVTOPTA95503;Print the truth in the mother tongue.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95503;Eesti Postimees and the Readers Circles;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95503;Jannsen has moved to Tallinn and founded Eesti Postimees, and with it a network of readers circles across the land. Literate farmers now write to each other, subscribe together, and organize choirs around the arriving post.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95503;A newspaper in every township house.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTB95503;The censor will have his say first.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTNAME95504;The Kalevipoeg Is Read Aloud;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTDESC95504;Kreutzwald's epic of Kalev's son has passed from the scholars' salons to the farmhouse evenings of the land. Where the songs are sung, the idea of a nation grows.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
@@ -21,7 +21,6 @@ EVTDESC95507;Across the land, farmers are collecting kopecks into a great common
 EVTOPTA95507;Our pennies shall build our school.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTB95507;Keep the money in the parish.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTNAME95508;The Pressure of Russification;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-VTDESC95508;;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTDESC95508;New orders arrive from Saint Petersburg: Russian in the schools, Russian in the offices, Russian in the churches of the wrong rite. The Baltic German gentry lose their privileges - the Estonian peasants lose their language.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTA95508;We will keep our tongue behind closed doors.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTB95508;The storm will pass - bend but do not break.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
@@ -39,9 +38,6 @@ EVTOPTB95511;Careful maintenance wins wars.;French;German;Polish;Spanish;Italian
 EVTNAME95512;Brothers Across the Gulf;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTDESC95512;Across the water, Finland has won her freedom too. Both nations claim the same songs and nearly the same words. Volunteers and rifles have already crossed the gulf in both directions - now the two governments prepare to bind their fortunes together.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTA95512;One sea, two shores, one kinship.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-EVTNAME95513;The Provisional Government;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-EVTDESC95513;Amid the collapse of empire, Estonian leaders have gathered and declared a provisional government, answerable to the Estonian people alone. In Tallinn the tricolor rises over Toompea.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-EVTOPTA95513;The Republic of Estonia is proclaimed!;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTNAME95514;The Coastal Swedes Petition;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTDESC95514;The old Swedish fishing villages of the coast and islands - Ruhnu, Vormsi, Noarootsi - have sent a petition to Tallinn. Their pastors ask only that their tongue may live where it has lived for seven hundred years.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTA95514;Their home is our home - their rights are ours to guard.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
@@ -66,8 +62,6 @@ EVTOPTB95519;We will not sign away our soil.;French;German;Polish;Spanish;Italia
 EVTNAME95520;The Generals of the War;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTDESC95520;The war is won, and its commanders have become the first soldiers of the republic: Johan Laidoner, who commanded the Viru front - Andres Larka of the armored trains - Ernst Põdder, whose brigade held the barricades. The republic pins its medals and keeps its generals close.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTA95520;For honor, for the nation - and well earned.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-declare_independence_title;Declare the Independence of Estonia;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-declare_independence_desc;In the collapse of the Russian Empire, Maapäev, the Estonian provincial assembly, has voted to declare itself the supreme authority of the land. Let the manifest of independence be read from the balcony of the theatre in Tallinn, and let the world take note.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 found_soomusrong_corps_title;Found the Armored Train Division;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 found_soomusrong_corps_desc;The armored trains that broke the Red advance were improvised by a handful of officers and volunteer crews. Now let the improvisation become an institution: a standing Armored Train Division, with workshops, rail garrisons, and a proper war flag.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 establish_estonian_mark_title;Establish the Estonian Mark;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
@@ -88,10 +82,6 @@ expand_kreenholm_title;Expand the Kreenholm Works;French;German;Polish;Spanish;I
 expand_kreenholm_desc;On the falls of the Narva stands the largest cotton mill in the empire, Kreenholm, with its own hospital, schools and thousands of hands. Expanding the works will make Narva an industrial city and the republic a cotton power.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 estify_tartu_university_title;Estify the University of Tartu;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 estify_tartu_university_desc;For three centuries the language of the lecture hall has been Latin, then German, then Russian - everything but the language of the land. From this term, the University of Dorpat becomes the University of Tartu, and the language of instruction becomes Estonian.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-found_postimees_title;Establish Postimees;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-found_postimees_desc;The Tartu daily Postimees, under Jaan Tõnisson, shall become the national newspaper of the Estonian countryside: a reader in every farmhouse and a farmhouse in every reader's heart.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-enact_womens_suffrage_title;Proclaim Universal Suffrage;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-enact_womens_suffrage_desc;The republic was born with the vote already promised to every citizen, man and woman alike. Let the promise now be written plainly into the law, so that the first elections of the republic may be the first in Europe to know no line between the sexes.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 found_eesti_pank_title;Found the Bank of Estonia;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 found_eesti_pank_desc;A state needs more than money - it needs the machinery of money. The Bank of Estonia, Eesti Pank, shall issue the mark, guard the gold reserve, and stand behind every note the treasury prints.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 soomusrong_corps;Armored Train Doctrine;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
@@ -109,3 +99,45 @@ defence_league_hq;Defence League HQ;French;German;Polish;Spanish;Italian;Swedish
 kalevipoeg_legacy;Kalevipoeg Legacy;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 estonian_choral_tradition;Choral Tradition;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 estonian_depression;Export Depression;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95521;The Orthodox Mission;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95521;In the villages near the Narva river and the shores of Lake Peipus, peasants have begun crossing over to the Orthodox faith. They seek the protection of the Tsar from the manor lords, and every baptism is heard in the churches and the chancelleries alike.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95521;Faith is free - and owed protection.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95521;The Lutheran church must stand firm.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95522;Farms for Free Men;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95522;New land regulations allow the peasants to purchase their farms as freehold property. Across the land, families count their kopecks and dream of deeds written in their own names.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95522;Let the land belong to those who till it.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95523;The Telegraph Line;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95523;A humming wire now binds Tallinn to Tartu. Messages that once took two days by post coach now arrive before lunch. Merchants, officials and newspapermen alike learn to live at the speed of electricity.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95523;The nation speaks with one wire.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95524;The Parish School Law;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95524;Every township is now bound to keep a school and pay a teacher. In the farmhouse classrooms, children learn their letters in the mother tongue, and the bondsmen of yesterday become the readers of tomorrow.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95524;A school for every parish.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95525;The Kreenholm Strike;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95525;At the Kreenholm manufactury by the Narva falls, thousands of workers have downed their shuttles. They ask for shorter hours and honest pay. The strike committee waits - and so do the gendarmes.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95525;Hear the workers out.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95525;Send in the gendarmes.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95526;The Temperance Crusade;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95526;Preachers of sobriety walk the parish roads, gathering thousands to sign the pledge. Behind the hymns lies a sterner promise: a sober people cannot be kept poor, or silent, forever.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95526;Sign the pledge - awaken the people.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95526;The vodka revenue keeps the treasury full.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95527;Russian in the Schoolyard;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95527;Orders from Saint Petersburg now demand Russian as the language of instruction in the parish schools. Estonian children recite their lessons in a tongue their mothers do not know.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95527;Our schools will keep the mother tongue.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95527;The orders of the empire must be obeyed.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95528;The Revolution of 1905;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95528;The news from Saint Petersburg has lit the Baltic like a spark in a rickyard. Manor houses burn in the night, workers strike in Narva and Tallinn, and crowds gather in Tartu demanding land, liberty and a say in their own affairs.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95528;Concede the reforms - give them their say.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95528;Restore order at any price.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95529;The Volhynia Swedes Come Home;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95529;After two generations in the Ukraine, the Swedish families of Volhynia are returning to the coast their grandparents left. They bring ox-carts, seed grain and a dialect older than the maps.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95529;The old villages will receive them.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95529;There is no room on the coast.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95530;Tõnisson’s Progress Party;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95530;Around Jaan Tõnisson and his newspaper, a new party has taken shape: patient, legal, and stubborn as field-stones. It asks for no revolution - only elections, land and schools, in the language of the people.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95530;Organize, educate, endure.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+found_vanemuine_title;Found the Vanemuine Society;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+found_vanemuine_desc;In Tartu, the men of the awakening have founded a society for plays and song: Vanemuine, after the old god of music. Estonian words, acted by Estonians, on a stage of their own - the nation is learning to see itself.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+found_credit_union_title;Charter the Loan-and-Savings Societies;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+found_credit_union_desc;In the parish of Vändra, farmers have pooled their savings into a common fund, lending to one another without the manor lord or the German bank. Free men with money in their own hands are harder to turn back into bondsmen.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+estonian_national_stage;National Stage;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+peasant_credit_unions;Peasant Credit Unions;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x

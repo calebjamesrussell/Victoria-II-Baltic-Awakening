@@ -851,3 +851,14 @@ estonian_depression = {
 	pop_militancy_modifier = 0.02
 	icon = 12
 }
+
+estonian_national_stage = {
+	research_points_modifier = 0.03
+	core_pop_consciousness_modifier = 0.02
+	icon = 5
+}
+
+peasant_credit_unions = {
+	global_tax_efficiency = 0.03
+	icon = 5
+}
