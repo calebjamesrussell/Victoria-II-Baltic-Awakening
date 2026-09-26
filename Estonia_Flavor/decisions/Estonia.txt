@@ -838,5 +838,65 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	# The constitutional settlement: separation of church and state (1925)
+	enact_state_atheism = {
+		picture = "state_atheism"
+		potential = {
+			tag = EST
+			has_country_flag = secular_schools
+			not = { has_country_flag = state_atheism_declared }
+		}
+		allow = {
+			year = 1925
+		}
+		effect = {
+			set_country_flag = state_atheism_declared
+			religion = atheist
+			any_pop = {
+				limit = {
+					culture = estonian
+					type = clergymen
+				}
+				militancy = 2
+			}
+			any_pop = {
+				limit = {
+					has_pop_religion = atheist
+				}
+				consciousness = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Sign the concordat: restore the church settlement (reversal)
+	sign_concordat = {
+		picture = "concordat"
+		potential = {
+			tag = EST
+			religion = atheist
+			not = { has_country_flag = concordat_signed }
+		}
+		allow = {
+			year = 1925
+		}
+		effect = {
+			set_country_flag = concordat_signed
+			religion = protestant
+			prestige = 2
+			any_pop = {
+				limit = {
+					culture = estonian
+					type = clergymen
+				}
+				militancy = -3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 }

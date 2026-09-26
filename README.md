@@ -29,3 +29,8 @@ The Soomusrong (Armored Train): A custom 3D model event in 1919+ commemorates th
 <img width="505" height="464" alt="image" src="https://github.com/user-attachments/assets/ee58cdba-cf5a-4760-b366-fef65f8b5339" />
 
 <img width="614" height="560" alt="image" src="https://github.com/user-attachments/assets/eeb80edb-0e83-41ca-bfe2-c4e1f02432cb" />
+
+
+New Religion: Atheism:
+
+Atheist is now a real religion POPs can convert to (instead of e.g. Protestant), with its own icon on the religion strip. The chain begins with the Darwin debates at the University of Tartu (1880s) and the Tartu freethinkers; secular schools then quietly empty the pews, and from 1925 the state may separate church and state entirely - after which POPs convert to Atheism daily through the vanilla religious-conversion engine. A Concordat decision can restore the church settlement, and a Great Awakening event can force the issue if unrest grows.

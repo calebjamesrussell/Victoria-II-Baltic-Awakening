@@ -141,3 +141,28 @@ found_credit_union_title;Charter the Loan-and-Savings Societies;French;German;Po
 found_credit_union_desc;In the parish of Vändra, farmers have pooled their savings into a common fund, lending to one another without the manor lord or the German bank. Free men with money in their own hands are harder to turn back into bondsmen.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 estonian_national_stage;National Stage;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 peasant_credit_unions;Peasant Credit Unions;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+atheist;Atheist;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95541;Darwin in the Lecture Halls;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95541;In the halls of the university at Tartu, the young naturalists are reading Darwin in smuggled copies. The rector has asked whether the Origin of Species shall be debated openly - or whether the age of authority must close its doors to the age of evidence.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95541;Let the debate be open - truth fears no witness.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95541;Some doors are better left closed.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95542;The Freethinkers of Tartu;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95542;A circle of students, writers and surveyors has begun meeting above a print shop in Tartu, calling themselves the Society of Freethinkers. They publish pamphlets against superstition, and their members have quietly stopped attending church.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95542;The age of reason has its uses.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95542;Dissolve the society - faith is the bond of the people.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95543;The Secular Schools Question;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95543;The township schools teach reading, arithmetic - and the catechism. A movement of teachers and parents now asks that the church lessons be set aside and the school day given wholly to useful knowledge. The pastors call it the theft of souls.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95543;The school belongs to the nation, not the church.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95543;Keep the catechism in the classroom.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95544;The Quiet Congregations;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95544;In more and more parishes, the pews stand empty on Sunday mornings. Neighbors who once sang in the choir now spend the day with their books, their newspapers and their fields. The pastors ask the government to act.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95544;Let every man keep his own conscience.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95544;Encourage a return to the churches.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95545;The Great Awakening;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95545;Militancy has opened a door the freethinkers did not expect: travelling preachers are filling the town squares, and thousands who had left the churches are coming back. The cabinet must choose whether to yield - or to stand firm.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95545;Restore the ancient church of the land.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95545;The state shall not waver.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+enact_state_atheism_title;Separate Church and State;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+enact_state_atheism_desc;Henceforth the state shall have no established church, and no confession shall stand above another - or above none. The congregations that remain will keep their walls; the state will keep its distance.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+sign_concordat_title;Sign the Concordat;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+sign_concordat_desc;After years of empty pews and silent churchyards, the state and the church have negotiated a settlement: the church returns to its ancient place in the life of the people, and the state again extends its hand to it.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
