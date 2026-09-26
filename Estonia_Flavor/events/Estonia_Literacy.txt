@@ -52,6 +52,9 @@ country_event = {
 			any_pop = { limit = { type = clergymen culture = russian } literacy = 0.50 }    # Target: 0.60
 			any_pop = { limit = { type = artisans culture = russian } literacy = 0.30 }     # Target: 0.40
 			any_pop = { limit = { type = soldiers culture = russian } literacy = 0.15 }     # Target: 0.25
+
+			# Atheists - educated freethinkers of the capital
+			any_pop = { limit = { type = artisans has_pop_religion = atheist } literacy = 0.95 }
 		}
 
 		# -------------------------------------------------------------
@@ -114,6 +117,9 @@ country_event = {
 			any_pop = { limit = { type = artisans culture = russian } literacy = 0.25 }     # Target: 0.35
 			any_pop = { limit = { type = soldiers culture = russian } literacy = 0.10 }     # Target: 0.20
 			any_pop = { limit = { type = farmers culture = russian } literacy = 0.10 }      # Target: 0.20
+
+			# Atheists - rationalist circles around the university
+			any_pop = { limit = { type = artisans has_pop_religion = atheist } literacy = 0.90 }
 		}
 
 		# -------------------------------------------------------------
