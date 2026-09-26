@@ -143,12 +143,20 @@
 		literacy = 0.25
 	}
 
-	# Educated freethinkers of the capital: a handful of German artisans
-	# and clerks who keep no church. A tiny, mostly invisible minority.
+	# Educated freethinkers of the capital: German artisans and clerks
+	# who keep no church - readers of the philosophes, children of the
+	# Enlightenment manors and counting houses. A small, visible fringe.
 	artisans = {
 		culture = north_german
 		religion = atheist
-		size = 25
+		size = 250
+		literacy = 0.95
+	}
+
+	clerks = {
+		culture = north_german
+		religion = atheist
+		size = 100
 		literacy = 0.95
 	}
 }
@@ -378,20 +386,28 @@
 		literacy = 0.20
 	}
 
-	# Rationalist and freethinker circles around the university: a few
-	# educated men who read the philosophes and keep no congregation.
+	# Rationalist and freethinker circles around the university: the
+	# educated men who read the philosophes, the materialists of the
+	# lecture halls, and the Estonian students who read over their shoulders.
 	artisans = {
 		culture = north_german
 		religion = atheist
-		size = 50
+		size = 200
 		literacy = 0.95
 	}
 
-	artisans = {
+	clerks = {
+		culture = north_german
+		religion = atheist
+		size = 100
+		literacy = 0.95
+	}
+
+	clerks = {
 		culture = estonian
 		religion = atheist
-		size = 25
-		literacy = 0.80
+		size = 50
+		literacy = 0.90
 	}
 }
 
