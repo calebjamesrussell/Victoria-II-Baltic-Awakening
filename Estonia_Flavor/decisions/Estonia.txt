@@ -19,7 +19,7 @@ political_decisions = {
 		}
 
 		effect = {
-			add_accepted_culture = north_germanadd_accepted_culture = north_german
+			add_accepted_culture = north_german
 			set_country_flag = baltic_germans_integrated
 			plurality = 0.05
 
@@ -307,6 +307,7 @@ political_decisions = {
 			tag = EST
 			not = { has_country_flag = treaty_of_tartu }
 			exists = RUS
+			is_vassal = no
 		}
 
 		allow = {
