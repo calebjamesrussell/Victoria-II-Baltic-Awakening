@@ -7,140 +7,120 @@
 		culture = estonian
 		religion = protestant
 		size = 325
-		literacy = 0.85
 	}
 
 	artisans = {
 		culture = estonian
 		religion = protestant
 		size = 750
-		literacy = 0.70
 	}
 
 	soldiers = {
 		culture = estonian
 		religion = protestant
 		size = 1100
-		literacy = 0.60
 	}
 
 	farmers = {
 		culture = estonian
 		religion = protestant
 		size = 34925
-		literacy = 0.65
 	}
 
 	aristocrats = {
 		culture = north_german
 		religion = protestant
 		size = 375
-		literacy = 0.95
 	}
 
 	bureaucrats = {
 		culture = north_german
 		religion = protestant
 		size = 75
-		literacy = 0.90
 	}
 
 	officers = {
 		culture = north_german
 		religion = protestant
 		size = 125
-		literacy = 0.90
 	}
 
 	clergymen = {
 		culture = north_german
 		religion = protestant
 		size = 50
-		literacy = 0.95
 	}
 
 	artisans = {
 		culture = north_german
 		religion = protestant
 		size = 825
-		literacy = 0.85
 	}
 
 	soldiers = {
 		culture = north_german
 		religion = protestant
 		size = 50
-		literacy = 0.80
 	}
 
 	clergymen = {
 		culture = swedish
 		religion = protestant
 		size = 25
-		literacy = 0.85
 	}
 
 	artisans = {
 		culture = swedish
 		religion = protestant
 		size = 300
-		literacy = 0.75
 	}
 
 	soldiers = {
 		culture = swedish
 		religion = protestant
 		size = 25
-		literacy = 0.65
 	}
 
 	farmers = {
 		culture = swedish
 		religion = protestant
 		size = 400
-		literacy = 0.70
 	}
 
 	aristocrats = {
 		culture = russian
 		religion = orthodox
 		size = 425
-		literacy = 0.75
 	}
 
 	bureaucrats = {
 		culture = russian
 		religion = orthodox
 		size = 25
-		literacy = 0.70
 	}
 
 	officers = {
 		culture = russian
 		religion = orthodox
 		size = 50
-		literacy = 0.70
 	}
 
 	clergymen = {
 		culture = russian
 		religion = orthodox
 		size = 25
-		literacy = 0.60
 	}
 
 	artisans = {
 		culture = russian
 		religion = orthodox
 		size = 175
-		literacy = 0.40
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
 		size = 50
-		literacy = 0.25
 	}
 
 	# Educated freethinkers of the capital: German artisans and clerks
@@ -150,14 +130,12 @@
 		culture = north_german
 		religion = atheist
 		size = 250
-		literacy = 0.95
 	}
 
 	clerks = {
 		culture = north_german
 		religion = atheist
 		size = 100
-		literacy = 0.95
 	}
 }
 
@@ -167,70 +145,60 @@
 		culture = estonian
 		religion = protestant
 		size = 425
-		literacy = 0.80
 	}
 
 	artisans = {
 		culture = estonian
 		religion = protestant
 		size = 2300
-		literacy = 0.70
 	}
 
 	soldiers = {
 		culture = estonian
 		religion = protestant
 		size = 450
-		literacy = 0.60
 	}
 
 	farmers = {
 		culture = estonian
 		religion = protestant
 		size = 40825
-		literacy = 0.65
 	}
 
 	aristocrats = {
 		culture = north_german
 		religion = protestant
 		size = 400
-		literacy = 0.95
 	}
 
 	aristocrats = {
 		culture = russian
 		religion = orthodox
 		size = 400
-		literacy = 0.75
 	}
 
 	clergymen = {
 		culture = russian
 		religion = orthodox
 		size = 50
-		literacy = 0.60
 	}
 
 	artisans = {
 		culture = russian
 		religion = orthodox
 		size = 100
-		literacy = 0.35
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
 		size = 50
-		literacy = 0.20
 	}
 
 	farmers = {
 		culture = russian
 		religion = orthodox
 		size = 1100
-		literacy = 0.20
 	}
 }
 
@@ -240,56 +208,48 @@
 		culture = north_german
 		religion = protestant
 		size = 350
-		literacy = 0.95
 	}
 
 	clergymen = {
 		culture = north_german
 		religion = protestant
 		size = 50
-		literacy = 0.95
 	}
 
 	artisans = {
 		culture = north_german
 		religion = protestant
 		size = 550
-		literacy = 0.85
 	}
 
 	soldiers = {
 		culture = north_german
 		religion = protestant
 		size = 50
-		literacy = 0.80
 	}
 
 	clergymen = {
 		culture = estonian
 		religion = protestant
 		size = 400
-		literacy = 0.85
 	}
 
 	artisans = {
 		culture = estonian
 		religion = protestant
 		size = 600
-		literacy = 0.70
 	}
 
 	soldiers = {
 		culture = estonian
 		religion = protestant
 		size = 200
-		literacy = 0.60
 	}
 
 	farmers = {
 		culture = estonian
 		religion = protestant
 		size = 20800
-		literacy = 0.65
 	}
 }
 
@@ -299,91 +259,78 @@
 		culture = north_german
 		religion = protestant
 		size = 350
-		literacy = 0.95
 	}
 
 	clergymen = {
 		culture = north_german
 		religion = protestant
 		size = 150
-		literacy = 0.95
 	}
 
 	bureaucrats = {
 		culture = north_german
 		religion = protestant
 		size = 100
-		literacy = 0.95
 	}
 
 	artisans = {
 		culture = north_german
 		religion = protestant
 		size = 550
-		literacy = 0.90
 	}
 
 	soldiers = {
 		culture = north_german
 		religion = protestant
 		size = 50
-		literacy = 0.80
 	}
 
 	clergymen = {
 		culture = estonian
 		religion = protestant
 		size = 350
-		literacy = 0.85
 	}
 
 	artisans = {
 		culture = estonian
 		religion = protestant
 		size = 1300
-		literacy = 0.70
 	}
 
 	soldiers = {
 		culture = estonian
 		religion = protestant
 		size = 350
-		literacy = 0.60
 	}
 
 	farmers = {
 		culture = estonian
 		religion = protestant
 		size = 34350
-		literacy = 0.65
 	}
 
 	clergymen = {
 		culture = russian
 		religion = orthodox
 		size = 25
-		literacy = 0.60
 	}
 
 	artisans = {
 		culture = russian
 		religion = orthodox
 		size = 100
-		literacy = 0.35
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
 		size = 50
-		literacy = 0.20
 	}
 
 	farmers = {
 		culture = russian
 		religion = orthodox
 		size = 1325
-		literacy = 0.20
 	}
 
 	# Rationalist and freethinker circles around the university: the
@@ -393,21 +340,18 @@
 		culture = north_german
 		religion = atheist
 		size = 200
-		literacy = 0.95
 	}
 
 	clerks = {
 		culture = north_german
 		religion = atheist
 		size = 100
-		literacy = 0.95
 	}
 
 	clerks = {
 		culture = estonian
 		religion = atheist
 		size = 50
-		literacy = 0.90
 	}
 }
 
@@ -417,56 +361,48 @@
 		culture = north_german
 		religion = protestant
 		size = 80
-		literacy = 0.95
 	}
 
 	clergymen = {
 		culture = north_german
 		religion = protestant
 		size = 10
-		literacy = 0.95
 	}
 
 	artisans = {
 		culture = north_german
 		religion = protestant
 		size = 50
-		literacy = 0.85
 	}
 
 	soldiers = {
 		culture = north_german
 		religion = protestant
 		size = 10
-		literacy = 0.80
 	}
 
 	clergymen = {
 		culture = estonian
 		religion = protestant
 		size = 50
-		literacy = 0.85
 	}
 
 	artisans = {
 		culture = estonian
 		religion = protestant
 		size = 150
-		literacy = 0.70
 	}
 
 	soldiers = {
 		culture = estonian
 		religion = protestant
 		size = 25
-		literacy = 0.60
 	}
 
 	farmers = {
 		culture = estonian
 		religion = protestant
 		size = 3425
-		literacy = 0.65
 	}
 
 	# Coastal Swedes (Aibofolke / Rannarootslased)
@@ -474,13 +410,11 @@
 		culture = swedish
 		religion = protestant
 		size = 200
-		literacy = 0.70
 	}
 
 	artisans = {
 		culture = swedish
 		religion = protestant
 		size = 50
-		literacy = 0.75
 	}
 }

@@ -27,7 +27,8 @@ country_event = {
 		349 = {
 			# Estonians
 			any_pop = { limit = { type = clergymen culture = estonian } literacy = 0.75 }   # Target: 0.85
-			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }    # Target: 0.70
+			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }
+			any_pop = { limit = { type = clerks culture = estonian } literacy = 0.65 }    # Target: 0.70
 			any_pop = { limit = { type = soldiers culture = estonian } literacy = 0.50 }    # Target: 0.60
 			any_pop = { limit = { type = farmers culture = estonian } literacy = 0.55 }     # Target: 0.65
 
@@ -36,12 +37,14 @@ country_event = {
 			any_pop = { limit = { type = clergymen culture = north_german } literacy = 0.85 }   # Target: 0.95
 			any_pop = { limit = { type = bureaucrats culture = north_german } literacy = 0.80 } # Target: 0.90
 			any_pop = { limit = { type = officers culture = north_german } literacy = 0.80 }    # Target: 0.90
-			any_pop = { limit = { type = artisans culture = north_german } literacy = 0.75 }    # Target: 0.85
+			any_pop = { limit = { type = artisans culture = north_german } literacy = 0.75 }
+			any_pop = { limit = { type = clerks culture = north_german } literacy = 0.8 }    # Target: 0.85
 			any_pop = { limit = { type = soldiers culture = north_german } literacy = 0.70 }    # Target: 0.80
 
 			# Coastal Swedes
 			any_pop = { limit = { type = clergymen culture = swedish } literacy = 0.75 }    # Target: 0.85
-			any_pop = { limit = { type = artisans culture = swedish } literacy = 0.65 }     # Target: 0.75
+			any_pop = { limit = { type = artisans culture = swedish } literacy = 0.65 }
+			any_pop = { limit = { type = clerks culture = swedish } literacy = 0.7 }     # Target: 0.75
 			any_pop = { limit = { type = farmers culture = swedish } literacy = 0.60 }      # Target: 0.70
 			any_pop = { limit = { type = soldiers culture = swedish } literacy = 0.55 }     # Target: 0.65
 
@@ -50,7 +53,8 @@ country_event = {
 			any_pop = { limit = { type = bureaucrats culture = russian } literacy = 0.60 }  # Target: 0.70
 			any_pop = { limit = { type = officers culture = russian } literacy = 0.60 }     # Target: 0.70
 			any_pop = { limit = { type = clergymen culture = russian } literacy = 0.50 }    # Target: 0.60
-			any_pop = { limit = { type = artisans culture = russian } literacy = 0.30 }     # Target: 0.40
+			any_pop = { limit = { type = artisans culture = russian } literacy = 0.30 }
+			any_pop = { limit = { type = clerks culture = russian } literacy = 0.35 }     # Target: 0.40
 			any_pop = { limit = { type = soldiers culture = russian } literacy = 0.15 }     # Target: 0.25
 
 			# Atheists - educated freethinkers of the capital
@@ -63,7 +67,8 @@ country_event = {
 		350 = {
 			# Estonians
 			any_pop = { limit = { type = clergymen culture = estonian } literacy = 0.70 }   # Target: 0.80
-			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }    # Target: 0.70
+			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }
+			any_pop = { limit = { type = clerks culture = estonian } literacy = 0.65 }    # Target: 0.70
 			any_pop = { limit = { type = farmers culture = estonian } literacy = 0.55 }     # Target: 0.65
 			any_pop = { limit = { type = soldiers culture = estonian } literacy = 0.50 }    # Target: 0.60
 
@@ -73,7 +78,8 @@ country_event = {
 			# Russians
 			any_pop = { limit = { type = aristocrats culture = russian } literacy = 0.65 }  # Target: 0.75
 			any_pop = { limit = { type = clergymen culture = russian } literacy = 0.50 }    # Target: 0.60
-			any_pop = { limit = { type = artisans culture = russian } literacy = 0.25 }     # Target: 0.35
+			any_pop = { limit = { type = artisans culture = russian } literacy = 0.25 }
+			any_pop = { limit = { type = clerks culture = russian } literacy = 0.3 }     # Target: 0.35
 			any_pop = { limit = { type = soldiers culture = russian } literacy = 0.10 }     # Target: 0.20
 			any_pop = { limit = { type = farmers culture = russian } literacy = 0.10 }      # Target: 0.20
 		}
@@ -85,12 +91,14 @@ country_event = {
 			# Baltic Germans
 			any_pop = { limit = { type = aristocrats culture = north_german } literacy = 0.85 } # Target: 0.95
 			any_pop = { limit = { type = clergymen culture = north_german } literacy = 0.85 }   # Target: 0.95
-			any_pop = { limit = { type = artisans culture = north_german } literacy = 0.75 }    # Target: 0.85
+			any_pop = { limit = { type = artisans culture = north_german } literacy = 0.75 }
+			any_pop = { limit = { type = clerks culture = north_german } literacy = 0.8 }    # Target: 0.85
 			any_pop = { limit = { type = soldiers culture = north_german } literacy = 0.70 }    # Target: 0.80
 
 			# Estonians
 			any_pop = { limit = { type = clergymen culture = estonian } literacy = 0.75 }   # Target: 0.85
-			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }    # Target: 0.70
+			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }
+			any_pop = { limit = { type = clerks culture = estonian } literacy = 0.65 }    # Target: 0.70
 			any_pop = { limit = { type = farmers culture = estonian } literacy = 0.55 }     # Target: 0.65
 			any_pop = { limit = { type = soldiers culture = estonian } literacy = 0.50 }    # Target: 0.60
 		}
@@ -103,18 +111,21 @@ country_event = {
 			any_pop = { limit = { type = aristocrats culture = north_german } literacy = 0.85 } # Target: 0.95
 			any_pop = { limit = { type = clergymen culture = north_german } literacy = 0.85 }   # Target: 0.95
 			any_pop = { limit = { type = bureaucrats culture = north_german } literacy = 0.85 } # Target: 0.95
-			any_pop = { limit = { type = artisans culture = north_german } literacy = 0.80 }    # Target: 0.90
+			any_pop = { limit = { type = artisans culture = north_german } literacy = 0.80 }
+			any_pop = { limit = { type = clerks culture = north_german } literacy = 0.85 }    # Target: 0.90
 			any_pop = { limit = { type = soldiers culture = north_german } literacy = 0.70 }    # Target: 0.80
 
 			# Estonians
 			any_pop = { limit = { type = clergymen culture = estonian } literacy = 0.75 }   # Target: 0.85
-			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }    # Target: 0.70
+			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }
+			any_pop = { limit = { type = clerks culture = estonian } literacy = 0.65 }    # Target: 0.70
 			any_pop = { limit = { type = farmers culture = estonian } literacy = 0.55 }     # Target: 0.65
 			any_pop = { limit = { type = soldiers culture = estonian } literacy = 0.50 }    # Target: 0.60
 
 			# Russians
 			any_pop = { limit = { type = clergymen culture = russian } literacy = 0.50 }    # Target: 0.60
-			any_pop = { limit = { type = artisans culture = russian } literacy = 0.25 }     # Target: 0.35
+			any_pop = { limit = { type = artisans culture = russian } literacy = 0.25 }
+			any_pop = { limit = { type = clerks culture = russian } literacy = 0.3 }     # Target: 0.35
 			any_pop = { limit = { type = soldiers culture = russian } literacy = 0.10 }     # Target: 0.20
 			any_pop = { limit = { type = farmers culture = russian } literacy = 0.10 }      # Target: 0.20
 
@@ -129,17 +140,20 @@ country_event = {
 			# Baltic Germans
 			any_pop = { limit = { type = aristocrats culture = north_german } literacy = 0.85 } # Target: 0.95
 			any_pop = { limit = { type = clergymen culture = north_german } literacy = 0.85 }   # Target: 0.95
-			any_pop = { limit = { type = artisans culture = north_german } literacy = 0.75 }    # Target: 0.85
+			any_pop = { limit = { type = artisans culture = north_german } literacy = 0.75 }
+			any_pop = { limit = { type = clerks culture = north_german } literacy = 0.8 }    # Target: 0.85
 			any_pop = { limit = { type = soldiers culture = north_german } literacy = 0.70 }    # Target: 0.80
 
 			# Estonians
 			any_pop = { limit = { type = clergymen culture = estonian } literacy = 0.75 }   # Target: 0.85
-			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }    # Target: 0.70
+			any_pop = { limit = { type = artisans culture = estonian } literacy = 0.60 }
+			any_pop = { limit = { type = clerks culture = estonian } literacy = 0.65 }    # Target: 0.70
 			any_pop = { limit = { type = farmers culture = estonian } literacy = 0.55 }     # Target: 0.65
 			any_pop = { limit = { type = soldiers culture = estonian } literacy = 0.50 }    # Target: 0.60
 
 			# Coastal Swedes
-			any_pop = { limit = { type = artisans culture = swedish } literacy = 0.65 }     # Target: 0.75
+			any_pop = { limit = { type = artisans culture = swedish } literacy = 0.65 }
+			any_pop = { limit = { type = clerks culture = swedish } literacy = 0.7 }     # Target: 0.75
 			any_pop = { limit = { type = farmers culture = swedish } literacy = 0.60 }      # Target: 0.70
 		}
 	}
