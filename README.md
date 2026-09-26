@@ -21,6 +21,10 @@ Sign the Treaty of Tartu: Available in 1920 when at peace with Russia/USSR; yiel
 
 Propose the Baltic Entente: Allows an independent Estonia (if a Secondary Power) to automatically sphere and/or ally Latvia and Lithuania while burning off Infamy.
 
+New Units and Events:
+
+The Soomusrong (Armored Train): A custom 3D model event in 1919+ commemorates the Estonian armored trains of the War of Independence, granting prestige and calming our soldiers. The Soomusrong is also a buildable land unit (unlocked by the Armored Trains invention after Infiltration, 1900+): a rail-borne fortress with high defence, attack and siege value that comes with its own in-game 3D model, animations and build-window icon.
+
 
 <img width="505" height="464" alt="image" src="https://github.com/user-attachments/assets/ee58cdba-cf5a-4760-b366-fef65f8b5339" />
 

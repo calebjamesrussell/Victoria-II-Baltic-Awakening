@@ -23,3 +23,9 @@ propose_baltic_entente_desc;As a rising power in the region, Estonia is well-pos
 EVTNAME95500;The Baltic Schooling Tradition;;;;;;;;;;;;;x
 EVTDESC95500;Centuries of Lutheran parish schooling, confirmation reading requirements, and the academic presence of the Imperial University of Dorpat have left the population of Estland and Livland far more literate than the imperial norm.;;;;;;;;;;;;;x
 EVTOPTA95500;Vana hea Rootsi aeg.;;;;;;;;;;;;;x
+soomusrong;Armored Train;;;;;;;;;;;;x
+soomusrong_deployment;Armored Trains;;;;;;;;;;;;x
+soomusrong_deployment_desc;By mounting naval guns and machine guns on armored rail carriages, our army can project heavy firepower anywhere the Baltic railway network reaches. Where the rails run, the soomusrong follows.;;;;;;;;;;;;x
+EVTNAME95501;The Soomusrong;;;;;;;;;;;;x
+EVTDESC95501;Our engineers have bolted guns and armor onto railway carriages to create the soomusrong - the armored train. On the broad-gauge rails of the Baltic, these iron beasts can carry heavy firepower wherever the army needs it, striking deep and fast along the lines.;;;;;;;;;;;;x
+EVTOPTA95501;All aboard!;;;;;;;;;;;;x
