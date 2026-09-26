@@ -266,7 +266,6 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
 		owns = 349
 		349 = {
 			any_pop = { has_pop_religion = atheist }
