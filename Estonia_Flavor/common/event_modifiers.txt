@@ -768,7 +768,7 @@ soomusrong_corps = {
 }
 
 soomusrong_morale = {
-	land_defence_modifier = 0.05
+	land_defense_modifier = 0.05
 	supply_consumption = -0.05
 	icon = 15
 }
@@ -859,7 +859,7 @@ estonian_national_stage = {
 }
 
 peasant_credit_unions = {
-	global_tax_efficiency = 0.03
+	tax_efficiency = 0.03
 	icon = 5
 }
 
