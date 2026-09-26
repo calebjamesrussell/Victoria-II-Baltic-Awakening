@@ -253,3 +253,31 @@ country_event = {
 		}
 	}
 }
+
+
+##########################################################################
+# 95548 - The Freethinkers Are Here (diagnostic: confirms atheist POPs loaded)
+##########################################################################
+country_event = {
+	id = 95548
+	title = "EVTNAME95548"
+	desc = "EVTDESC95548"
+	picture = "Administration"
+	fire_only_once = yes
+
+	trigger = {
+		owns = 349
+		349 = {
+			any_pop = { has_pop_religion = atheist }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "EVTOPTA95548"
+		set_country_flag = freethinkers_present
+	}
+}
