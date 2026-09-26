@@ -898,5 +898,140 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	# Volunteer fire brigades: the first schools of self-government (1862)
+	found_fire_brigades = {
+		picture = "fire_brigades"
+		potential = {
+			tag = EST
+			not = { has_country_flag = fire_brigades_founded }
+		}
+		allow = {
+			year = 1862
+		}
+		effect = {
+			set_country_flag = fire_brigades_founded
+			any_pop = {
+				limit = {
+					culture = estonian
+					type = farmers
+				}
+				militancy = -1
+				consciousness = 1
+			}
+			add_country_modifier = {
+				name = volunteer_fire_brigades
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Eesti Kirjameeste Selts: the association of Estonian writers (1872)
+	found_kirjameeste_selts = {
+		picture = "kirjameeste_selts"
+		potential = {
+			tag = EST
+			has_country_flag = national_awakening_begun
+			not = { has_country_flag = kirjameeste_selts_founded }
+		}
+		allow = {
+			year = 1872
+			owns = 352 # Tartu
+		}
+		effect = {
+			set_country_flag = kirjameeste_selts_founded
+			prestige = 3
+			research_points = 300
+			any_pop = {
+				limit = {
+					culture = estonian
+					type = clergymen
+				}
+				consciousness = 2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# The co-operative creameries: Estonian butter for the world (1908)
+	found_dairy_coops = {
+		picture = "dairy_coops"
+		potential = {
+			tag = EST
+			not = { has_country_flag = dairy_coops_founded }
+		}
+		allow = {
+			year = 1908
+		}
+		effect = {
+			set_country_flag = dairy_coops_founded
+			money = 5000
+			add_country_modifier = {
+				name = cooperative_creameries
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Kunda cement: the first modern cement works (1868... historically; here as investment)
+	build_kunda_cement = {
+		picture = "kunda_cement"
+		potential = {
+			tag = EST
+			not = { has_country_flag = kunda_cement_built }
+		}
+		allow = {
+			year = 1868
+			money = 10000
+			owns = 350 # Narva - the Viru coast
+		}
+		effect = {
+			set_country_flag = kunda_cement_built
+			money = -10000
+			350 = {
+				add_province_modifier = {
+					name = kunda_cement_works
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Luther's furniture factory: plywood and world markets (1877)
+	expand_luther_factory = {
+		picture = "luther_factory"
+		potential = {
+			tag = EST
+			not = { has_country_flag = luther_factory_expanded }
+		}
+		allow = {
+			year = 1877
+			money = 15000
+			owns = 349 # Tallinn
+		}
+		effect = {
+			set_country_flag = luther_factory_expanded
+			money = -15000
+			349 = {
+				add_province_modifier = {
+					name = luther_furniture_works
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 }

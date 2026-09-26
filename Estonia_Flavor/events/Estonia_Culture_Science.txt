@@ -1,0 +1,187 @@
+# Estonia Flavor Events: culture, science and sport (1850-1936)
+# IDs 95546-95560 reserved for this file.
+
+#########################################################################
+# 95546 - The Struve Geodetic Arc
+#########################################################################
+country_event = {
+	id = 95546
+	title = "EVTNAME95546"
+	desc = "EVTDESC95546"
+	picture = "Administration"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		year = 1852
+		owns = 352 # Tartu - the observatory
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95546"
+		set_country_flag = struve_arc_completed
+		prestige = 5
+		research_points = 400
+	}
+}
+
+#########################################################################
+# 95547 - Koidula and the national stage
+#########################################################################
+country_event = {
+	id = 95547
+	title = "EVTNAME95547"
+	desc = "EVTDESC95547"
+	picture = "Celebration"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		year = 1869
+		has_country_flag = national_awakening_begun
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95547"
+		set_country_flag = koidula_stage
+		prestige = 3
+		any_pop = {
+			limit = {
+				culture = estonian
+			}
+			consciousness = 2
+			militancy = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95547"
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = clerks
+			}
+			consciousness = 1
+		}
+	}
+}
+
+#########################################################################
+# 95548 - The Old Believers of Lake Peipus
+#########################################################################
+province_event = {
+	id = 95548
+	title = "EVTNAME95548"
+	desc = "EVTDESC95548"
+	picture = "Orthodox"
+
+	fire_only_once = yes
+
+	trigger = {
+		owner = { tag = EST }
+		year = 1860
+		pop_majority_culture = russian
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "EVTOPTA95548"
+		owner = {
+			set_country_flag = old_believers_tolerated
+			prestige = 2
+		}
+		any_pop = {
+			limit = {
+				culture = russian
+			}
+			militancy = -2
+			consciousness = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB95548"
+		any_pop = {
+			limit = {
+				culture = russian
+			}
+			militancy = 2
+		}
+	}
+}
+
+#########################################################################
+# 95549 - Tammsaare's Truth and Justice
+#########################################################################
+country_event = {
+	id = 95549
+	title = "EVTNAME95549"
+	desc = "EVTDESC95549"
+	picture = "Nobel_Literature"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		year = 1926
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95549"
+		set_country_flag = tammsaare_published
+		prestige = 5
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = clerks
+			}
+			consciousness = 2
+		}
+	}
+}
+
+#########################################################################
+# 95550 - Antwerp 1920: the first Olympic team
+#########################################################################
+country_event = {
+	id = 95550
+	title = "EVTNAME95550"
+	desc = "EVTDESC95550"
+	picture = "Olympics"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		year = 1920
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA95550"
+		set_country_flag = olympic_team_sent
+		prestige = 3
+	}
+	option = {
+		name = "EVTOPTB95550"
+		money = 1000
+	}
+}

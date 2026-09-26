@@ -862,3 +862,25 @@ peasant_credit_unions = {
 	global_tax_efficiency = 0.03
 	icon = 5
 }
+
+volunteer_fire_brigades = {
+	core_pop_militancy_modifier = -0.05
+	icon = 5
+}
+
+cooperative_creameries = {
+	rgo_output = 0.05
+	tax_efficiency = 0.03
+	icon = 5
+}
+
+kunda_cement_works = {
+	local_factory_output = 0.10
+	local_rgo_output = 0.05
+	icon = 5
+}
+
+luther_furniture_works = {
+	local_factory_output = 0.15
+	icon = 5
+}
