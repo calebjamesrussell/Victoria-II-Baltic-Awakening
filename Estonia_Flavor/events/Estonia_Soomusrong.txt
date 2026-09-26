@@ -12,7 +12,7 @@ country_event = {
 
 	trigger = {
 		tag = EST
-		year = 1919
+		iron_railroad = 1
 		civilized = yes
 		owns = 349 # Tallinn / Reval
 	}

@@ -17,13 +17,13 @@ Expand the Baltic Railway: A massive treasury sink that instantly builds railroa
 
 Found the Kaitseliit: Triggers during wartime or high unrest (Militancy > 4); spawns a free irregular "Tallinna Malev" brigade in the capital and reduces soldier militancy.
 
-Sign the Treaty of Tartu: Available in 1920 when at peace with Russia/USSR; yields high prestige and a massive treasury injection representing Russian imperial gold rubles.
+Sign the Treaty of Tartu: Available when at peace with Russia/USSR; yields high prestige and a massive treasury injection representing Russian imperial gold rubles.
 
 Propose the Baltic Entente: Allows an independent Estonia (if a Secondary Power) to automatically sphere and/or ally Latvia and Lithuania while burning off Infamy.
 
 New Units and Events:
 
-The Soomusrong (Armored Train): A custom 3D model event in 1919+ commemorates the Estonian armored trains of the War of Independence, granting prestige and calming our soldiers. The Soomusrong is also a buildable land unit (unlocked by the Armored Trains invention after Infiltration, 1900+): a rail-borne fortress with high defence, attack and siege value that comes with its own in-game 3D model, animations and build-window icon.
+The Soomusrong (Armored Train): A custom 3D model event (once iron railroads reach Estonia) commemorates the Estonian armored trains of the War of Independence, granting prestige and calming our soldiers. The Soomusrong is also a buildable land unit (unlocked by the Armored Trains invention after Infiltration, 1900+): a rail-borne fortress with high defence, attack and siege value that comes with its own in-game 3D model, animations and build-window icon.
 
 
 <img width="505" height="464" alt="image" src="https://github.com/user-attachments/assets/ee58cdba-cf5a-4760-b366-fef65f8b5339" />
@@ -41,13 +41,14 @@ Estonia's long 19th century is now playable: Jannsen's Perno Postimees (1857) an
 
 Culture, Science and Sport:
 
-The Struve Geodetic Arc (1852) puts Tartu's observatory on the world map; Koidula and the National Stage (1869) gives the awakening its voice; the Old Believers of Lake Peipus ask for toleration of their ancient rites; Tammsaare's Truth and Justice (1926) becomes the novel of the people; and Antwerp 1920 sends the first Olympic team behind its own flag.
+The Struve Geodetic Arc (1852) puts Tartu's observatory on the world map; Koidula and the National Stage (1869) gives the awakening its voice; the Old Believers of Lake Peipus ask for toleration of their ancient rites; Tammsaare's Truth and Justice becomes the novel of the people; and the first Olympic team marches behind its own flag.
 
 Industry and the Co-operative Economy:
 
 Build the Kunda Cement Works (1868) on the Viru coast, Expand Luther's Furniture Factory (1877) in Tallinn, and from 1908 Charter the Co-operative Creameries - the butter-export economy that made Estonian farmers rich.
 
-The Young Republic (1917-1939):
+Content is deliberately not tied to fixed years: Victoria II is a sandbox, and Estonia's independence, wars and institutions arrive whenever the game's history produces them. War- and nation-building content (the Soomusrong, Põdder, the currency and central bank, the Narva line, the veterans' Vaps movement, the December Rising, the Bases Ultimatum) is gated on conditions - wars fought, institutions founded, ideologies strong - so an Estonia that wins its freedom in 1870 gets its full story then.
+The Young Republic:
 
 Tõnisson's Postimees, the Vaps Movement, the Armored Train Doctrine, the December Rising, the Cultural Autonomy Law, the Coastal Swedes' petition, the New Constitution, the World Depression, the Bases Ultimatum, Brothers Across the Gulf (Finland), plus decisions to Establish the Estonian Mark (the currency), Found Eesti Pank (the central bank), Fortify the Narva Line, Build the Coastal Defences, Expand Kreenholm, Estify the University of Tartu, Enact Women's Suffrage, Found the Noored Kotkad, Organize Setomaa, and Expand the Kaitseliit.
 
@@ -57,7 +58,7 @@ The Baltic German estates now have a country of their own. BLW is a civilized, n
 
 Ernst Põdder and the Kaitseliit:
 
-Ernst Põdder - the Iron Man of the Estonian War of Independence - now gets his own event (1918+), complete with his historical photograph and very beefy stats: the maximum a Victoria II general can legally carry (daring + war college). Accept him into service for prestige and the calm of a nation that trusts its defenders.
+Ernst Põdder - the Iron Man of the Estonian War of Independence - now gets his own event (1900+, once Estonia has a Defence League or is at war), complete with his historical photograph and very beefy stats: the maximum a Victoria II general can legally carry (daring + war college). Accept him into service for prestige and the calm of a nation that trusts its defenders. Like the real Põdder, he is a career soldier - usable whenever Estonia fights, not tied to a fixed year.
 
 Democracy at the Declaration - an Estate Republic:
 

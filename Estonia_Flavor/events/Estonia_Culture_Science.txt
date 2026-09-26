@@ -134,7 +134,7 @@ country_event = {
 
 	trigger = {
 		tag = EST
-		year = 1926
+		year = 1915
 	}
 
 	mean_time_to_happen = {
@@ -168,7 +168,6 @@ country_event = {
 
 	trigger = {
 		tag = EST
-		year = 1920
 	}
 
 	mean_time_to_happen = {

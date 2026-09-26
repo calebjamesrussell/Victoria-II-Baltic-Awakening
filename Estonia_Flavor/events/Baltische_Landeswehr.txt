@@ -135,7 +135,6 @@ country_event = {
 	trigger = {
 		tag = BLW
 		owns = 349
-		year = 1918
 	}
 
 	mean_time_to_happen = {

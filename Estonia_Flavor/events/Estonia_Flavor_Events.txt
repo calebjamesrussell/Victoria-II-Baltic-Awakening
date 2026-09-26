@@ -338,8 +338,9 @@ country_event = {
 
 	trigger = {
 		tag = EST
-		year = 1929
 		government = democracy
+		has_country_flag = soomusrong_deployed
+		war = no
 	}
 
 	mean_time_to_happen = {
@@ -382,7 +383,6 @@ country_event = {
 	trigger = {
 		tag = EST
 		has_country_flag = soomusrong_deployed
-		year = 1920
 	}
 
 	mean_time_to_happen = {
@@ -418,8 +418,10 @@ country_event = {
 
 	trigger = {
 		tag = EST
-		year = 1918
 		exists = FIN
+		NOT = {
+			FIN = { in_sphere = RUS }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -452,7 +454,6 @@ province_event = {
 
 	trigger = {
 		owner = { tag = EST }
-		year = 1920
 		pop_majority_culture = swedish
 	}
 
@@ -492,7 +493,6 @@ country_event = {
 
 	trigger = {
 		tag = EST
-		year = 1925
 		government = democracy
 	}
 
@@ -530,8 +530,11 @@ country_event = {
 
 	trigger = {
 		tag = EST
-		year = 1924
 		war = no
+		OR = {
+			communist = 0.20
+			socialist = 0.30
+		}
 	}
 
 	mean_time_to_happen = {
@@ -569,7 +572,8 @@ country_event = {
 
 	trigger = {
 		tag = EST
-		year = 1931
+		has_country_flag = soomusrong_deployed
+		war = no
 	}
 
 	mean_time_to_happen = {
@@ -608,7 +612,6 @@ country_event = {
 	trigger = {
 		tag = EST
 		has_country_flag = vaikiv_ajastu
-		year = 1937
 	}
 
 	mean_time_to_happen = {
@@ -639,9 +642,11 @@ country_event = {
 
 	trigger = {
 		tag = EST
-		year = 1939
 		exists = SOV
 		war = no
+		SOV = {
+			is_greater_power = yes
+		}
 	}
 
 	mean_time_to_happen = {
@@ -691,7 +696,6 @@ country_event = {
 	trigger = {
 		tag = EST
 		has_country_flag = soomusrong_deployed
-		year = 1920
 	}
 
 	mean_time_to_happen = {
@@ -724,7 +728,11 @@ country_event = {
 
 	trigger = {
 		tag = EST
-		year = 1918
+		year = 1900
+		OR = {
+			has_country_flag = kaitseliit_founded
+			war = yes
+		}
 	}
 
 	mean_time_to_happen = {
