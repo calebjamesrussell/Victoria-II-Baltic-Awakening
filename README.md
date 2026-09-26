@@ -50,3 +50,15 @@ Build the Kunda Cement Works (1868) on the Viru coast, Expand Luther's Furniture
 The Young Republic (1917-1939):
 
 Tõnisson's Postimees, the Vaps Movement, the Armored Train Doctrine, the December Rising, the Cultural Autonomy Law, the Coastal Swedes' petition, the New Constitution, the World Depression, the Bases Ultimatum, Brothers Across the Gulf (Finland), plus decisions to Establish the Estonian Mark (the currency), Found Eesti Pank (the central bank), Fortify the Narva Line, Build the Coastal Defences, Expand Kreenholm, Estify the University of Tartu, Enact Women's Suffrage, Found the Noored Kotkad, Organize Setomaa, and Expand the Kaitseliit.
+
+A New Nation: the Baltische Landeswehr (BLW):
+
+The Baltic German estates now have a country of their own. BLW is a civilized, north_german-cultured bourgeois dictatorship - the United Baltic Duchy that nearly was - with cores on the entire Estonian and Latvian coast (Reval to Libau). It does not exist at the 1836 start: it rises through the "Landeswehr Rising" event when the provinces collapse into very bad conditions (wartime, militancy 6+ across the land, and an enraged Baltic German population). Choose to release it as a vassal or crush it by angering the German estates further. If it survives, BLW gets its own flavor events - Major Alfred Fletcher forges the militia into an army, and the Baltic German banks and manors rally behind the white-red-white. As a Germanic-culture nation it can plausibly be sphered by - or join - the North German Federation or Germany. Complete with custom flags for every government type.
+
+Ernst Põdder and the Kaitseliit:
+
+Ernst Põdder - the Iron Man of the Estonian War of Independence - now gets his own event (1918+), complete with his historical photograph and very beefy stats: the maximum a Victoria II general can legally carry (daring + war college). Accept him into service for prestige and the calm of a nation that trusts its defenders.
+
+Democracy at the Declaration:
+
+Releasing Estonia from the Russian Empire now produces a democracy by default - landed voting, a state-equal-weight upper house, free press and non-secret ballots - the constitutional republic the national awakening always demanded, ready to face the twentieth century.

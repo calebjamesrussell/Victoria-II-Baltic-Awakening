@@ -710,11 +710,48 @@ country_event = {
 			personality = cautious
 			background = war_college
 		}
+		prestige = 5
+	}
+}
+
+########################################################################## 95513 - Ernst Põdder and the Kaitseliit (Defence League)#########################################################################
+country_event = {
+	id = 95513
+	title = "EVTNAME95513"
+	desc = "EVTDESC95513"
+	picture = "ernst_podder"
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		year = 1918
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			war = yes
+		}
+	}
+
+	option = {
+		name = "EVTOPTA95513"
 		define_general = {
 			name = "Ernst Põdder"
-			personality = audacious
+			personality = daring
 			background = war_college
 		}
-		prestige = 5
+		prestige = 10
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB95513"
+		prestige = 2
 	}
 }
