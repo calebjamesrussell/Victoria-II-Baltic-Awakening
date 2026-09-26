@@ -642,11 +642,14 @@ country_event = {
 
 	trigger = {
 		tag = EST
-		exists = SOV
+		exists = RUS
 		war = no
-		SOV = {
+		RUS = {
+			government = proletarian_dictatorship
 			is_greater_power = yes
 		}
+		NOT = { has_country_flag = ultimatum_defied }
+		NOT = { has_country_flag = soviet_bases_admitted }
 	}
 
 	mean_time_to_happen = {
@@ -657,7 +660,7 @@ country_event = {
 		name = "EVTOPTA95519"
 		set_country_flag = soviet_bases_admitted
 		relation = {
-			who = SOV
+			who = RUS
 			value = 50
 		}
 		any_pop = {
@@ -670,7 +673,7 @@ country_event = {
 		name = "EVTOPTB95519"
 		set_country_flag = ultimatum_defied
 		relation = {
-			who = SOV
+			who = RUS
 			value = -100
 		}
 		prestige = 10
