@@ -1,0 +1,68 @@
+# 3D model for the Soomusrong (Estonian armored train).
+# Referenced by units/soomusrong.txt via sprite = Soomusrong.
+# Reuses the vanilla Generic Tank mesh and animations: a fabricated mesh
+# crashes the engine at startup, so the armored train rides on Paradox's
+# own rigged model until a real Maya export exists.
+
+objectTypes = {
+	EMFXActorType = {
+		name = "Soomusrong"
+		actorfile = "gfx\anims\Generic_Tank.xac"
+		animation = {
+			name = "idle"
+			file = "gfx\anims\Generic_Tank_Idle.xsm"
+			defaultAnimationTime = 0.25
+		}
+		animation = {
+			name = "move"
+			file = "gfx\anims\Generic_Tank_Moving.xsm"
+			defaultAnimationTime = 0.55
+		}
+		animation = {
+			name = "attack"
+			file = "gfx\anims\Generic_Tank_Attack.xsm"
+			defaultAnimationTime = 0.6
+		}
+		scale = 0.6
+	}
+	EMFXActorType = {
+		name = "EuropeanGCSoomusrong"
+		actorfile = "gfx\anims\Generic_Tank.xac"
+		animation = {
+			name = "idle"
+			file = "gfx\anims\Generic_Tank_Idle.xsm"
+			defaultAnimationTime = 0.25
+		}
+		animation = {
+			name = "move"
+			file = "gfx\anims\Generic_Tank_Moving.xsm"
+			defaultAnimationTime = 0.55
+		}
+		animation = {
+			name = "attack"
+			file = "gfx\anims\Generic_Tank_Attack.xsm"
+			defaultAnimationTime = 0.6
+		}
+		scale = 0.6
+	}
+	EMFXActorType = {
+		name = "GenericSoomusrong"
+		actorfile = "gfx\anims\Generic_Tank.xac"
+		animation = {
+			name = "idle"
+			file = "gfx\anims\Generic_Tank_Idle.xsm"
+			defaultAnimationTime = 0.25
+		}
+		animation = {
+			name = "move"
+			file = "gfx\anims\Generic_Tank_Moving.xsm"
+			defaultAnimationTime = 0.55
+		}
+		animation = {
+			name = "attack"
+			file = "gfx\anims\Generic_Tank_Attack.xsm"
+			defaultAnimationTime = 0.6
+		}
+		scale = 0.6
+	}
+}

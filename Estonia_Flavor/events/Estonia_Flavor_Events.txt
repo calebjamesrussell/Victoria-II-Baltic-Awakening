@@ -1,0 +1,768 @@
+# Estonia Flavor Events
+# National figures, cultural milestones and crisis moments for a playable Estonia.
+# IDs 95500-95599 are reserved for this mod.
+
+#########################################################################
+# 95502 - The National Awakening: Jannsen and the first Estonian newspaper (1857)
+#########################################################################
+country_event = {
+	id = 95502
+	title = "EVTNAME95502"
+	desc = "EVTDESC95502"
+	picture = "publishers"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		year = 1858
+		civilized = yes
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95502"
+		set_country_flag = national_awakening_begun
+		add_country_modifier = {
+			name = estonian_cultural_awakening
+			duration = 3650
+		}
+		prestige = 3
+		any_pop = {
+			limit = { culture = estonian }
+			consciousness = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB95502"
+		set_country_flag = national_awakening_squelched
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 1
+		}
+	}
+}
+
+#########################################################################
+# 95503 - Eesti Postimees and the network of readers' circles (1864)
+#########################################################################
+country_event = {
+	id = 95503
+	title = "EVTNAME95503"
+	desc = "EVTDESC95503"
+	picture = "news"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		has_country_flag = national_awakening_begun
+		year = 1864
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	option = {
+		name = "EVTOPTA95503"
+		set_country_flag = estonian_press_founded
+		add_country_modifier = {
+			name = baltic_student_body
+			duration = 3650
+		}
+		research_points = 250
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = clergymen
+			}
+			consciousness = 2
+		}
+	}
+}
+
+#########################################################################
+# 95504 - The Kalevipoeg published (follow-up to the decision)
+#########################################################################
+country_event = {
+	id = 95504
+	title = "EVTNAME95504"
+	desc = "EVTDESC95504"
+	picture = "Nobel_Literature"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		has_country_flag = kalevipoeg_published
+		year = 1861
+	}
+
+	mean_time_to_happen = {
+		months = 18
+	}
+
+	option = {
+		name = "EVTOPTA95504"
+		add_country_modifier = {
+			name = kalevipoeg_legacy
+			duration = 3650
+		}
+		prestige = 5
+		any_pop = {
+			limit = { culture = estonian }
+			consciousness = 1
+			militancy = -1
+		}
+	}
+}
+
+#########################################################################
+# 95505 - The first Song Festival (Laulupidu aftermath)
+#########################################################################
+country_event = {
+	id = 95505
+	title = "EVTNAME95505"
+	desc = "EVTDESC95505"
+	picture = "Celebration"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		has_country_flag = laulupidu_organized
+		year = 1869
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA95505"
+		add_country_modifier = {
+			name = estonian_choral_tradition
+			duration = 3650
+		}
+		prestige = 5
+		any_pop = {
+			limit = { culture = estonian }
+			consciousness = 2
+			militancy = -2
+		}
+	}
+}
+
+#########################################################################
+# 95506 - Carl Robert Jakobson and the Sakala generation
+#########################################################################
+country_event = {
+	id = 95506
+	title = "EVTNAME95506"
+	desc = "EVTDESC95506"
+	picture = "punch"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		has_country_flag = national_awakening_begun
+		year = 1875
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	option = {
+		name = "EVTOPTA95506"
+		set_country_flag = jakobson_programme
+		any_pop = {
+			limit = { culture = estonian }
+			consciousness = 2
+		}
+		relation = {
+			who = RUS
+			value = -25
+		}
+		relation = {
+			who = GER
+			value = -25
+		}
+	}
+	option = {
+		name = "EVTOPTB95506"
+		set_country_flag = moderate_awakening
+		prestige = 2
+		any_pop = {
+			limit = { culture = estonian }
+			consciousness = 1
+		}
+	}
+}
+
+#########################################################################
+# 95507 - The Estonian Alexander School movement
+#########################################################################
+country_event = {
+	id = 95507
+	title = "EVTNAME95507"
+	desc = "EVTDESC95507"
+	picture = "School"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		has_country_flag = national_awakening_begun
+		year = 1870
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95507"
+		set_country_flag = alexander_school_founded
+		money = -5000
+		add_country_modifier = {
+			name = estonian_folk_high_schools
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB95507"
+		money = 2500
+	}
+}
+
+#########################################################################
+# 95508 - Russification pressures in the Baltic provinces
+#########################################################################
+country_event = {
+	id = 95508
+	title = "EVTNAME95508"
+	desc = "EVTDESC95508"
+	picture = "Orthodox"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		year = 1885
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95508"
+		set_country_flag = russofication_resisted
+		any_pop = {
+			limit = { culture = estonian }
+			consciousness = 2
+			militancy = 1
+		}
+		relation = {
+			who = RUS
+			value = -50
+		}
+	}
+	option = {
+		name = "EVTOPTB95508"
+		set_country_flag = russofication_endured
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 2
+		}
+		add_country_modifier = {
+			name = russian_minority_conciliation
+			duration = 1825
+		}
+	}
+}
+
+#########################################################################
+# 95509 - Jaan Tõnisson and the Postimees generation
+#########################################################################
+country_event = {
+	id = 95509
+	title = "EVTNAME95509"
+	desc = "EVTDESC95509"
+	picture = "news"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		year = 1896
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95509"
+		set_country_flag = tonisson_circle
+		add_country_modifier = {
+			name = estonian_folk_high_schools
+			duration = 3650
+		}
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = clerks
+			}
+			consciousness = 2
+		}
+	}
+}
+
+#########################################################################
+# 95510 - The Vaps Movement (veterans of the Independence War)
+#########################################################################
+country_event = {
+	id = 95510
+	title = "EVTNAME95510"
+	desc = "EVTDESC95510"
+	picture = "Fascist"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		government = democracy
+		has_country_flag = soomusrong_deployed
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			average_militancy = 4
+		}
+	}
+
+	option = {
+		name = "EVTOPTA95510"
+		set_country_flag = vaps_movement_rising
+		add_country_modifier = {
+			name = vaps_movement
+			duration = 1825
+		}
+	}
+	option = {
+		name = "EVTOPTB95510"
+		set_country_flag = vaps_suppressed
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 2
+		}
+	}
+}
+
+#########################################################################
+# 95511 - Armored trains doctrine matures (Soomusrong follow-up)
+#########################################################################
+country_event = {
+	id = 95511
+	title = "EVTNAME95511"
+	desc = "EVTDESC95511"
+	picture = "soomusrong"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		has_country_flag = soomusrong_deployed
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA95511"
+		add_country_modifier = {
+			name = soomusrong_corps
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB95511"
+		add_country_modifier = {
+			name = soomusrong_morale
+			duration = 3650
+		}
+	}
+}
+
+#########################################################################
+# 95512 - Finnish-Estonian brotherhood across the gulf
+#########################################################################
+country_event = {
+	id = 95512
+	title = "EVTNAME95512"
+	desc = "EVTDESC95512"
+	picture = "Scandinavia"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		exists = FIN
+		NOT = {
+			FIN = { in_sphere = RUS }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA95512"
+		set_country_flag = finnish_brotherhood
+		relation = {
+			who = FIN
+			value = 100
+		}
+		create_alliance = FIN
+		prestige = 3
+	}
+}
+
+
+#########################################################################
+# 95514 - Coastal Swedes petition for cultural autonomy
+#########################################################################
+province_event = {
+	id = 95514
+	title = "EVTNAME95514"
+	desc = "EVTDESC95514"
+	picture = "norwayflag"
+
+	fire_only_once = yes
+
+	trigger = {
+		owner = { tag = EST }
+		pop_majority_culture = swedish
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "EVTOPTA95514"
+		owner = {
+			set_country_flag = swedish_autonomy_granted
+			add_accepted_culture = swedish
+			prestige = 3
+		}
+	}
+	option = {
+		name = "EVTOPTB95514"
+		owner = {
+			any_pop = {
+				limit = { culture = swedish }
+				militancy = 2
+			}
+		}
+	}
+}
+
+#########################################################################
+# 95515 - Cultural Autonomy Law for national minorities
+#########################################################################
+country_event = {
+	id = 95515
+	title = "EVTNAME95515"
+	desc = "EVTDESC95515"
+	picture = "Unite"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		government = democracy
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA95515"
+		set_country_flag = cultural_autonomy_law
+		prestige = 10
+		any_pop = {
+			limit = {
+				NOT = { culture = estonian }
+			}
+			militancy = -3
+		}
+		add_country_modifier = {
+			name = estonian_national_unity
+			duration = 3650
+		}
+	}
+}
+
+#########################################################################
+# 95516 - The 1924 December coup attempt (communist rising)
+#########################################################################
+country_event = {
+	id = 95516
+	title = "EVTNAME95516"
+	desc = "EVTDESC95516"
+	picture = "Riot"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		war = no
+		OR = {
+			communist = 0.20
+			socialist = 0.30
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			average_militancy = 4
+		}
+	}
+
+	option = {
+		name = "EVTOPTA95516"
+		set_country_flag = december_coup_crushed
+		any_pop = {
+			limit = { ideology = communist }
+			militancy = 4
+		}
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = -2
+		}
+	}
+}
+
+#########################################################################
+# 95517 - Great Depression hits Estonian exports
+#########################################################################
+country_event = {
+	id = 95517
+	title = "EVTNAME95517"
+	desc = "EVTDESC95517"
+	picture = "stocks"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		has_country_flag = soomusrong_deployed
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA95517"
+		add_country_modifier = {
+			name = estonian_depression
+			duration = 1095
+		}
+		money = -25000
+	}
+	option = {
+		name = "EVTOPTB95517"
+		money = -50000
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = -1
+		}
+	}
+}
+
+#########################################################################
+# 95518 - The Päts Constitution and guided governance
+#########################################################################
+country_event = {
+	id = 95518
+	title = "EVTNAME95518"
+	desc = "EVTDESC95518"
+	picture = "Upperhouse"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		has_country_flag = vaikiv_ajastu
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA95518"
+		set_country_flag = pals_constitution
+		prestige = 3
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = -1
+		}
+	}
+}
+
+#########################################################################
+# 95519 - Soviet ultimatum of 1939 (bases pact)
+#########################################################################
+country_event = {
+	id = 95519
+	title = "EVTNAME95519"
+	desc = "EVTDESC95519"
+	picture = "Policeaction"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		exists = RUS
+		war = no
+		RUS = {
+			government = proletarian_dictatorship
+			is_greater_power = yes
+		}
+		NOT = { has_country_flag = ultimatum_defied }
+		NOT = { has_country_flag = soviet_bases_admitted }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA95519"
+		set_country_flag = soviet_bases_admitted
+		relation = {
+			who = RUS
+			value = 50
+		}
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 3
+			consciousness = 2
+		}
+	}
+	option = {
+		name = "EVTOPTB95519"
+		set_country_flag = ultimatum_defied
+		relation = {
+			who = RUS
+			value = -100
+		}
+		prestige = 10
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = -2
+			consciousness = 1
+		}
+	}
+}
+
+#########################################################################
+# 95520 - Laidoner and Larka: officers of the Independence War
+#########################################################################
+country_event = {
+	id = 95520
+	title = "EVTNAME95520"
+	desc = "EVTDESC95520"
+	picture = "Recruits"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		has_country_flag = soomusrong_deployed
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA95520"
+		define_general = {
+			name = "Johan Laidoner"
+			personality = school_of_defense
+			background = war_college
+		}
+		define_general = {
+			name = "Andres Larka"
+			personality = cautious
+			background = war_college
+		}
+		prestige = 5
+	}
+}
+
+########################################################################## 95513 - Ernst Põdder and the Kaitseliit (Defence League)#########################################################################
+country_event = {
+	id = 95513
+	title = "EVTNAME95513"
+	desc = "EVTDESC95513"
+	picture = "ernst_podder"
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		year = 1900
+		OR = {
+			has_country_flag = kaitseliit_founded
+			war = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			war = yes
+		}
+	}
+
+	option = {
+		name = "EVTOPTA95513"
+		define_general = {
+			name = "Ernst Põdder"
+			personality = daring
+			background = war_college
+		}
+		prestige = 10
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB95513"
+		prestige = 2
+	}
+}
