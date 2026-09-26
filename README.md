@@ -59,6 +59,6 @@ Ernst Põdder and the Kaitseliit:
 
 Ernst Põdder - the Iron Man of the Estonian War of Independence - now gets his own event (1918+), complete with his historical photograph and very beefy stats: the maximum a Victoria II general can legally carry (daring + war college). Accept him into service for prestige and the calm of a nation that trusts its defenders.
 
-Democracy at the Declaration:
+Democracy at the Declaration - an Estate Republic:
 
-Releasing Estonia from the Russian Empire now produces a democracy by default - landed voting, a state-equal-weight upper house, free press and non-secret ballots - the constitutional republic the national awakening always demanded, ready to face the twentieth century.
+Releasing Estonia from the Russian Empire now produces a democracy by default - but one true to the Baltic provinces of the era. Wealth, land, education and administration were concentrated in the hands of the German nobility, so the young republic starts with wealth_voting, an appointed upper house, censored press and nv_order: a republic of the estates, where the Estonian majority is governed by a privileged few. Playing Estonia now means fighting to widen the franchise - pushing universal voting through a resistant conservative upper house, which the Women's Suffrage decision (1917) then builds upon.
