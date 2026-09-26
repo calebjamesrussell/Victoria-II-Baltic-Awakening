@@ -1,8 +1,8 @@
 # Estonia Regional Pop-Level Literacy Initialization
 country_event = {
 	id = 95500
-	title = "High Literacy in the Baltic Provinces"
-	desc = "Centuries of parish schooling and academic institutions have fostered exceptionally high literacy across the Baltic governorates."
+	title = "EVTNAME95500"
+	desc = "EVTDESC95500"
 	picture = "Administration"
 
 	fire_only_once = yes

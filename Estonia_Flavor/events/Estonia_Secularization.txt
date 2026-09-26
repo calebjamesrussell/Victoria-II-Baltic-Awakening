@@ -1,8 +1,14 @@
 # Estonia Flavor Events: secularization and freethought (1880-1939)
-# POPs can become atheist through these events; the vanilla conversion
-# engine then spreads the faith of the state religion daily, provided
-# same-culture seed POPs of the target religion exist in a province.
+# POPs become atheist organically: the vanilla conversion engine spreads
+# the state religion daily once same-culture seed POPs of that religion
+# exist in a province. These events steer consciousness/militancy, grant
+# province modifiers that boost conversion, and (for the state atheism
+# path) change the state religion itself, which the engine then spreads.
 # IDs 95541-95560 reserved for this file.
+#
+# Note: pop religion cannot be set directly by effects; only the state
+# religion can be changed (country scope). Seed POPs are defined in
+# history/pops/1836.1.1/Estonia.txt so conversion has valid targets.
 
 #########################################################################
 # 95541 - Darwin in the lecture halls
@@ -29,12 +35,14 @@ country_event = {
 	option = {
 		name = "EVTOPTA95541"
 		set_country_flag = darwin_debates_allowed
+		352 = {
+			add_province_modifier = { name = darwin_debates duration = 3650 }
+		}
 		any_pop = {
 			limit = {
 				culture = estonian
 				type = clerks
 			}
-			religion = atheist
 			consciousness = 2
 		}
 		any_pop = {
@@ -84,19 +92,8 @@ country_event = {
 	option = {
 		name = "EVTOPTA95542"
 		set_country_flag = freethinkers_society
-		any_pop = {
-			limit = {
-				culture = estonian
-				type = clerks
-			}
-			religion = atheist
-		}
-		any_pop = {
-			limit = {
-				culture = estonian
-				type = artisans
-			}
-			religion = atheist
+		352 = {
+			add_province_modifier = { name = freethinkers_tartu duration = 3650 }
 		}
 		any_pop = {
 			limit = {
@@ -146,13 +143,7 @@ country_event = {
 			limit = {
 				owner = { has_country_flag = secular_schools }
 			}
-			any_pop = {
-				limit = {
-					culture = estonian
-					type = farmers
-				}
-				religion = atheist
-			}
+			add_province_modifier = { name = secular_schools_mod duration = 3650 }
 		}
 		any_pop = {
 			limit = {
@@ -200,14 +191,9 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = { tag = EST }
+				any_pop = { has_pop_religion = atheist }
 			}
-			any_pop = {
-				limit = {
-					culture = estonian
-					NOT = { has_pop_religion = atheist }
-				}
-				religion = atheist
-			}
+			add_province_modifier = { name = quiet_congregations duration = 730 }
 		}
 	}
 	option = {
@@ -261,7 +247,6 @@ country_event = {
 		set_country_flag = state_atheism_persevered
 		any_pop = {
 			limit = {
-				religion_group = christian
 				NOT = { has_pop_religion = atheist }
 			}
 			militancy = 2
