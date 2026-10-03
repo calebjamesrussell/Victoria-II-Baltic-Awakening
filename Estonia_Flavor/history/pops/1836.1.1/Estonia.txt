@@ -137,6 +137,22 @@
 		religion = atheist
 		size = 100
 	}
+
+	# Estonian-language freethinkers: the koluvere schoolmasters and
+	# town clerks who read the German pamphlets and passed them on.
+	# Same-culture atheist seeds let the conversion engine target
+	# Estonian POPs in this province.
+	clerks = {
+		culture = estonian
+		religion = atheist
+		size = 50
+	}
+
+	artisans = {
+		culture = estonian
+		religion = atheist
+		size = 50
+	}
 }
 
 # Narva (350) - Eastern Border & Trade Gateway
@@ -250,6 +266,21 @@
 		culture = estonian
 		religion = protestant
 		size = 20800
+	}
+
+	# Pärnu's merchant quarter reads what Tallinn's presses print:
+	# a small Estonian freethinker fringe, and same-culture seeds for
+	# the conversion engine.
+	clerks = {
+		culture = estonian
+		religion = atheist
+		size = 25
+	}
+
+	artisans = {
+		culture = estonian
+		religion = atheist
+		size = 25
 	}
 }
 
@@ -416,5 +447,14 @@
 		culture = swedish
 		religion = protestant
 		size = 50
+	}
+
+	# Even the islands have their skeptics: the sailors and smiths who
+	# saw the world and kept no parish. Same-culture seeds for the
+	# conversion engine.
+	artisans = {
+		culture = estonian
+		religion = atheist
+		size = 25
 	}
 }

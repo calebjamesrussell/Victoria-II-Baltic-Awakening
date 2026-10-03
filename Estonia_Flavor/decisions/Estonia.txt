@@ -99,7 +99,6 @@ political_decisions = {
 		}
 
 		allow = {
-			year = 1857
 			romanticism = 1
 		}
 
@@ -312,6 +311,7 @@ political_decisions = {
 
 		allow = {
 			not = { war_with = RUS }
+			not = { has_country_flag = treaty_of_tartu }
 		}
 
 		effect = {
@@ -481,7 +481,7 @@ political_decisions = {
 		}
 
 		allow = {
-			year = 1878
+			positivism = 1
 			owns = 352 # Tartu
 		}
 
@@ -662,7 +662,7 @@ political_decisions = {
 		}
 
 		allow = {
-			year = 1859
+			mechanical_production = 1
 			money = 15000
 		}
 
@@ -789,7 +789,7 @@ political_decisions = {
 			not = { has_country_flag = vanemuine_founded }
 		}
 		allow = {
-			year = 1865
+			realism = 1
 			owns = 352 # Tartu
 		}
 		effect = {
@@ -820,7 +820,7 @@ political_decisions = {
 			not = { has_country_flag = credit_union_founded }
 		}
 		allow = {
-			year = 1882
+			business_banks = 1
 		}
 		effect = {
 			set_country_flag = credit_union_founded
@@ -855,6 +855,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = state_atheism_declared
 			religion = atheist
+			# The state no longer pays the church: its employees go with the state
 			any_pop = {
 				limit = {
 					culture = estonian
@@ -862,11 +863,29 @@ political_decisions = {
 				}
 				militancy = 2
 			}
+			# The emboldened freethinkers carry the message into the parishes:
+			# conscious POPs convert faster, and the state religion is now atheist
+			any_pop = {
+				limit = {
+					culture = estonian
+					not = { has_pop_religion = atheist }
+				}
+				consciousness = 2
+			}
 			any_pop = {
 				limit = {
 					has_pop_religion = atheist
 				}
 				consciousness = 1
+				militancy = -1
+			}
+			# Secular schooling in every province we own: the conversion
+			# engine works per province, so blanket the whole country
+			any_owned = {
+				add_province_modifier = {
+					name = secular_schools_mod
+					duration = -1
+				}
 			}
 		}
 		ai_will_do = {
@@ -888,12 +907,67 @@ political_decisions = {
 			set_country_flag = concordat_signed
 			religion = protestant
 			prestige = 2
+			# The pews refill; the unbelievers keep quiet again
 			any_pop = {
 				limit = {
 					culture = estonian
 					type = clergymen
 				}
 				militancy = -3
+			}
+			any_pop = {
+				limit = {
+					has_pop_religion = atheist
+				}
+				consciousness = -2
+				militancy = 1
+			}
+			any_owned = {
+				limit = {
+					has_province_modifier = secular_schools_mod
+				}
+				remove_province_modifier = secular_schools_mod
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Patronize the freethinkers' press: pamphlets, journals and lecture
+	# circuits for the unbelievers - pushes POPs toward atheism
+	patronize_freethought_press = {
+		picture = "state_atheism"
+		potential = {
+			tag = EST
+			religion = atheist
+			not = { has_country_flag = freethought_press_patronized }
+		}
+		allow = {
+			biologism = 1
+			money = 10000
+		}
+		effect = {
+			set_country_flag = freethought_press_patronized
+			money = -10000
+			# Pamphlets circulate where the unbelievers already are: the
+			# province modifiers raise consciousness, which speeds the
+			# vanilla conversion engine
+			any_owned = {
+				limit = {
+					any_pop = { has_pop_religion = atheist }
+				}
+				add_province_modifier = {
+					name = quiet_congregations
+					duration = 3650
+				}
+			}
+			# The convinced become preachers of the new outlook
+			any_pop = {
+				limit = {
+					has_pop_religion = atheist
+				}
+				consciousness = 2
 			}
 		}
 		ai_will_do = {
@@ -908,7 +982,7 @@ political_decisions = {
 			not = { has_country_flag = fire_brigades_founded }
 		}
 		allow = {
-			year = 1862
+			time_saving_measures = 1
 		}
 		effect = {
 			set_country_flag = fire_brigades_founded
@@ -939,7 +1013,7 @@ political_decisions = {
 			not = { has_country_flag = kirjameeste_selts_founded }
 		}
 		allow = {
-			year = 1872
+			realism = 1
 			owns = 352 # Tartu
 		}
 		effect = {
@@ -967,7 +1041,7 @@ political_decisions = {
 			not = { has_country_flag = dairy_coops_founded }
 		}
 		allow = {
-			year = 1890
+			electricity = 1
 		}
 		effect = {
 			set_country_flag = dairy_coops_founded
@@ -990,7 +1064,7 @@ political_decisions = {
 			not = { has_country_flag = kunda_cement_built }
 		}
 		allow = {
-			year = 1868
+			inorganic_chemistry = 1
 			money = 10000
 			owns = 350 # Narva - the Viru coast
 		}
@@ -1017,7 +1091,7 @@ political_decisions = {
 			not = { has_country_flag = luther_factory_expanded }
 		}
 		allow = {
-			year = 1877
+			interchangeable_parts = 1
 			money = 15000
 			owns = 349 # Tallinn
 		}

@@ -52,6 +52,13 @@ country_event = {
 			}
 			militancy = 1
 		}
+		# The unbelievers take heart from the public victory of science
+		any_pop = {
+			limit = {
+				has_pop_religion = atheist
+			}
+			consciousness = 2
+		}
 	}
 	option = {
 		name = "EVTOPTB95541"
@@ -101,6 +108,14 @@ country_event = {
 				type = clergymen
 			}
 			militancy = 2
+		}
+		# The society organizes: unbelievers become proselytizers of the
+		# new outlook, conscious POPs convert faster
+		any_pop = {
+			limit = {
+				has_pop_religion = atheist
+			}
+			consciousness = 2
 		}
 	}
 	option = {
@@ -183,17 +198,33 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 18
+		months = 12
+
+		# The freethought press and the movement's own organizations carry
+		# the quiet congregations from town to town much faster
+		modifier = {
+			factor = 0.5
+			has_country_flag = freethought_press_patronized
+		}
 	}
 
 	option = {
 		name = "EVTOPTA95544"
-		random_owned = {
+		# The conversion engine works per province: reach every province
+		# where unbelievers already live, not just one
+		any_owned = {
 			limit = {
 				owner = { tag = EST }
 				any_pop = { has_pop_religion = atheist }
+				NOT = { has_province_modifier = quiet_congregations }
 			}
 			add_province_modifier = { name = quiet_congregations duration = 730 }
+		}
+		any_pop = {
+			limit = {
+				has_pop_religion = atheist
+			}
+			consciousness = 1
 		}
 	}
 	option = {
