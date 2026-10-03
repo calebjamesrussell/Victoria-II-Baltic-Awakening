@@ -312,6 +312,14 @@ political_decisions = {
 		allow = {
 			not = { war_with = RUS }
 			not = { has_country_flag = treaty_of_tartu }
+			RUS = {
+				OR = {
+					war_exhaustion = 10
+					revolt_percentage = 0.3
+					NOT = { is_greater_power = yes }
+				}
+			}
+			prestige = 50
 		}
 
 		effect = {
