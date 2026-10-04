@@ -68,8 +68,8 @@ EVTOPTA95513;Give him a command and the nation's trust.;French;German;Polish;Spa
 EVTOPTB95513;The republic has enough soldiers.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 found_soomusrong_corps_title;Found the Armored Train Division;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 found_soomusrong_corps_desc;The armored trains that broke the Red advance were improvised by a handful of officers and volunteer crews. Now let the improvisation become an institution: a standing Armored Train Division, with workshops, rail garrisons, and a proper war flag.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-establish_estonian_mark_title;Establish the Estonian Mark;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-establish_estonian_mark_desc;German occupation marks, tsarist rubles and Kerensky notes all circulate at once, each worth less than the paper it is printed on. A national bank and a national currency will let the republic pay its soldiers and price its bread in honest numbers.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+establish_estonian_mark_title;Establish the Estonian Kroon;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+establish_estonian_mark_desc;A young nation trades in borrowed coin. A currency of our own - the kroon - will let the republic price its bread in honest numbers and pay its way without a banker's leave.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 found_sakala_society_title;Endorse the Sakala Society;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 found_sakala_society_desc;Carl Robert Jakobson's newspaper Sakala has become the organ of the radical national movement, read aloud in the township houses of Viljandimaa. Endorsing the society will spread its network of reading rooms and choirs across the province.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 organize_setomaa_title;Organize Setomaa;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
@@ -87,7 +87,7 @@ expand_kreenholm_desc;On the falls of the Narva stands the largest cotton mill i
 estify_tartu_university_title;Estify the University of Tartu;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 estify_tartu_university_desc;For three centuries the language of the lecture hall has been Latin, then German, then Russian - everything but the language of the land. From this term, the University of Dorpat becomes the University of Tartu, and the language of instruction becomes Estonian.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 found_eesti_pank_title;Found the Bank of Estonia;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-found_eesti_pank_desc;A state needs more than money - it needs the machinery of money. The Bank of Estonia, Eesti Pank, shall issue the mark, guard the gold reserve, and stand behind every note the treasury prints.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+found_eesti_pank_desc;A state needs more than money - it needs the machinery of money. The Bank of Estonia, Eesti Pank, shall issue the kroon, guard the gold reserve, and stand behind every note the treasury prints.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 soomusrong_corps;Armored Train Doctrine;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 soomusrong_morale;Rail Garrison Morale;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 estonian_cultural_awakening;National Awakening;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
@@ -223,6 +223,8 @@ desc_baltic_handelsvertrag;The Baltic trade accord fills Riga and Tallinn harbor
 desc_estonian_shipyards;The yards on the Kopli bay lay down hulls for the Baltic fleet.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_defence_league_hq;A permanent staff coordinates the Kaitseliit districts.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_kalevipoeg_legacy;The national epic reminds every soldier whose son he is.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+laulupidu_tradition;Laulupidu Tradition;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+desc_laulupidu_tradition;The song festival returns every five years; a nation that sings together stands together.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_estonian_choral_tradition;The song festivals bind a nation of singers together.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_estonian_depression;The world depression bites deep; factories idle and credit dries up.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_estonian_national_stage;The Estonia theatre stages opera and drama in the mother tongue.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
