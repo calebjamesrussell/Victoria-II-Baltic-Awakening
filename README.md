@@ -1,4 +1,4 @@
-# Victoria II: Estonia Flavor Mod
+# Baltic Awakening
 
 A flavor and content mod for Victoria II focused on Estonia, from the 1836 start through the game's end. Play Estonia as a subject of the Russian Empire and lead it through the national awakening to independence - or release it and play it directly at any point in the campaign. Everything is built on vanilla engine syntax and has been audited for stability (image formats, modifier keys, tags, provinces and unit types all verified against a clean Victoria II installation).
 
