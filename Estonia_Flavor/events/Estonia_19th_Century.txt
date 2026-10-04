@@ -14,7 +14,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1840
 	}
 
@@ -66,7 +69,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1849
 	}
 
@@ -107,7 +113,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1852
 	}
 
@@ -143,7 +152,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1856
 	}
 
@@ -183,7 +195,7 @@ province_event = {
 	fire_only_once = yes
 
 	trigger = {
-		owner = { tag = EST }
+		owner = { OR = { tag = EST tag = UBD } }
 		year = 1872
 		province_id = 350 # Narva - site of the Kreenholm cotton mills
 	}
@@ -231,7 +243,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1889
 	}
 
@@ -274,7 +289,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		has_country_flag = russofication_endured
 		year = 1890
 	}
@@ -327,7 +345,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1905
 		average_militancy = 4
 	}
@@ -376,7 +397,7 @@ province_event = {
 	fire_only_once = yes
 
 	trigger = {
-		owner = { tag = EST }
+		owner = { OR = { tag = EST tag = UBD } }
 		year = 1900
 		pop_majority_culture = swedish
 	}
@@ -421,7 +442,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1905
 		has_country_flag = revolution_1905_conceded
 	}

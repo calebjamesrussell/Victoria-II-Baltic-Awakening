@@ -153,6 +153,13 @@
 		religion = atheist
 		size = 50
 	}
+	# Freethinker seeds for the conversion engine (same culture,
+	# all major strata - farmers are the mass of the people)
+	farmers = {
+		culture = estonian
+		religion = atheist
+		size = 150
+	}
 }
 
 # Narva (350) - Eastern Border & Trade Gateway
@@ -215,6 +222,23 @@
 		culture = russian
 		religion = orthodox
 		size = 1100
+	}
+	# Freethinker seeds for the conversion engine (same culture,
+	# all major strata - farmers are the mass of the people)
+	clerks = {
+		culture = estonian
+		religion = atheist
+		size = 25
+	}
+	artisans = {
+		culture = estonian
+		religion = atheist
+		size = 25
+	}
+	farmers = {
+		culture = estonian
+		religion = atheist
+		size = 100
 	}
 }
 
@@ -281,6 +305,13 @@
 		culture = estonian
 		religion = atheist
 		size = 25
+	}
+	# Freethinker seeds for the conversion engine (same culture,
+	# all major strata - farmers are the mass of the people)
+	farmers = {
+		culture = estonian
+		religion = atheist
+		size = 100
 	}
 }
 
@@ -384,6 +415,18 @@
 		religion = atheist
 		size = 50
 	}
+	# Freethinker seeds for the conversion engine (same culture,
+	# all major strata - farmers are the mass of the people)
+	artisans = {
+		culture = estonian
+		religion = atheist
+		size = 50
+	}
+	farmers = {
+		culture = estonian
+		religion = atheist
+		size = 150
+	}
 }
 
 # Kuressaare / Arensburg (353) - Saaremaa, Hiiumaa & Archipelago
@@ -456,5 +499,17 @@
 		culture = estonian
 		religion = atheist
 		size = 25
+	}
+	# Freethinker seeds for the conversion engine (same culture,
+	# all major strata - farmers are the mass of the people)
+	clerks = {
+		culture = estonian
+		religion = atheist
+		size = 25
+	}
+	farmers = {
+		culture = estonian
+		religion = atheist
+		size = 100
 	}
 }

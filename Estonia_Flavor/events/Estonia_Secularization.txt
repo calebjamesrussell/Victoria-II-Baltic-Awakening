@@ -22,7 +22,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1879
 		empiricism = 1
 		owns = 352 # Tartu - the university city
@@ -87,7 +90,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		has_country_flag = darwin_debates_allowed
 		year = 1885
 	}
@@ -142,7 +148,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1901
 		has_country_flag = freethinkers_society
 	}
@@ -192,7 +201,10 @@ country_event = {
 	picture = "Administration"
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		has_country_flag = secular_schools
 		religion = atheist
 	}
@@ -214,7 +226,7 @@ country_event = {
 		# where unbelievers already live, not just one
 		any_owned = {
 			limit = {
-				owner = { tag = EST }
+				owner = { OR = { tag = EST tag = UBD } }
 				any_pop = { has_pop_religion = atheist }
 				NOT = { has_province_modifier = quiet_congregations }
 			}
@@ -251,7 +263,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		religion = atheist
 		average_militancy = 5
 	}
@@ -310,5 +325,63 @@ country_event = {
 	option = {
 		name = "EVTOPTA95548"
 		set_country_flag = freethinkers_present
+	}
+}
+
+########################################################################
+# 95549 - The League of Militant Atheists: the revolution's own church
+########################################################################
+# A proletarian dictatorship turns its guns on the altars: with the
+# state already atheist, the League forces the issue, driving the
+# remaining faithful toward the conversion engine's targets.
+country_event = {
+	id = 95549
+	title = "EVTNAME95549"
+	desc = "EVTDESC95549"
+	picture = "Riot"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		government = proletarian_dictatorship
+		religion = atheist
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA95549"
+		set_country_flag = militant_atheists_organized
+		# The League's lectures and demonstrations reach every province:
+		# the engine converts per province, so blanket the country
+		any_owned = {
+			add_province_modifier = {
+				name = quiet_congregations
+				duration = -1
+			}
+		}
+		# The faithful are shamed into the party's reading circles;
+		# conscious POPs convert faster
+		any_pop = {
+			limit = {
+				NOT = { has_pop_religion = atheist }
+			}
+			consciousness = 2
+			militancy = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95549"
+		# Softer line: win them with bread, not with decrees
+		set_country_flag = league_soft_line
+		any_pop = {
+			limit = {
+				NOT = { has_pop_religion = atheist }
+			}
+			militancy = -2
+		}
+		prestige = 1
 	}
 }

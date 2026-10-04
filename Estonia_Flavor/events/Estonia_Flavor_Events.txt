@@ -14,7 +14,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1858
 		civilized = yes
 	}
@@ -58,7 +61,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		has_country_flag = national_awakening_begun
 		year = 1864
 	}
@@ -97,7 +103,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		has_country_flag = kalevipoeg_published
 		year = 1861
 	}
@@ -133,7 +142,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		has_country_flag = laulupidu_organized
 		year = 1869
 	}
@@ -169,7 +181,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		has_country_flag = national_awakening_begun
 		year = 1875
 	}
@@ -217,7 +232,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		has_country_flag = national_awakening_begun
 		year = 1870
 	}
@@ -253,7 +271,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1885
 	}
 
@@ -300,7 +321,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1896
 	}
 
@@ -337,7 +361,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		government = democracy
 		has_country_flag = soomusrong_deployed
 		war = no
@@ -381,7 +408,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		has_country_flag = soomusrong_deployed
 	}
 
@@ -417,7 +447,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		exists = FIN
 		NOT = {
 			FIN = { in_sphere = RUS }
@@ -453,7 +486,7 @@ province_event = {
 	fire_only_once = yes
 
 	trigger = {
-		owner = { tag = EST }
+		owner = { OR = { tag = EST tag = UBD } }
 		pop_majority_culture = swedish
 	}
 
@@ -492,7 +525,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		government = democracy
 	}
 
@@ -529,7 +565,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		war = no
 		OR = {
 			communist = 0.20
@@ -571,7 +610,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		has_country_flag = soomusrong_deployed
 		war = no
 	}
@@ -610,7 +652,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		has_country_flag = vaikiv_ajastu
 	}
 
@@ -641,7 +686,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		exists = RUS
 		war = no
 		RUS = {
@@ -697,7 +745,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		has_country_flag = soomusrong_deployed
 	}
 
@@ -730,7 +781,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1900
 		OR = {
 			has_country_flag = kaitseliit_founded
