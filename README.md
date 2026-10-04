@@ -10,6 +10,13 @@ Copy the `Estonia_Flavor` folder and the `Estonia_Flavor.mod` file into your Vic
 
 The mod sets Estonia's literacy to historically accurate levels and adds a large set of decisions, events, units and mechanics. Content is deliberately not tied to fixed years: Victoria II is a sandbox, and Estonia's independence, wars and institutions arrive whenever the game's history produces them. Nation-building content (the Soomusrong, Põdder, the currency and central bank, the Narva line, the veterans' Vaps movement, the December Rising, the Bases Ultimatum) is gated on conditions - wars fought, institutions founded, ideologies strong, technologies researched - so an Estonia that wins its freedom in 1870 gets its full story then.
 
+### Design principles
+
+- **Vanilla Heart of Darkness only.** Every effect, trigger, modifier key, tag and province ID has been verified against a clean HoD installation. No other mod is required. Where vanilla already provides a mechanic (female suffrage, the United Baltic Provinces formation via the cultural union, the German pan-nationalists), the mod does not duplicate it - it builds on it.
+- **The map's granularity is respected.** Provinces are coarse. The historical Swedish-majority fishing villages (Ruhnu, Vormsi, Noarootsi) cannot exist as a province majority, so the Swedish events trigger on Swedish POPs being present - never on impossible majority conditions. The same applies to the Old Believers of Lake Peipus.
+- **The engine's rules are worked with, not against.** POPs cannot be forced to convert religion by script, so Atheism spreads through the vanilla religious-conversion engine, with same-culture seed POPs placed in every province and strata. POPs cannot be told to immigrate to a specific country, so acceptance-based retention and melting-pot changes shape who stays, who leaves and who assimilates.
+- **Choices have texture.** Accepting a minority culture is a political act with requirements and trade-offs; claiming Memel costs German goodwill; refusing the Coastal Swedes' petition lets you embrace them later on the state's own terms, for a better reward.
+
 ### The original decisions
 
 - **Publish the Kalevipoeg** - Requires Romanticism; grants prestige and boosts consciousness for all Estonian POPs.
@@ -62,15 +69,30 @@ The Baltic German estates have a country of their own - the Baltic Territorial A
 Releasing Estonia from the Russian Empire produces a democracy by default - but one true to the Baltic provinces of the era. Wealth, land, education and administration were concentrated in the hands of the German nobility, so the young republic starts with wealth voting, an appointed upper house, censored press and national value Order: a republic of the estates, where the Estonian majority is governed by a privileged few. Playing Estonia means fighting to widen the franchise - pushing universal voting through a resistant conservative upper house; women's suffrage then arrives through the vanilla Heart of Darkness decision.
 
 ### The United Baltic Duchy
-Estonia forms the United Baltic Duchy through vanilla Heart of Darkness' own Form United Baltic Provinces decision (Estonia or Latvia as a Great Power in control of the other); the mod does not duplicate that decision. Once the duchy exists, the mod's new Integrate the Duchy of Lithuania decision lets the UBD claim Lithuania's crown lands and accept the Lithuanians as its own: owning Vilna and Kovno, at peace, with 40 prestige, the duchy adds cores on all Lithuanian lands, accepts the culture and calms the Lithuanian POPs. The claim is deliberately irredentist: it extends to Memel, the Lithuanian-cored city in Ostpreussen, and claiming it costs 50 relations with its owner and with Prussia, the North German Federation and Germany - the player must decide whether Lithuanian nation-building is worth the enmity of the Reich. Every Estonian decision and event in the mod applies to the United Baltic Duchy as well - the full national story, from the Kalevipoeg to the Narva Line, is playable from Tallinn or from a united Baltic crown.
+Estonia forms the United Baltic Duchy through vanilla Heart of Darkness' own cultural-union mechanic: the baltic culture group's union tag is UBD, so a Great Power Estonia (or Latvia) with the other Baltic nation in its sphere can unite the two through the pan-nationalists, exactly as in an unmodded game. The mod does not duplicate that mechanic. Once the duchy exists, the mod's new Integrate the Duchy of Lithuania decision lets the UBD claim Lithuania's crown lands and accept the Lithuanians as its own: owning Vilna and Kovno, at peace, with 40 prestige, the duchy adds cores on all Lithuanian lands, accepts the culture and calms the Lithuanian POPs. The claim is deliberately irredentist: it extends to Memel, the Lithuanian-cored city in Ostpreussen, and claiming it costs 50 relations with its owner and with Prussia, the North German Federation and Germany - the player must decide whether Lithuanian nation-building is worth the enmity of the Reich. Every Estonian decision and event in the mod applies to the United Baltic Duchy as well - the full national story, from the Kalevipoeg to the Narva Line, is playable from Tallinn or from a united Baltic crown.
 
 Two further decisions of the duchy and the republic:
 
 - **Support the Finnish Nationalists** - If Finland does not exist, Estonia or the UBD can send arms and money to the Finnish independence movement in whoever holds Oulu and Helsinki (usually the Russian Empire): bankrolling the nationalist fervor of the northern provinces at the cost of the holder's goodwill. The fervor raises consciousness and core militancy across the Finnish lands, feeding the independence revolution.
 - **Accept the Swedish Culture** - With Swedish inhabitants in the country and a democratic franchise in place, the republic can accept its Swedish minority: calming the Swedish POPs, pleasing Stockholm, and widening the nation. A folk event about a Swedish-majority parish remains as the organic alternative.
 
+### Migration reworked (pop_types.txt)
+
+The mod ships one overridden vanilla file, common/pop_types.txt - copied byte-for-byte from vanilla and then modified with a small set of deliberate changes, because shipping it replaces vanilla's entirely:
+
+- **The New World is no longer doubly favored.** Vanilla's Americas-only bonuses are gone: the -2.0 retention that made POPs living in New World democracies three times stickier, and the melting-pot assimilation bonus restricted to the Americas and Oceania.
+- **The melting pot is available to every full-citizenship nation.** Unaccepted-culture POPs assimilate ten times faster wherever the country's citizenship policy is full citizenship. A multicultural Estonia melts its immigrants as the New World melts theirs; a residency-policy state keeps its minorities forever.
+- **Acceptance shapes who stays.** A POP whose culture is accepted where it lives emigrates less (-0.1, doubled under full citizenship); an unaccepted, non-primary POP emigrates more (+0.2). Tolerant countries keep their people; intolerant ones watch them board ships.
+- **The Baltic peoples stay for their own nation.** Estonian, Latvian and Lithuanian POPs in a peaceful Estonia or United Baltic Duchy emigrate 30 percent less - an independent Baltic homeland holds its people.
+- **Accepted cultures settle the colonies.** Accepted-culture POPs migrate to the colonies alongside the primary culture, so accepting a minority has a visible overseas effect.
+
+The hardcoded destination-picker (which weights the New World for trans-ocean emigration targets) is in the engine binary and cannot be modded; these changes are the strongest available approximation, reshaping who stays, who leaves and who assimilates, with acceptance and citizenship policy as the levers. Note that these rules apply worldwide, not only to Estonia.
+
 ## Technical notes
 
-- All events use the reserved ID range 95500-95550; they will not collide with vanilla events.
-- All new content uses only engine-proven effects, triggers, tags and file formats, verified against a clean Victoria II installation.
+- All events use the reserved ID range 95500-95555; they will not collide with vanilla events.
+- All new content uses only engine-proven effects, triggers, tags and file formats, verified against a clean Victoria II installation - every trigger keyword cross-checked against vanilla usage, every province ID against the vanilla map, every modifier key against vanilla's modifier files, every picture against the vanilla art folders.
 - Text files are Latin-1 encoded with CRLF line endings, matching vanilla.
+- The mod's decision and event art is filtered to match the sepia tone of Victoria II's own event art.
+- Female suffrage, the United Baltic Provinces formation and the German pan-nationalist integration are deliberately left to vanilla's own mechanics.
+- History notes: the atheist seed POPs are a what-if channel (a historically plausible freethinker fringe amplified into a real demographic force), the Landeswehr's rise is a crisis mechanic rather than a fixed date, and the Minorities' Franchise Petition imagines the Swedish and German burghers responding to universal voting as they plausibly would have.
