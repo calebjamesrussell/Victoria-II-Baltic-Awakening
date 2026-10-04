@@ -1179,53 +1179,58 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	# Form the United Baltic Duchy: unify the Baltic lands under one crown.
-	# Estonia holding the Estonian and Latvian homelands may claim the
-	# duchy - a union of the three Baltic peoples, with Lithuania's
-	# crown lands claimed and its people accepted.
-	form_united_baltic_duchy = {
+	# Integrate the Duchy of Lithuania: the duchy reaches south.
+	# The United Baltic Duchy holding the Lithuanian heartlands may
+	# claim Lithuania's crown lands and accept its people.
+	integrate_duchy_of_lithuania = {
 		picture = "treaty_of_tartu"
 		potential = {
-			OR = {
-				tag = EST
-				tag = UBD
-			}
-			not = { has_global_flag = united_baltic_duchy_formed }
+			tag = UBD
+			not = { has_country_flag = lithuania_integrated }
+			not = { has_accepted_culture = lithuanian }
 		}
 		allow = {
 			war = no
-			is_greater_power = yes
-			owns = 349
-			owns = 354
-			prestige = 60
+			owns = 360
+			owns = 361
+			prestige = 40
 			average_militancy = 4
 		}
 		effect = {
-			set_global_flag = united_baltic_duchy_formed
+			set_country_flag = lithuania_integrated
 			prestige = 25
 			LIT = {
 				all_core = {
 					add_core = UBD
 				}
 			}
+			698 = { add_core = UBD }
 			add_accepted_culture = lithuanian
-			change_tag = UBD
 			any_pop = {
 				limit = {
 					culture = lithuanian
 				}
 				militancy = -2
 			}
+			698 = {
+				owner = {
+					relation = {
+						who = THIS
+						value = -50
+					}
+				}
+			}
 			any_country = {
 				limit = {
 					OR = {
 						tag = GER
 						tag = NGF
+						tag = PRU
 					}
 				}
 				relation = {
 					who = THIS
-					value = 50
+					value = -50
 				}
 			}
 		}
