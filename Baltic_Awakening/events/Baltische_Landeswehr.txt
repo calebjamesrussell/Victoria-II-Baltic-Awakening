@@ -1,0 +1,154 @@
+# Baltische Landeswehr events
+# The Baltic German estate militia rises when order in the Baltic provinces collapses.
+# IDs 95531-95533 are reserved for this chain.
+
+##########################################################################
+# 95531 - The Landeswehr Rising
+#########################################################################
+country_event = {
+	id = 95531
+	title = "EVTNAME95531"
+	desc = "EVTDESC95531"
+	picture = "Rebellion"
+
+	trigger = {
+		NOT = { tag = BLW }
+		nationalism_n_imperialism = 1
+		owns = 349
+		OR = {
+			owns = 354
+			owns = 355
+			owns = 357
+			owns = 358
+			owns = 359
+		}
+		war = yes
+		average_militancy = 6
+		any_pop = {
+			limit = { culture = north_german }
+			militancy = 6
+		}
+		NOT = { has_country_flag = baltische_landeswehr_rising }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.5
+			average_militancy = 8
+		}
+
+		modifier = {
+			factor = 0.5
+			GER = {
+				exists = yes
+			}
+		}
+
+		modifier = {
+			factor = 4.0
+			has_country_flag = baltic_germans_integrated
+		}
+	}
+
+	option = {
+		name = "EVTOPTA95531"
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 0.1
+				has_country_flag = baltic_germans_integrated
+			}
+		}
+		release_vassal = BLW
+		set_country_flag = baltische_landeswehr_rising
+		any_pop = {
+			limit = { culture = north_german }
+			militancy = 2
+			consciousness = 2
+		}
+	}
+
+	option = {
+		name = "EVTOPTB95531"
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 3
+				has_country_flag = baltic_germans_integrated
+			}
+		}
+		set_country_flag = baltische_landeswehr_rising
+		any_owned_province = {
+			limit = { is_core = BLW }
+			any_pop = {
+				limit = { culture = north_german }
+				militancy = 4
+				consciousness = 2
+			}
+		}
+	}
+}
+
+##########################################################################
+# 95532 - The Landeswehr Consolidates (BLW flavor)
+#########################################################################
+country_event = {
+	id = 95532
+	title = "EVTNAME95532"
+	desc = "EVTDESC95532"
+	picture = "Parade"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BLW
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA95532"
+		define_general = {
+			name = "Alfred Fletcher"
+			personality = disciplined
+			background = war_college
+		}
+		prestige = 5
+	}
+}
+
+##########################################################################
+# 95533 - The Baltic Germans Rally to the Landeswehr
+#########################################################################
+country_event = {
+	id = 95533
+	title = "EVTNAME95533"
+	desc = "EVTDESC95533"
+	picture = "Finepeople"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BLW
+		owns = 349
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA95533"
+		money = 5000
+		prestige = 10
+		any_pop = {
+			limit = { culture = north_german }
+			militancy = -2
+			consciousness = 1
+		}
+	}
+}

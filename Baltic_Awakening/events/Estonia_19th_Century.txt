@@ -1,0 +1,474 @@
+# Estonia Flavor Events: the long 19th century (1836-1917)
+# Pre-independence Estonia: national awakening, empire, temperance, and revolt.
+# IDs 95521-95540 reserved for this file.
+
+#########################################################################
+# 95521 - The Alexander Nevsky congregation and the Orthodox mission
+#########################################################################
+country_event = {
+	id = 95521
+	title = "EVTNAME95521"
+	desc = "EVTDESC95521"
+	picture = "Orthodox"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1840
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "EVTOPTA95521"
+		set_country_flag = orthodox_mission_admitted
+		any_pop = {
+			limit = {
+				culture = estonian
+				religion = protestant
+			}
+			consciousness = 1
+		}
+		any_pop = {
+			limit = {
+				culture = estonian
+				religion = orthodox
+			}
+			militancy = -2
+		}
+	}
+	option = {
+		name = "EVTOPTB95521"
+		set_country_flag = orthodox_mission_resisted
+		any_pop = {
+			limit = {
+				culture = estonian
+				religion = orthodox
+			}
+			militancy = 2
+		}
+		prestige = 2
+	}
+}
+
+#########################################################################
+# 95522 - The land regulations: peasant farm purchases begin
+#########################################################################
+country_event = {
+	id = 95522
+	title = "EVTNAME95522"
+	desc = "EVTDESC95522"
+	picture = "countryside"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1849
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95522"
+		set_country_flag = peasant_land_purchases
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = farmers
+			}
+			consciousness = 2
+			militancy = -1
+		}
+		any_pop = {
+			limit = {
+				culture = north_german
+				type = aristocrats
+			}
+			militancy = 1
+		}
+	}
+}
+
+#########################################################################
+# 95523 - The Tallinn-Tartu telegraph line
+#########################################################################
+country_event = {
+	id = 95523
+	title = "EVTNAME95523"
+	desc = "EVTDESC95523"
+	picture = "telegraph"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1852
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95523"
+		set_country_flag = telegraph_line_built
+		any_pop = {
+			limit = {
+				type = clerks
+			}
+			consciousness = 1
+		}
+		relation = {
+			who = RUS
+			value = 25
+		}
+	}
+}
+
+#########################################################################
+# 95524 - The Maardu manor school law: parish schools for the people
+#########################################################################
+country_event = {
+	id = 95524
+	title = "EVTNAME95524"
+	desc = "EVTDESC95524"
+	picture = "School"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1856
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95524"
+		set_country_flag = parish_school_law
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = farmers
+			}
+			consciousness = 2
+		}
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = clergymen
+			}
+			consciousness = 1
+		}
+	}
+}
+
+#########################################################################
+# 95525 - The Kreenholm strike of 1872
+#########################################################################
+province_event = {
+	id = 95525
+	title = "EVTNAME95525"
+	desc = "EVTDESC95525"
+	picture = "Strike"
+
+	fire_only_once = yes
+
+	trigger = {
+		owner = { OR = { tag = EST tag = UBD } }
+		year = 1872
+		province_id = 350 # Narva - site of the Kreenholm cotton mills
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95525"
+		any_pop = {
+			limit = {
+				type = craftsmen
+			}
+			militancy = -3
+			consciousness = 2
+		}
+		owner = {
+			set_country_flag = kreenholm_strike_settled
+		}
+	}
+	option = {
+		name = "EVTOPTB95525"
+		any_pop = {
+			limit = {
+				type = craftsmen
+			}
+			militancy = 4
+		}
+		owner = {
+			set_country_flag = kreenholm_strike_repressed
+		}
+	}
+}
+
+#########################################################################
+# 95526 - The temperance movement and the Awake, Sobriety! crusades
+#########################################################################
+country_event = {
+	id = 95526
+	title = "EVTNAME95526"
+	desc = "EVTDESC95526"
+	picture = "TemperanceLeague"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1889
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95526"
+		set_country_flag = temperance_crusade
+		add_country_modifier = {
+			name = temperance_league
+			duration = 3650
+		}
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = farmers
+			}
+			militancy = -1
+			consciousness = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB95526"
+		set_country_flag = vodka_revenue_kept
+		money = 5000
+	}
+}
+
+#########################################################################
+# 95527 - Russification of the parish schools
+#########################################################################
+country_event = {
+	id = 95527
+	title = "EVTNAME95527"
+	desc = "EVTDESC95527"
+	picture = "Western_education"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = russofication_endured
+		year = 1890
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95527"
+		set_country_flag = mother_tongue_schools
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = clergymen
+			}
+			consciousness = 2
+		}
+		relation = {
+			who = RUS
+			value = -25
+		}
+	}
+	option = {
+		name = "EVTOPTB95527"
+		set_country_flag = russian_schools_accepted
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = clergymen
+			}
+			militancy = 2
+		}
+		add_country_modifier = {
+			name = russian_minority_conciliation
+			duration = 1825
+		}
+	}
+}
+
+#########################################################################
+# 95528 - The 1905 Revolution reaches the Baltic
+#########################################################################
+country_event = {
+	id = 95528
+	title = "EVTNAME95528"
+	desc = "EVTDESC95528"
+	picture = "Revolution"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1905
+		average_militancy = 4
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA95528"
+		set_country_flag = revolution_1905_conceded
+		any_pop = {
+			limit = {
+				culture = estonian
+			}
+			militancy = -3
+			consciousness = 2
+		}
+		political_reform = free_press
+	}
+	option = {
+		name = "EVTOPTB95528"
+		set_country_flag = revolution_1905_repressed
+		any_pop = {
+			limit = {
+				culture = estonian
+			}
+			militancy = 4
+		}
+		add_country_modifier = {
+			name = estonian_depression
+			duration = 730
+		}
+	}
+}
+
+#########################################################################
+# 95529 - The Volhynia Swedes return home
+#########################################################################
+province_event = {
+	id = 95529
+	title = "EVTNAME95529"
+	desc = "EVTDESC95529"
+	picture = "emigration"
+
+	fire_only_once = yes
+
+	trigger = {
+		owner = { OR = { tag = EST tag = UBD } }
+		year = 1900
+		any_pop = {
+			limit = { culture = swedish }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "EVTOPTA95529"
+		owner = {
+			set_country_flag = volhynia_swedes_welcomed
+			prestige = 2
+		}
+		any_pop = {
+			limit = {
+				culture = swedish
+			}
+			militancy = -2
+		}
+	}
+	option = {
+		name = "EVTOPTB95529"
+		any_pop = {
+			limit = {
+				culture = swedish
+			}
+			militancy = 2
+		}
+	}
+}
+
+#########################################################################
+# 95530 - The Jaan Tõnisson circle and the national progress party
+#########################################################################
+country_event = {
+	id = 95530
+	title = "EVTNAME95530"
+	desc = "EVTDESC95530"
+	picture = "meeting"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1905
+		has_country_flag = revolution_1905_conceded
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA95530"
+		set_country_flag = progress_party_founded
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = clerks
+			}
+			consciousness = 2
+		}
+		upper_house = {
+			ideology = liberal
+			value = 0.05
+		}
+	}
+}
