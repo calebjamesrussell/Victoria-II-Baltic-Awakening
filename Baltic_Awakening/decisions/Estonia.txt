@@ -69,6 +69,38 @@ political_decisions = {
 		}
 	}
 
+	# The song festival tradition: after the first festival, the republic
+	# gathers again in Tartu every five years.
+	hold_laulupidu = {
+		picture = "laulupidu"
+		potential = {
+			OR = {
+				tag = EST
+				tag = UBD
+			}
+			has_country_flag = laulupidu_organized
+			not = { has_country_modifier = laulupidu_tradition }
+		}
+		allow = {
+			owns = 352 # Tartu
+		}
+		effect = {
+			add_country_modifier = {
+				name = laulupidu_tradition
+				duration = 1825 # five years until the next festival
+			}
+			prestige = 5
+			any_pop = {
+				limit = { culture = estonian }
+				consciousness = 1
+				militancy = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	organize_laulupidu = {
 		picture = "laulupidu"
 
@@ -295,6 +327,7 @@ political_decisions = {
 				tag = EST
 				tag = UBD
 			}
+				owns = 349 # Reval
 			not = { has_country_flag = kaitseliit_founded }
 		}
 
@@ -311,6 +344,7 @@ political_decisions = {
 			349 = {
 				sub_unit = {
 					type = irregular
+					value = current
 				}
 			}
 			any_pop = {
@@ -473,6 +507,7 @@ political_decisions = {
 			349 = {
 				sub_unit = {
 					type = soomusrong
+					value = current
 				}
 			}
 		}
@@ -502,7 +537,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = estonian_mark_established
 			money = -20000
-			add_tax_relative_income = 2
+			research_points = 200
 			add_country_modifier = {
 				name = baltic_handelsvertrag
 				duration = 3650
@@ -567,15 +602,13 @@ political_decisions = {
 		effect = {
 			set_country_flag = setomaa_organized
 			prestige = 3
+			plurality = 3
 			352 = {
 				any_pop = {
-					limit = { culture = russian }
+					limit = { is_primary_culture = yes }
+					consciousness = 1
 					militancy = -2
 				}
-			}
-			add_country_modifier = {
-				name = russian_minority_conciliation
-				duration = 3650
 			}
 		}
 
@@ -1252,10 +1285,6 @@ political_decisions = {
 			not = { has_country_flag = finnish_nationalists_supported }
 		}
 		allow = {
-			OR = {
-				336 = { NOT = { owned_by = THIS } }
-				343 = { NOT = { owned_by = THIS } }
-			}
 			money = 50000
 			nationalism_n_imperialism = 1
 		}
@@ -1264,21 +1293,18 @@ political_decisions = {
 			money = -50000
 			prestige = 5
 			336 = {
-				limit = { NOT = { owned_by = THIS } }
 				add_province_modifier = {
 					name = finnish_nationalist_fervor
 					duration = 1825
 				}
 			}
 			343 = {
-				limit = { NOT = { owned_by = THIS } }
 				add_province_modifier = {
 					name = finnish_nationalist_fervor
 					duration = 1825
 				}
 			}
 			345 = {
-				limit = { NOT = { owned_by = THIS } }
 				add_province_modifier = {
 					name = finnish_nationalist_fervor
 					duration = 1825

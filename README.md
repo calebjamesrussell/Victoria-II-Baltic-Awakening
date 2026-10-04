@@ -50,7 +50,7 @@ Build the Kunda Cement Works on the Viru coast, Expand Luther's Furniture Factor
 
 ### The young republic
 
-Tõnisson's Postimees, the Vaps Movement, the Armored Train Doctrine, the December Rising, the Cultural Autonomy Law, the Coastal Swedes' petition, the New Constitution, the World Depression, the Bases Ultimatum, and Brothers Across the Gulf (Finland). Decisions of the republic: Establish the Estonian Mark (the currency), Found Eesti Pank (the central bank), Fortify the Narva Line, Build the Coastal Defences, Expand the Kaitseliit, Estify the University of Tartu, Found the Noored Kotkad, and Organize Setomaa.
+Tõnisson's Postimees, the Vaps Movement, the Armored Train Doctrine, the December Rising, the Cultural Autonomy Law, the Coastal Swedes' petition, the New Constitution, the World Depression, the Bases Ultimatum, and Brothers Across the Gulf (Finland). Decisions of the republic: Establish the Estonian Kroon (the currency), Found Eesti Pank (the central bank), Fortify the Narva Line, Build the Coastal Defences, Expand the Kaitseliit, Estify the University of Tartu, Found the Noored Kotkad, and Organize Setomaa.
 
 ### Atheism as a religion
 
@@ -100,3 +100,4 @@ The hardcoded destination-picker (which weights the New World for trans-ocean em
 ## Credits
 
 - Main menu background: AI-generated original artwork in the style of a 19th-century Baltic seascape painting, created for this mod. No third-party copyright applies.
+- Decision and event art: created for this mod and filtered to match the sepia tone of Victoria II's own event art. No third-party copyright applies.
