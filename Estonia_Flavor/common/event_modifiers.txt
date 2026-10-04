@@ -906,4 +906,12 @@ quiet_congregations = {
 	pop_consciousness_modifier = 0.10
 	core_pop_militancy_modifier = -0.02
 	icon = 8
+
+# Finnish nationalist fervor: Estonian/UBD arms and money at work in the
+# Finnish provinces - consciousness and militancy rise under the occupier
+finnish_nationalist_fervor = {
+	pop_consciousness_modifier = 0.15
+	core_pop_militancy_modifier = 0.10
+	icon = 8
+}
 }

@@ -13,7 +13,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1852
 		owns = 352 # Tartu - the observatory
 	}
@@ -42,7 +45,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1869
 		has_country_flag = national_awakening_begun
 	}
@@ -87,7 +93,7 @@ province_event = {
 	fire_only_once = yes
 
 	trigger = {
-		owner = { tag = EST }
+		owner = { OR = { tag = EST tag = UBD } }
 		year = 1860
 		pop_majority_culture = russian
 	}
@@ -133,7 +139,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 		year = 1915
 	}
 
@@ -167,7 +176,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = EST
+		OR = {
+			tag = EST
+			tag = UBD
+		}
 	}
 
 	mean_time_to_happen = {

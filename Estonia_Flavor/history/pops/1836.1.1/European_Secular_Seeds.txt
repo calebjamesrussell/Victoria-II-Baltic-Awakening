@@ -145,3 +145,72 @@
 		size = 50
 	}
 }
+# Latvian and Lithuanian freethinker seeds: when Estonia forms the
+# United Baltic Duchy and declares state atheism, the conversion engine
+# needs same-culture targets in the Latvian and Lithuanian provinces too.
+
+# Riga (354) - the Latvian national awakening's radical wing
+354 = {
+	clerks = {
+		culture = latvian
+		religion = atheist
+		size = 100
+	}
+	artisans = {
+		culture = latvian
+		religion = atheist
+		size = 100
+	}
+	farmers = {
+		culture = latvian
+		religion = atheist
+		size = 150
+	}
+}
+
+# Jelgava (357) - the Kurzeme rationalists
+357 = {
+	clerks = {
+		culture = latvian
+		religion = atheist
+		size = 50
+	}
+	farmers = {
+		culture = latvian
+		religion = atheist
+		size = 75
+	}
+}
+
+# Vilnius (360) - the Lithuanian student underground
+360 = {
+	clerks = {
+		culture = lithuanian
+		religion = atheist
+		size = 75
+	}
+	artisans = {
+		culture = lithuanian
+		religion = atheist
+		size = 50
+	}
+	farmers = {
+		culture = lithuanian
+		religion = atheist
+		size = 100
+	}
+}
+
+# Kaunas (361) - the priests' rebellious flock
+361 = {
+	clerks = {
+		culture = lithuanian
+		religion = atheist
+		size = 50
+	}
+	farmers = {
+		culture = lithuanian
+		religion = atheist
+		size = 75
+	}
+}
