@@ -4,7 +4,7 @@ A flavor and content mod for Victoria II focused on Estonia, from the 1836 start
 
 ## Installation
 
-Copy the `Estonia_Flavor` folder and the `Estonia_Flavor.mod` file into your Victoria II installation's `mod` folder, then activate the mod in the launcher.
+Copy the `Baltic_Awakening` folder and the `Baltic_Awakening.mod` file into your Victoria II installation's `mod` folder, then activate the mod in the launcher.
 
 ## What the mod changes
 
@@ -24,13 +24,13 @@ The mod sets Estonia's literacy to historically accurate levels and adds a large
 - **Exploit the Põlevkivi Reserves** - Requires Clean Coal; changes the Narva province RGO to coal and provides wealth to local craftsmen.
 - **Enact the Land Reform** - Demotes aristocrats to farmers and heavily reduces lower-class militancy, affecting relations with Germany and Russia while cutting Conservative and Reactionary support in the Upper House.
 - **Expand the Baltic Railway** - A massive treasury sink that instantly builds railroads in Tallinn, Tartu and Narva.
-- **Found the Kaitseliit** - Available during wartime or high unrest (Militancy > 4); spawns a free irregular "Tallinna Malev" brigade in the capital and reduces soldier militancy.
-- **Sign the Treaty of Tartu** - Available when at peace with Russia; yields high prestige and a massive treasury injection representing Russian imperial gold rubles.
+- **Found the Kaitseliit** - Available during wartime or high unrest (Militancy > 4); spawns a free irregular \"Tallinna Malev\" brigade in the capital and reduces soldier militancy.
+- **Sign the Treaty of Tartu** - Available when at peace with Russia; yields high prestige and a massive treasury injection representing Russian imperial gold rubers.
 - **Propose the Baltic Entente** - Allows an independent Estonia (if a Secondary Power) to automatically sphere and/or ally Latvia and Lithuania while burning off Infamy.
 
-<img width="505" height="464" alt="image" src="https://github.com/user-attachments/assets/ee58cdba-cf5a-4760-b366-fef65f8b5339" />
+<img width=\"505\" height=\"464\" alt=\"image\" src=\"https://github.com/user-attachments/assets/ee58cdba-cf5a-4760-b366-fef65f8b5339\" />
 
-<img width="614" height="560" alt="image" src="https://github.com/user-attachments/assets/eeb80edb-0e83-41ca-bfe2-c4e1f02432cb" />
+<img width=\"614\" height=\"560\" alt=\"image\" src=\"https://github.com/user-attachments/assets/eeb80edb-0e83-41ca-bfe2-c4e1f02432cb\" />
 
 ### The Soomusrong (armored train)
 
@@ -69,6 +69,7 @@ The Baltic German estates have a country of their own - the Baltic Territorial A
 Releasing Estonia from the Russian Empire produces a democracy by default - but one true to the Baltic provinces of the era. Wealth, land, education and administration were concentrated in the hands of the German nobility, so the young republic starts with wealth voting, an appointed upper house, censored press and national value Order: a republic of the estates, where the Estonian majority is governed by a privileged few. Playing Estonia means fighting to widen the franchise - pushing universal voting through a resistant conservative upper house; women's suffrage then arrives through the vanilla Heart of Darkness decision.
 
 ### The United Baltic Duchy
+
 Estonia forms the United Baltic Duchy through vanilla Heart of Darkness' own cultural-union mechanic: the baltic culture group's union tag is UBD, so a Great Power Estonia (or Latvia) with the other Baltic nation in its sphere can unite the two through the pan-nationalists, exactly as in an unmodded game. The mod does not duplicate that mechanic. Once the duchy exists, the mod's new Integrate the Duchy of Lithuania decision lets the UBD claim Lithuania's crown lands and accept the Lithuanians as its own: owning Vilna and Kovno, at peace, with 40 prestige, the duchy adds cores on all Lithuanian lands, accepts the culture and calms the Lithuanian POPs. The claim is deliberately irredentist: it extends to Memel, the Lithuanian-cored city in Ostpreussen, and claiming it costs 50 relations with its owner and with Prussia, the North German Federation and Germany - the player must decide whether Lithuanian nation-building is worth the enmity of the Reich. Every Estonian decision and event in the mod applies to the United Baltic Duchy as well - the full national story, from the Kalevipoeg to the Narva Line, is playable from Tallinn or from a united Baltic crown.
 
 Two further decisions of the duchy and the republic:
