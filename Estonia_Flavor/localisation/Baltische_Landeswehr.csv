@@ -1,19 +1,19 @@
 BLW;Baltic Territorial Army;Baltic Territorial Army;Baltic Territorial Army;;Baltic Territorial Army;;;;;;;;;x;;;;
-BLW_ADJ;Baltic Territorial;Allemand balte;Baltendeutsche;;B醠tico-alem醤;;;;;;;;;x;;;;
-BLW_conservative;The Ritterchaft Faction;La faction du Ritterschaft;Die Ritterschafts-Fraktion;;La facci髇 de la Ritterschaft;;;;;;;;;x;;;;
-BLW_liberal;The Liberal Faction;Faction lib閞ale;Die liberale Fraktion;;La facci髇 liberal;;;;;;;;;x;;;;
-BLW_reactionary;The Reactionary Faction;Faction r閍ctionnaire;Die reaktion鋜e Fraktion;;La facci髇 reaccionaria;;;;;;;;;x;;;;
-BLW_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;La facci髇 radical;;;;;;;;;x;;;;
-BLW_socialist;The Social Democratic Faction;Faction social-d閙ocrate;Die sozialdemokratische Fraktion;;La facci髇 socialdem骳rata;;;;;;;;;x;;;;
-BLW_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;La facci髇 comunista;;;;;;;;;x;;;;
-BLW_fascist;The Fascist Faction;Faction fasciste;Die faschistische Fraktion;;La facci髇 fascista;;;;;;;;;x;;;;
-EVTNAME95531;The Landeswehr Rising;La lev閑 de la Landeswehr;Der Aufstand der Landeswehr;;El alzamiento de la Landeswehr;;;;;;;;;x;;;;
+BLW_ADJ;Baltic German;Allemand balte;Baltendeutsche;;B谩ltico-alem谩n;;;;;;;;;x;;;;
+BLW_conservative;The Ritterchaft Faction;La faction du Ritterschaft;Die Ritterschafts-Fraktion;;La facci贸n de la Ritterschaft;;;;;;;;;x;;;;
+BLW_liberal;The Liberal Faction;Faction lib茅rale;Die liberale Fraktion;;La facci贸n liberal;;;;;;;;;x;;;;
+BLW_reactionary;The Reactionary Faction;Faction r茅actionnaire;Die reaktion盲re Fraktion;;La facci贸n reaccionaria;;;;;;;;;x;;;;
+BLW_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;La facci贸n radical;;;;;;;;;x;;;;
+BLW_socialist;The Social Democratic Faction;Faction social-d茅mocrate;Die sozialdemokratische Fraktion;;La facci贸n socialdem贸crata;;;;;;;;;x;;;;
+BLW_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;La facci贸n comunista;;;;;;;;;x;;;;
+BLW_fascist;The Fascist Faction;Faction fasciste;Die faschistische Fraktion;;La facci贸n fascista;;;;;;;;;x;;;;
+EVTNAME95531;The Landeswehr Rising;La lev茅e de la Landeswehr;Der Aufstand der Landeswehr;;El alzamiento de la Landeswehr;;;;;;;;;x;;;;
 EVTDESC95531;The old order in the Baltic provinces has collapsed. War rages, the countryside is in ferment, and the estates of the Baltic German nobility see their centuries-old privileges slipping away. The Ritterschaft has raised the Baltic Territorial Army - a German militia sworn to defend their homeland against both the Red tide and the weak promises of the new national governments. With the ports and the great estates behind them, they proclaim a state of their own.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTA95531;We cannot hold them down - let them go.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTB95531;Rally the loyalists - the Landeswehr shall not have the Baltic.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTNAME95532;The Landeswehr Consolidates;La Landeswehr se consolide;Die Landeswehr festigt sich;;La Landeswehr se consolida;;;;;;;;;x;;;;
 EVTDESC95532;With rifles secured from Germany and officers seasoned in the Great War, the Baltic Territorial Army drills in the courtyard of every manor in the land. Major Alfred Fletcher, the Englishman who took command of the ragged force and forged it into an army, leads the muster. The Landeswehr parades through Reval under the black-white-red, the ducal arms at its heart, and the estates breathe easier.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTA95532;An army of gentlemen, for the gentlemen's land.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-EVTNAME95533;The Baltic Germans Rally;Les Allemands baltes se rallient;Die Baltendeutschen r點ken an;;Los alemanes del B醠tico se suman;;;;;;;;;x;;;;
+EVTNAME95533;The Baltic Germans Rally;Les Allemands baltes se rallient;Die Baltendeutschen r眉cken an;;Los alemanes del B谩ltico se suman;;;;;;;;;x;;;;
 EVTDESC95533;From Reval to Riga the manors fly the black-white-red of the old Reich, the ducal arms at its heart. Baltic German bankers in the capital subscribe to the Landeswehr's war loans, and the estate owners send their sons and their tenant levies to the colors. The Landeswehr is no longer a mutinous militia - it is the armed conscience of a people.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTA95533;Blood and soil of the Baltic.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
