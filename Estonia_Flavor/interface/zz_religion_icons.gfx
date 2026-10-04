@@ -1,8 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_icon_religion"
-		texturefile = "gfx\\interface\\icon_religion_atheist.dds"
-		noOfFrames = 15
-		norefcount = yes
-	}
-}
