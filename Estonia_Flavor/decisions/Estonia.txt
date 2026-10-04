@@ -1187,7 +1187,7 @@ political_decisions = {
 		potential = {
 			tag = UBD
 			not = { has_country_flag = lithuania_integrated }
-			not = { has_accepted_culture = lithuanian }
+			not = { accepted_culture = lithuanian }
 		}
 		allow = {
 			war = no
