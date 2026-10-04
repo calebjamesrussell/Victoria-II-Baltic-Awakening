@@ -99,4 +99,4 @@ The hardcoded destination-picker (which weights the New World for trans-ocean em
 
 ## Credits
 
-- Main menu background: reproduction of a painting of Tiskre by Lorenz-Heinrich Petersen (1805-1895), courtesy of the [Tallinn City Archives](https://commons.wikimedia.org/wiki/File:TLA_1465_1_4440_repro_maalist_tiskre.jpg) via Wikimedia Commons. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/).
+- Main menu background: AI-generated original artwork in the style of a 19th-century Baltic seascape painting, created for this mod. No third-party copyright applies.
