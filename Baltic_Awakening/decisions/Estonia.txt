@@ -327,11 +327,11 @@ political_decisions = {
 				tag = EST
 				tag = UBD
 			}
+				owns = 349 # Reval
 			not = { has_country_flag = kaitseliit_founded }
 		}
 
 		allow = {
-			owns = 349
 			OR = {
 				war = yes
 				average_militancy = 4
@@ -342,9 +342,9 @@ political_decisions = {
 			set_country_flag = kaitseliit_founded
 			leadership = 20
 			349 = {
-				limit = { controller = THIS }
 				sub_unit = {
 					type = irregular
+					value = current
 				}
 			}
 			any_pop = {
@@ -507,6 +507,7 @@ political_decisions = {
 			349 = {
 				sub_unit = {
 					type = soomusrong
+					value = current
 				}
 			}
 		}
