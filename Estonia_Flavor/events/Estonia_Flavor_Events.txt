@@ -487,7 +487,9 @@ province_event = {
 
 	trigger = {
 		owner = { OR = { tag = EST tag = UBD } }
-		pop_majority_culture = swedish
+		any_pop = {
+			limit = { culture = swedish }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -818,5 +820,72 @@ country_event = {
 	option = {
 		name = "EVTOPTB95513"
 		prestige = 2
+	}
+}
+##########################################################################
+# 95553 - The minorities' franchise petition
+##########################################################################
+country_event = {
+	id = 95553
+	title = "EVTNAME95553"
+	desc = "EVTDESC95553"
+	picture = "Upperhouse"
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		vote_franschise = universal_voting
+		any_owned = {
+			any_pop = {
+				limit = {
+					culture = swedish
+				}
+			}
+		}
+		any_owned = {
+			any_pop = {
+				limit = {
+					culture = north_german
+				}
+			}
+		}
+		NOT = { has_country_flag = minorities_petition_answered }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA95553"
+		set_country_flag = minorities_petition_answered
+		any_pop = {
+			limit = {
+				OR = {
+					culture = swedish
+					culture = north_german
+				}
+			}
+			militancy = -2
+			consciousness = 1
+		}
+		prestige = 3
+	}
+
+	option = {
+		name = "EVTOPTB95553"
+		set_country_flag = minorities_petition_answered
+		any_pop = {
+			limit = {
+				OR = {
+					culture = swedish
+					culture = north_german
+				}
+			}
+			militancy = 2
+		}
 	}
 }

@@ -399,7 +399,9 @@ province_event = {
 	trigger = {
 		owner = { OR = { tag = EST tag = UBD } }
 		year = 1900
-		pop_majority_culture = swedish
+		any_pop = {
+			limit = { culture = swedish }
+		}
 	}
 
 	mean_time_to_happen = {
