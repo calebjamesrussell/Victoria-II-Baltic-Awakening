@@ -558,14 +558,8 @@ emigration_chance =
 		not = { culture = this }
 	}
 
-	modifier = {
-		factor = -2.0
-		OR = { 
-			continent = north_america
-			continent = south_america
-		}
-		government = democracy
-	}
+	# The Americas retention bonus removed: the New World no longer doubly keeps
+	# the people it receives, so migration flows do not compound its hardcoded pull.
 	modifier = {
 		factor = -2.0
 		state_scope = { is_colonial = yes }
@@ -589,6 +583,20 @@ emigration_chance =
 	modifier = {
 		factor = -0.1
 		is_accepted_culture = yes
+	}
+	# A pop whose culture is welcome where it lives puts down roots;
+	# the intolerant lose their people, the tolerant keep them.
+	modifier = {
+		factor = -0.2
+		is_accepted_culture = yes
+		country = {
+			citizenship_policy = full_citizenship
+		}
+	}
+	modifier = {
+		factor = 0.2
+		is_primary_culture = no
+		is_accepted_culture = no
 	}
 }
 
@@ -616,15 +624,13 @@ assimilation_chance =
     	factor = -20
 		has_culture_core = yes
 	}
+	# The melting pot is not a New World monopoly: newcomers assimilate
+	# wherever the state treats cultures as one people.
 	modifier = {
 		factor = 10
-		AND = {
-			is_accepted_culture = no
-			OR = { 
-				continent = north_america
-				continent = south_america
-				continent = oceania
-			}
+		is_accepted_culture = no
+		country = {
+			citizenship_policy = full_citizenship
 		}
 	}
 
