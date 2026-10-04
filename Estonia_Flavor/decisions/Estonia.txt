@@ -1204,6 +1204,7 @@ political_decisions = {
 					add_core = UBD
 				}
 			}
+			698 = { add_core = UBD }
 			add_accepted_culture = lithuanian
 			any_pop = {
 				limit = {
@@ -1211,16 +1212,25 @@ political_decisions = {
 				}
 				militancy = -2
 			}
+			698 = {
+				owner = {
+					relation = {
+						who = THIS
+						value = -50
+					}
+				}
+			}
 			any_country = {
 				limit = {
 					OR = {
 						tag = GER
 						tag = NGF
+						tag = PRU
 					}
 				}
 				relation = {
 					who = THIS
-					value = 50
+					value = -50
 				}
 			}
 		}
