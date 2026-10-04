@@ -305,9 +305,9 @@ country_event = {
 # 95548 - The Freethinkers Are Here (diagnostic: confirms atheist POPs loaded)
 ##########################################################################
 country_event = {
-	id = 95548
-	title = "EVTNAME95548"
-	desc = "EVTDESC95548"
+	id = 95554
+	title = "EVTNAME95554"
+	desc = "EVTDESC95554"
 	picture = "Administration"
 	fire_only_once = yes
 
@@ -323,7 +323,7 @@ country_event = {
 	}
 
 	option = {
-		name = "EVTOPTA95548"
+		name = "EVTOPTA95554"
 		set_country_flag = freethinkers_present
 	}
 }
@@ -335,9 +335,9 @@ country_event = {
 # state already atheist, the League forces the issue, driving the
 # remaining faithful toward the conversion engine's targets.
 country_event = {
-	id = 95549
-	title = "EVTNAME95549"
-	desc = "EVTDESC95549"
+	id = 95555
+	title = "EVTNAME95555"
+	desc = "EVTDESC95555"
 	picture = "Riot"
 	fire_only_once = yes
 	trigger = {
@@ -352,7 +352,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "EVTOPTA95549"
+		name = "EVTOPTA95555"
 		set_country_flag = militant_atheists_organized
 		# The League's lectures and demonstrations reach every province:
 		# the engine converts per province, so blanket the country
@@ -373,7 +373,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB95549"
+		name = "EVTOPTB95555"
 		# Softer line: win them with bread, not with decrees
 		set_country_flag = league_soft_line
 		any_pop = {
