@@ -96,3 +96,7 @@ The hardcoded destination-picker (which weights the New World for trans-ocean em
 - The mod's decision and event art is filtered to match the sepia tone of Victoria II's own event art.
 - Female suffrage, the United Baltic Provinces formation and the German pan-nationalist integration are deliberately left to vanilla's own mechanics.
 - History notes: the atheist seed POPs are a what-if channel (a historically plausible freethinker fringe amplified into a real demographic force), the Landeswehr's rise is a crisis mechanic rather than a fixed date, and the Minorities' Franchise Petition imagines the Swedish and German burghers responding to universal voting as they plausibly would have.
+
+## Credits
+
+- Main menu background: reproduction of a painting of Tiskre by Lorenz-Heinrich Petersen (1805-1895), courtesy of the [Tallinn City Archives](https://commons.wikimedia.org/wiki/File:TLA_1465_1_4440_repro_maalist_tiskre.jpg) via Wikimedia Commons. [Public domain](https://creativecommons.org/publicdomain/mark/1.0/).
