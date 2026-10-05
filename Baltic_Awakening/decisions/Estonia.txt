@@ -1292,29 +1292,64 @@ political_decisions = {
 			set_country_flag = finnish_nationalists_supported
 			money = -50000
 			prestige = 5
-			336 = {
-				add_province_modifier = {
-					name = finnish_nationalist_fervor
-					duration = 1825
+			any_country = {
+				limit = {
+					owns = 343
 				}
-			}
-			343 = {
-				add_province_modifier = {
-					name = finnish_nationalist_fervor
-					duration = 1825
+				343 = {
+					add_province_modifier = {
+						name = finnish_nationalist_fervor
+						duration = 1825
+					}
 				}
-			}
-			345 = {
-				add_province_modifier = {
-					name = finnish_nationalist_fervor
-					duration = 1825
-				}
-			}
-			RUS = {
-				limit = { exists = yes }
 				relation = {
 					who = THIS
 					value = -50
+				}
+				casus_belli = {
+					target = THIS
+					type = cut_down_to_size
+					months = 24
+				}
+			}
+			any_country = {
+				limit = {
+					owns = 336
+				}
+				336 = {
+					add_province_modifier = {
+						name = finnish_nationalist_fervor
+						duration = 1825
+					}
+				}
+				relation = {
+					who = THIS
+					value = -50
+				}
+				casus_belli = {
+					target = THIS
+					type = cut_down_to_size
+					months = 24
+				}
+			}
+			any_country = {
+				limit = {
+					owns = 345
+				}
+				345 = {
+					add_province_modifier = {
+						name = finnish_nationalist_fervor
+						duration = 1825
+					}
+				}
+				relation = {
+					who = THIS
+					value = -50
+				}
+				casus_belli = {
+					target = THIS
+					type = cut_down_to_size
+					months = 24
 				}
 			}
 		}
