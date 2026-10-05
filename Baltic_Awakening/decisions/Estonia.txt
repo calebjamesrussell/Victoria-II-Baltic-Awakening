@@ -1306,6 +1306,11 @@ political_decisions = {
 					who = THIS
 					value = -50
 				}
+				casus_belli = {
+					target = THIS
+					type = cut_down_to_size
+					months = 24
+				}
 			}
 			any_country = {
 				limit = {
@@ -1321,6 +1326,11 @@ political_decisions = {
 					who = THIS
 					value = -50
 				}
+				casus_belli = {
+					target = THIS
+					type = cut_down_to_size
+					months = 24
+				}
 			}
 			any_country = {
 				limit = {
@@ -1335,6 +1345,11 @@ political_decisions = {
 				relation = {
 					who = THIS
 					value = -50
+				}
+				casus_belli = {
+					target = THIS
+					type = cut_down_to_size
+					months = 24
 				}
 			}
 		}
