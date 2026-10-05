@@ -137,6 +137,7 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { has_country_flag = kalevipoeg_published }
+			romanticism = 1
 		}
 
 		allow = {
@@ -162,6 +163,7 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { has_country_flag = eus_founded }
+			state_n_government = 1
 		}
 
 		allow = {
@@ -195,6 +197,7 @@ political_decisions = {
 		potential = {
 			owns = 350 # Narva / Ida-Viru
 			NOT = { has_global_flag = polevkivi_exploited }
+			clean_coal = 1
 		}
 
 		allow = {
@@ -297,6 +300,7 @@ political_decisions = {
 			}
 			owns = 349 # Tallinn / Reval
 			NOT = { has_country_flag = baltic_railway }
+			early_railroad = 1
 		}
 
 		allow = {
@@ -527,6 +531,7 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { has_country_flag = estonian_mark_established }
+			nationalism_n_imperialism = 1
 		}
 
 		allow = {
@@ -560,6 +565,7 @@ political_decisions = {
 			}
 			has_country_flag = national_awakening_begun
 			not = { has_country_flag = sakala_founded }
+			positivism = 1
 		}
 
 		allow = {
@@ -592,6 +598,7 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { has_country_flag = setomaa_organized }
+			nationalism_n_imperialism = 1
 		}
 
 		allow = {
@@ -627,6 +634,7 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { has_country_flag = noored_kotkad_founded }
+			has_country_flag = kaitseliit_founded
 		}
 
 		allow = {
@@ -724,6 +732,7 @@ political_decisions = {
 			}
 			owns = 349
 			not = { has_country_flag = coastal_defence_built }
+			battleship_column_doctrine = 1
 		}
 
 		allow = {
@@ -757,6 +766,7 @@ political_decisions = {
 			}
 			owns = 350 # Narva - site of the Kreenholm works
 			not = { has_country_flag = kreenholm_expanded }
+			mechanical_production = 1
 		}
 
 		allow = {
@@ -831,6 +841,7 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { has_country_flag = eesti_pank_founded }
+			has_country_flag = estonian_mark_established
 		}
 
 		allow = {
@@ -863,6 +874,7 @@ political_decisions = {
 			}
 			has_country_flag = national_awakening_begun
 			not = { has_country_flag = vanemuine_founded }
+			realism = 1
 		}
 		allow = {
 			realism = 1
@@ -897,6 +909,7 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { has_country_flag = credit_union_founded }
+			business_banks = 1
 		}
 		allow = {
 			business_banks = 1
@@ -1071,6 +1084,7 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { has_country_flag = fire_brigades_founded }
+			time_saving_measures = 1
 		}
 		allow = {
 			time_saving_measures = 1
@@ -1105,6 +1119,7 @@ political_decisions = {
 			}
 			has_country_flag = national_awakening_begun
 			not = { has_country_flag = kirjameeste_selts_founded }
+			realism = 1
 		}
 		allow = {
 			realism = 1
@@ -1136,6 +1151,7 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { has_country_flag = dairy_coops_founded }
+			electricity = 1
 		}
 		allow = {
 			electricity = 1
@@ -1162,6 +1178,7 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { has_country_flag = kunda_cement_built }
+			inorganic_chemistry = 1
 		}
 		allow = {
 			inorganic_chemistry = 1
@@ -1192,6 +1209,7 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { has_country_flag = luther_factory_expanded }
+			interchangeable_parts = 1
 		}
 		allow = {
 			interchangeable_parts = 1
@@ -1292,31 +1310,7 @@ political_decisions = {
 			set_country_flag = finnish_nationalists_supported
 			money = -50000
 			prestige = 5
-			336 = {
-				add_province_modifier = {
-					name = finnish_nationalist_fervor
-					duration = 1825
-				}
-			}
-			343 = {
-				add_province_modifier = {
-					name = finnish_nationalist_fervor
-					duration = 1825
-				}
-			}
-			345 = {
-				add_province_modifier = {
-					name = finnish_nationalist_fervor
-					duration = 1825
-				}
-			}
-			RUS = {
-				limit = { exists = yes }
-				relation = {
-					who = THIS
-					value = -50
-				}
-			}
+			country_event = { id = estonia_finnish_arms.1 }
 		}
 		ai_will_do = {
 			factor = 0.5

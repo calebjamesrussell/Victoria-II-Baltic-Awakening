@@ -1,0 +1,81 @@
+# Fires from the "Send Arms to Finnish Nationalists" decision.
+# The decision tooltip never renders these province/relation/casus belli
+# blocks directly - the event window executes them instead.
+
+country_event = {
+	id = estonia_finnish_arms.1
+	title = "EVTNAME_estonia_finnish_arms_1"
+	desc = "EVTDESC_estonia_finnish_arms_1"
+
+	picture = "state_atheism"
+
+	is_triggered_only = yes
+
+	immediate = {
+		any_country = {
+			limit = {
+				owns = 343
+			}
+			343 = {
+				add_province_modifier = {
+					name = finnish_nationalist_fervor
+					duration = 1825
+				}
+			}
+			relation = {
+				who = THIS
+				value = -50
+			}
+			casus_belli = {
+				target = THIS
+				type = cut_down_to_size
+				months = 24
+			}
+		}
+		any_country = {
+			limit = {
+				owns = 336
+			}
+			336 = {
+				add_province_modifier = {
+					name = finnish_nationalist_fervor
+					duration = 1825
+				}
+			}
+			relation = {
+				who = THIS
+				value = -50
+			}
+			casus_belli = {
+				target = THIS
+				type = cut_down_to_size
+				months = 24
+			}
+		}
+		any_country = {
+			limit = {
+				owns = 345
+			}
+			345 = {
+				add_province_modifier = {
+					name = finnish_nationalist_fervor
+					duration = 1825
+				}
+			}
+			relation = {
+				who = THIS
+				value = -50
+			}
+			casus_belli = {
+				target = THIS
+				type = cut_down_to_size
+				months = 24
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA_estonia_finnish_arms_1"
+		ai_chance = { factor = 1 }
+	}
+}
