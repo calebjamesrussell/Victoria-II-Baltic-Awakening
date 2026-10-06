@@ -156,6 +156,32 @@ country_migration_target =
 		war = no
 		NOT = { unemployment = 0.25 }
 	}
+	# Baltic Awakening: literacy draw. Literacy roughly follows the
+	# (1 + literacy) ideal via cumulative brackets: 0.4 -> x1.40,
+	# 0.6 -> x1.61, 0.8 -> x1.80, 0.9 -> x1.89. Educated destinations
+	# attract immigrants; below 40% literacy there is no bonus.
+	modifier = {
+		factor = 1.40
+		literacy = 0.4
+	}
+	modifier = {
+		factor = 1.15
+		literacy = 0.6
+	}
+	modifier = {
+		factor = 1.12
+		literacy = 0.8
+	}
+	modifier = {
+		factor = 1.05
+		literacy = 0.9
+	}
+	# Baltic Awakening: mild sphere-of-influence draw. Moving within
+	# the sphere of one's homeland is the path of least resistance.
+	modifier = {
+		factor = 1.15
+		in_sphere = THIS
+	}
 	# Baltic Awakening (#41): graded social-reform ladder. Every level of
 	# every social reform makes a well-governed state a stronger
 	# destination; a full package of good reforms rivals the New World.
