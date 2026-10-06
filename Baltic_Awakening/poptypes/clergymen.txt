@@ -1,6 +1,3 @@
-# Ported from the Victoria II POP Migration Mod (country_migration_target
-# and migration_target scoring make well-governed countries - including
-# Estonia - viable emigration destinations, not just the New World).
 sprite = 3
 color = { 234 227 40 }
 strata = middle
@@ -70,57 +67,6 @@ country_migration_target =
 {
 	factor = 1
 
-	# Middle POPs
-	## Lower taxes
-	modifier = {
-		factor = -5.0
-		middle_tax = 0.9
-	}
-	modifier = {
-		factor = -3.0
-		NOT ={ middle_tax = 0.9 }
-		middle_tax = 0.66
-	}
-	modifier = {
-		factor = 1.5
-		NOT ={ middle_tax = 0.66 }
-		middle_tax = 0.33
-	}
-	modifier = {
-		factor = 2.0
-		NOT ={ middle_tax = 0.33 }
-		middle_tax = 0.1
-	}
-	modifier = {
-		factor = 3.0
-		NOT ={ middle_tax = 0.1 }
-	}
-
-	## Voting rights
-	modifier = {
-		factor = -3.0
-		vote_franschise = no_voting
-	}
-	modifier = {
-		factor = 2.0
-		vote_franschise = wealth_weighted_voting
-	}
-	modifier = {
-		factor = 3.0
-		vote_franschise = wealth_voting
-	}
-	modifier = {
-		factor = 2.0
-		vote_franschise = universal_weighted_voting
-	}
-	modifier = {
-		factor = 3.0
-		vote_franschise = universal_voting
-	}
-
-	#All POPs
-
-	# Unemployment
 	modifier = {
 		factor = 0.9
 		unemployment = 0.05
@@ -153,244 +99,34 @@ country_migration_target =
 		factor = 0.1
 		unemployment = 0.5
 	}
-
-	## Avoid high militancy
-	modifier = {
-		factor = -1.0
-		average_militancy = 1.0
-	}
-	modifier = {
-		factor = -2.0
-		average_militancy = 2.0
-	}
-
-	modifier = {
-		factor = -3.0
-		average_militancy = 3.0
-	}
-	
-	modifier = {
-		factor = -4.0
-		average_militancy = 4.0
-	}
-	
-	modifier = {
-		factor = 0
-		average_militancy = 5.0
-	}
-
-	## Avoid no available jobs
-	modifier = {
-		factor = -1.0
-		unemployment = 0.1
-	}
-	modifier = {
-		factor = -2.0
-		unemployment = 0.2
-	}
-	modifier = {
-		factor = -3.0
-		unemployment = 0.3
-	}
-	modifier = {
-		factor = -4.0
-		unemployment = 0.4
-	}
-	modifier = {
-		factor = 0
-		unemployment = 0.5
-	}
-
-	## Democracy
-	modifier = {
-		factor = 2.0
-		government = democracy
-	}
-
-	## Similar culture
 	modifier = {
 		factor = 2.0
 		has_pop_culture = THIS
 	}
 	modifier = {
-		factor = 2.0
-		is_cultural_union = yes
-		has_pop_culture = THIS
-	}
-
-	## Similar religion
-	modifier = {
-		factor = 1.5
-		religion = THIS
+		factor = 1.2
+		is_greater_power = yes
 	}
 	modifier = {
-		factor = -3.0
-		religious_policy = moralism
-		NOT = { religion = THIS }
+		factor = 1.05
+		vote_franschise = wealth_voting
 	}
-	modifier = {
-		factor = 1.5
-		religious_policy = moralism
-		religion = THIS
-	}
-	modifier = {
-		factor = 1.5
-		religious_policy = pluralism
-	}
-	modifier = {
-		factor = -2.0
-		religious_policy = pro_atheism
-	}
-	modifier = {
-		factor = 2.0
-		religious_policy = secularized
-	}
-
-	## Citizenship
-	modifier = {
-		factor = -3.0
-		citizenship_policy = residency
-		NOT = { culture = THIS }
-	}
-	modifier = {
-		factor = 1.5
-		citizenship_policy = residency
-		# culture = THIS
-	}
-	modifier = {
-		factor = -3.0
-		citizenship_policy = limited_citizenship
-		is_accepted_culture = no
-	}
-	modifier = {
-		factor = 1.5
-		citizenship_policy = limited_citizenship
-		is_accepted_culture = yes
-	}
-	modifier = {
-		factor = 2.0
-		citizenship_policy = full_citizenship
-	}
-
-	## Better work hours
 	modifier = {
 		factor = 1.25
-		work_hours = fourteen_hours
+		vote_franschise = universal_weighted_voting
 	}
 	modifier = {
 		factor = 1.5
-		work_hours = twelve_hours
+		vote_franschise = universal_voting
 	}
 	modifier = {
-		factor = 1.75
-		work_hours = ten_hours
+		factor = 4.0
+		OR = { 
+			continent = north_america
+			continent = south_america
+			continent = oceania
+		}
 	}
-	modifier = {
-		factor = 2.0
-		work_hours = eight_hours
-	}
-
-	## Safety
-	modifier = {
-		factor = 1.25
-		safety_regulations = trinket_safety
-	}
-	modifier = {
-		factor = 1.5
-		safety_regulations = low_safety
-	}
-	modifier = {
-		factor = 1.75
-		safety_regulations = acceptable_safety
-	}
-	modifier = {
-		factor = 2.0
-		safety_regulations = good_safety
-	}
-
-	## Unemployment subsidies
-	modifier = {
-		factor = 1.25
-		unemployment_subsidies = trinket_subsidies
-	}
-	modifier = {
-		factor = 1.5
-		unemployment_subsidies = low_subsidies
-	}
-	modifier = {
-		factor = 1.75
-		unemployment_subsidies = acceptable_subsidies
-	}
-	modifier = {
-		factor = 2.0
-		unemployment_subsidies = good_subsidies
-	}
-
-	## Healthcare
-	modifier = {
-		factor = 1.25
-		health_care = trinket_health_care
-	}
-	modifier = {
-		factor = 1.5
-		health_care = low_health_care
-	}
-	modifier = {
-		factor = 1.75
-		health_care = acceptable_health_care
-	}
-	modifier = {
-		factor = 2.0
-		health_care = good_health_care
-	}
-
-	## Wage laws
-	modifier = {
-		factor = 1.25
-		wage_reform = trinket_wage
-	}
-	modifier = {
-		factor = 1.5
-		wage_reform = low_minimum_wage
-	}
-	modifier = {
-		factor = 1.75
-		wage_reform = acceptable_minimum_wage
-	}
-	modifier = {
-		factor = 2.0
-		wage_reform = good_minimum_wage
-	}
-
-	## Pensions
-	modifier = {
-		factor = 1.25
-		pensions = trinket_pensions
-	}
-	modifier = {
-		factor = 1.5
-		pensions = low_pensions
-	}
-	modifier = {
-		factor = 1.75
-		pensions = acceptable_pensions
-	}
-	modifier = {
-		factor = 2.0
-		pensions = good_pensions
-	}
-
-	## Satellites or in sphere of influence
-	modifier = {
-		factor = 2.0
-		location = { owner = { vassal_of = THIS } }
-	}
-	modifier = {
-		factor = 2.0
-		location = { owner = { is_sphere_leader_of = THIS }	}
-	}
-
-	# From vanilla
 	modifier = {
 		factor = 0.1
 		NOT = {
@@ -412,6 +148,39 @@ country_migration_target =
 				}
 			}
 		}
+	}	
+
+	# Baltic Awakening: Europe should not lose its people wholesale to the
+	# New World. A prosperous, well-governed European state draws migrants.
+	modifier = {
+		factor = 2.0
+		continent = europe
+		NOT = { average_militancy = 4 }
+	}
+	modifier = {
+		factor = 1.5
+		continent = europe
+		is_secondary_power = yes
+	}
+	modifier = {
+		factor = 1.2
+		continent = europe
+		citizenship_policy = full_citizenship
+	}
+	modifier = {
+		factor = 1.2
+		continent = europe
+		OR = {
+			religion = THIS
+			religion = protestant
+			religion = orthodox
+		}
+	}
+	modifier = {
+		factor = 1.1
+		continent = europe
+		war = no
+		NOT = { unemployment = 0.1 }
 	}
 }
 
