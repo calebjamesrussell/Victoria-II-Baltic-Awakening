@@ -1,0 +1,103 @@
+# State Atheism: the revolution decides about God.
+#
+# Fires shortly after any country becomes a proletarian dictatorship
+# (MTTH 1 month, once per country). The player chooses between
+# declaring state atheism - which flips the state religion to the
+# mod's atheist religion so the conversion engine spreads it - or
+# keeping religion as a private matter.
+#
+# This is the generic companion to the Estonia/UBD secularization
+# chain in Estonia_Secularization.txt (IDs 95541-95560): event 95555
+# (League of Militant Atheists) triggers on religion = atheist and
+# follows naturally from Option A.
+#
+# Note: pop religion cannot be set directly by effects; only the
+# state religion can be changed (country scope), per the note in
+# Estonia_Secularization.txt.
+#
+# IDs 95561-95565 reserved for this file.
+
+###########################################################################
+# 95561 - Opium of the People?
+###########################################################################
+
+country_event = {
+	id = 95561
+	title = "EVTNAME95561"
+	desc = "EVTDESC95561"
+	picture = "Riot"
+
+	trigger = {
+		government = proletarian_dictatorship
+		NOT = { religion = atheist }
+		NOT = { has_country_flag = state_atheism_decided }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	# Option A - Declare State Atheism
+	option = {
+		name = "EVTOPTA95561"
+		religion = atheist
+		set_country_flag = state_atheism_decided
+		set_country_flag = state_atheism
+		# Church property is confiscated to the revolutionary treasury
+		money = 5000
+		# The faithful resist the desecration
+		any_pop = {
+			limit = {
+				NOT = { has_pop_religion = atheist }
+			}
+			militancy = 2
+		}
+		# The unbelievers take heart: the revolution is theirs
+		any_pop = {
+			limit = {
+				has_pop_religion = atheist
+			}
+			consciousness = 2
+		}
+		# The faithful of the world take note
+		any_greater_power = {
+			limit = {
+				NOT = { government = proletarian_dictatorship }
+			}
+			relation = {
+				who = THIS
+				value = -25
+			}
+		}
+		add_country_modifier = {
+			name = state_atheism_campaign
+			duration = 3650
+		}
+	}
+
+	# Option B - Religion Is a Private Matter
+	option = {
+		name = "EVTOPTB95561"
+		set_country_flag = state_atheism_decided
+		set_country_flag = religion_private_matter
+		# The faithful breathe easier under the tolerant revolution
+		any_pop = {
+			limit = {
+				NOT = { has_pop_religion = atheist }
+			}
+			militancy = -1
+		}
+		# The revolution is unfinished: the primary-culture cadres
+		# grumble that the vanguard has stayed its hand
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			consciousness = 1
+		}
+		add_country_modifier = {
+			name = religious_tolerance
+			duration = 3650
+		}
+	}
+}

@@ -929,3 +929,18 @@ baltic_settler_influx = {
 	population_growth = 0.010
 	icon = 9
 }
+
+# State atheism campaign: the League lectures, the schools secularize,
+# but the pews empty and the world takes note
+state_atheism_campaign = {
+	research_points_modifier = 0.03
+	global_immigrant_attract = -0.10
+	icon = 8
+}
+
+# Religious tolerance under the dictatorship: no state church, no
+# persecution - a quiet draw for migrants of every creed
+religious_tolerance = {
+	global_immigrant_attract = 0.05
+	icon = 5
+}
