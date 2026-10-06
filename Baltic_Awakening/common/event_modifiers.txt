@@ -920,11 +920,3 @@ finnish_nationalist_fervor = {
 	icon = 8
 }
 }
-
-# Baltic settler influx: migration toward the prosperous Baltic
-# provinces (engine emigration scoring favors the New World,
-# so this models the historic westward movement empirically)
-baltic_settler_influx = {
-	population_growth = 0.010
-	icon = 9
-}
