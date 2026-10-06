@@ -1,7 +1,8 @@
 # Estonia and the Finnish national movement.
 # With Finland under a foreign yoke, Estonian money, rifles and volunteers
-# can cross the gulf. The decision tooltip crash is avoided entirely:
-# this fires as a country event with a real choice.
+# can cross the gulf. The fervor is applied to the OWNER of the Finnish
+# cores as a country-wide unrest modifier - vanilla events never apply
+# province modifiers to foreign-owned provinces directly.
 
 country_event = {
 	id = 95562
@@ -36,62 +37,24 @@ country_event = {
 		prestige = 5
 		any_country = {
 			limit = {
-				owns = 343
-			}
-			343 = {
-				add_province_modifier = {
-					name = finnish_nationalist_fervor
-					duration = 1825
+				OR = {
+					owns = 343
+					owns = 336
+					owns = 345
 				}
 			}
 			relation = {
 				who = THIS
 				value = -50
 			}
-			casus_belli = {
+			add_casus_belli = {
 				target = THIS
 				type = cut_down_to_size
 				months = 24
 			}
-		}
-		any_country = {
-			limit = {
-				owns = 336
-			}
-			336 = {
-				add_province_modifier = {
-					name = finnish_nationalist_fervor
-					duration = 1825
-				}
-			}
-			relation = {
-				who = THIS
-				value = -50
-			}
-			casus_belli = {
-				target = THIS
-				type = cut_down_to_size
-				months = 24
-			}
-		}
-		any_country = {
-			limit = {
-				owns = 345
-			}
-			345 = {
-				add_province_modifier = {
-					name = finnish_nationalist_fervor
-					duration = 1825
-				}
-			}
-			relation = {
-				who = THIS
-				value = -50
-			}
-			casus_belli = {
-				target = THIS
-				type = cut_down_to_size
-				months = 24
+			add_country_modifier = {
+				name = finnish_nationalist_fervor
+				duration = 1825
 			}
 		}
 	}
@@ -104,7 +67,11 @@ country_event = {
 		set_country_flag = finnish_nationalists_declined
 		any_country = {
 			limit = {
-				owns = 343
+				OR = {
+					owns = 343
+					owns = 336
+					owns = 345
+				}
 			}
 			relation = {
 				who = THIS
