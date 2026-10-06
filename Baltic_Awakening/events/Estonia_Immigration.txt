@@ -20,6 +20,8 @@ country_event = {
 		}
 		civilized = yes
 		year = 1840
+		not = { has_country_flag = open_to_settlers }
+		not = { has_country_flag = borders_closed_to_settlers }
 		any_owned = {
 			limit = { OR = { is_core = EST is_core = UBD } }
 			average_militancy = 3
@@ -46,6 +48,27 @@ country_event = {
 				name = baltic_settler_influx
 				duration = 3650
 			}
+		}
+		set_country_flag = open_to_settlers
+		any_pop = {
+			limit = {
+				type = farmers
+				culture = estonian
+			}
+			militancy = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB95561"
+		set_country_flag = borders_closed_to_settlers
+		any_pop = {
+			limit = {
+				type = farmers
+				culture = estonian
+			}
+			consciousness = 1
+			militancy = -1
 		}
 	}
 }
