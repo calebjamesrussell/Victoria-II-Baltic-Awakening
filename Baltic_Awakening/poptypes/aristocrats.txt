@@ -144,19 +144,10 @@ country_migration_target =
 		citizenship_policy = full_citizenship
 	}
 	modifier = {
-		factor = 1.2
-		continent = europe
-		OR = {
-			religion = THIS
-			religion = protestant
-			religion = orthodox
-		}
-	}
-	modifier = {
 		factor = 1.1
 		continent = europe
 		war = no
-		NOT = { unemployment = 0.1 }
+		NOT = { unemployment = 0.25 }
 	}
 	# Baltic Awakening (#41): graded social-reform ladder. Every level of
 	# every social reform makes a well-governed state a stronger
