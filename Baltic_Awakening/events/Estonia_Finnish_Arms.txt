@@ -8,7 +8,7 @@ country_event = {
 	title = "EVTNAME95562"
 	desc = "EVTDESC95562"
 
-	picture = "state_atheism"
+	picture = "Recruits"
 
 	trigger = {
 		OR = {
