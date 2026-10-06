@@ -156,6 +156,41 @@ country_migration_target =
 		war = no
 		NOT = { unemployment = 0.1 }
 	}
+
+	# Baltic Awakening (#41): refugees flee war and occupation. A stable,
+	# well-reformed European state is the natural first destination for the
+	# subjects of a warring neighbor - not a transatlantic crossing.
+	modifier = {
+		factor = 1.5
+		continent = europe
+		war = no
+		NOT = { political_reform_want = 0.05 }
+		unemployment_subsidies = good_subsidies
+	}
+	modifier = {
+		factor = 1.5
+		continent = europe
+		war = no
+		wage_reform = good_minimum_wage
+	}
+	modifier = {
+		factor = 1.3
+		continent = europe
+		war = no
+		health_care = good_health_care
+	}
+	modifier = {
+		factor = 1.3
+		continent = europe
+		war = no
+		pensions = good_pensions
+	}
+	modifier = {
+		factor = 1.2
+		continent = europe
+		war = no
+		school_reforms = acceptable_schools
+	}
 }
 
 migration_target =
