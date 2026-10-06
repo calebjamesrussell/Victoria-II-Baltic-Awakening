@@ -508,12 +508,7 @@ political_decisions = {
 				name = soomusrong_corps
 				duration = 3650
 			}
-			349 = {
-				sub_unit = {
-					type = soomusrong
-					value = current
-				}
-			}
+			leadership = 50
 		}
 
 		ai_will_do = {

@@ -1,0 +1,51 @@
+# Estonia: immigration from the Russian Empire
+# Victoria II's engine weights mass emigration toward the New World, so the
+# Baltic provinces rarely receive migrants even when life is good here.
+# These events model the historic westward movement of people within the
+# Russian Empire toward the prosperous Baltic provinces.
+
+# Province modifier: attractive frontier for settlers
+# (appended to event_modifiers.txt)
+
+country_event = {
+	id = 95561
+	title = "EVTNAME95561"
+	desc = "EVTDESC95561"
+	picture = "emigration"
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		civilized = yes
+		year = 1840
+		any_owned = {
+			limit = { OR = { is_core = EST is_core = UBD } }
+			average_militancy = 3
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			war = no
+		}
+		modifier = {
+			factor = 0.5
+			prestige = 30
+		}
+	}
+
+	option = {
+		name = "EVTOPTA95561"
+		any_owned = {
+			limit = { OR = { is_core = EST is_core = UBD } }
+			add_province_modifier = {
+				name = baltic_settler_influx
+				duration = 3650
+			}
+		}
+	}
+}
