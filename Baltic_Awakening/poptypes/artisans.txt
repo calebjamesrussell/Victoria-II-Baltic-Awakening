@@ -190,6 +190,12 @@ country_migration_target =
 		war = no
 		pensions = good_pensions
 	}
+	modifier = {
+		factor = 1.2
+		continent = europe
+		war = no
+		school_reforms = acceptable_schools
+	}
 }
 
 migration_target =
