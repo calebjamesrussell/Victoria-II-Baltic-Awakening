@@ -35,6 +35,6 @@ soomusrong = {
 	defence = 14
 	discipline = 1
 	support = 0.0
-	maneuver = 0
+	maneuver = 1
 	siege = 3
 }

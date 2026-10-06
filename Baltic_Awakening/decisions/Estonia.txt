@@ -508,12 +508,7 @@ political_decisions = {
 				name = soomusrong_corps
 				duration = 3650
 			}
-			349 = {
-				sub_unit = {
-					type = soomusrong
-					value = current
-				}
-			}
+			leadership = 50
 		}
 
 		ai_will_do = {
@@ -1290,32 +1285,6 @@ political_decisions = {
 		}
 	}
 	# Send arms to the Finnish nationalists: kindred peoples' struggle.
-	# Finland under the Russian yoke (or another occupier) can be helped
-	# toward independence - money, rifles and volunteers across the gulf.
-	support_finnish_nationalists = {
-		picture = "state_atheism"
-		potential = {
-			OR = {
-				tag = EST
-				tag = UBD
-			}
-			not = { exists = FIN }
-			not = { has_country_flag = finnish_nationalists_supported }
-		}
-		allow = {
-			money = 50000
-			nationalism_n_imperialism = 1
-		}
-		effect = {
-			set_country_flag = finnish_nationalists_supported
-			money = -50000
-			prestige = 5
-			country_event = { id = estonia_finnish_arms.1 }
-		}
-		ai_will_do = {
-			factor = 0.5
-		}
-	}
 	# Swedish as an accepted culture: the coastal Swedish communities
 	# (Aiboland) have fished and traded beside the Estonians for centuries.
 	accept_swedish_culture = {

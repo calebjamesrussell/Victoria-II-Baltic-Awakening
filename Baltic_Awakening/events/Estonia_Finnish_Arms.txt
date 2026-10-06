@@ -1,17 +1,39 @@
-# Fires from the "Send Arms to Finnish Nationalists" decision.
-# The decision tooltip never renders these province/relation/casus belli
-# blocks directly - the event window executes them instead.
+# Estonia and the Finnish national movement.
+# With Finland under a foreign yoke, Estonian money, rifles and volunteers
+# can cross the gulf. The decision tooltip crash is avoided entirely:
+# this fires as a country event with a real choice.
 
 country_event = {
-	id = estonia_finnish_arms.1
-	title = "EVTNAME_estonia_finnish_arms_1"
-	desc = "EVTDESC_estonia_finnish_arms_1"
+	id = 95562
+	title = "EVTNAME95562"
+	desc = "EVTDESC95562"
 
 	picture = "state_atheism"
 
-	is_triggered_only = yes
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		NOT = { exists = FIN }
+		not = { has_country_flag = finnish_nationalists_supported }
+		not = { has_country_flag = finnish_nationalists_declined }
+		money = 50000
+		nationalism_n_imperialism = 1
+	}
 
-	immediate = {
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95562"
+		ai_chance = {
+			factor = 0.5
+		}
+		set_country_flag = finnish_nationalists_supported
+		money = -50000
+		prestige = 5
 		any_country = {
 			limit = {
 				owns = 343
@@ -75,7 +97,19 @@ country_event = {
 	}
 
 	option = {
-		name = "EVTOPTA_estonia_finnish_arms_1"
-		ai_chance = { factor = 1 }
+		name = "EVTOPTB95562"
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = finnish_nationalists_declined
+		any_country = {
+			limit = {
+				owns = 343
+			}
+			relation = {
+				who = THIS
+				value = 10
+			}
+		}
 	}
 }
