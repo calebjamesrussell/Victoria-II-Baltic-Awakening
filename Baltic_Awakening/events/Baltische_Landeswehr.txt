@@ -1,15 +1,20 @@
 # Baltische Landeswehr events
-# The Baltic German estate militia rises when order in the Baltic provinces collapses.
+# The Baltic German estate militia rises when order in the Baltic provinces
+# collapses. Modeled on the vanilla American Civil War: BLW secedes with
+# the German-settled provinces and the mother country continues at war
+# (or rump peace) - the player never stops playing their own tag.
 # IDs 95531-95533 are reserved for this chain.
 
-##########################################################################
+###########################################################################
 # 95531 - The Landeswehr Rising
-#########################################################################
+###########################################################################
+
 country_event = {
 	id = 95531
 	title = "EVTNAME95531"
 	desc = "EVTDESC95531"
 	picture = "Rebellion"
+	major = yes
 
 	trigger = {
 		NOT = { tag = BLW }
@@ -25,33 +30,33 @@ country_event = {
 		war = yes
 		average_militancy = 6
 		any_pop = {
-			limit = { culture = north_german }
-			militancy = 6
+			limit = {
+				culture = north_german
+				militancy = 6
+			}
 		}
 		NOT = { has_country_flag = baltische_landeswehr_rising }
 	}
 
 	mean_time_to_happen = {
 		months = 24
-
 		modifier = {
 			factor = 0.5
 			average_militancy = 8
 		}
-
 		modifier = {
 			factor = 0.5
 			GER = {
 				exists = yes
 			}
 		}
-
 		modifier = {
 			factor = 4.0
 			has_country_flag = baltic_germans_integrated
 		}
 	}
 
+	# Option A - the estates rise; the provinces rise with them, and war
 	option = {
 		name = "EVTOPTA95531"
 		ai_chance = {
@@ -61,15 +66,47 @@ country_event = {
 				has_country_flag = baltic_germans_integrated
 			}
 		}
-		release_vassal = BLW
-		set_country_flag = baltische_landeswehr_rising
 		any_pop = {
-			limit = { culture = north_german }
+			limit = {
+				culture = north_german
+			}
 			militancy = 2
 			consciousness = 2
 		}
+		# The German-settled lands answer the Ritterschaft's call; the
+		# Estonian heartland (Dorpat's university towns aside) stays loyal
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 349
+					province_id = 350
+				}
+			}
+			secede_province = BLW
+		}
+		BLW = {
+			capital = 349
+			leadership = 80
+			prestige = 10
+		}
+		# The mother country does not recognize the estates' state
+		BLW = {
+			relation = { who = THIS value = -100 }
+		}
+		war = {
+			target = BLW
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		set_country_flag = baltische_landeswehr_rising
 	}
 
+	# Option B - the government yields the German boroughs, but there is
+	# no reconciliation: the Landeswehr declares itself regardless
 	option = {
 		name = "EVTOPTB95531"
 		ai_chance = {
@@ -79,21 +116,42 @@ country_event = {
 				has_country_flag = baltic_germans_integrated
 			}
 		}
-		set_country_flag = baltische_landeswehr_rising
-		any_owned_province = {
-			limit = { is_core = BLW }
-			any_pop = {
-				limit = { culture = north_german }
-				militancy = 4
-				consciousness = 2
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 349
+					province_id = 350
+				}
 			}
+			secede_province = BLW
 		}
+		BLW = {
+			capital = 349
+			leadership = 80
+		}
+		any_pop = {
+			limit = {
+				culture = north_german
+			}
+			militancy = -2
+		}
+		# The Estonian majority feels the betrayal of the compromise
+		any_pop = {
+			limit = {
+				culture = estonian
+			}
+			militancy = 2
+			consciousness = 2
+		}
+		set_country_flag = baltische_landeswehr_rising
+		set_country_flag = landeswehr_seceded_peacefully
 	}
 }
 
-##########################################################################
+###########################################################################
 # 95532 - The Landeswehr Consolidates (BLW flavor)
-#########################################################################
+###########################################################################
+
 country_event = {
 	id = 95532
 	title = "EVTNAME95532"
@@ -121,9 +179,10 @@ country_event = {
 	}
 }
 
-##########################################################################
+###########################################################################
 # 95533 - The Baltic Germans Rally to the Landeswehr
-#########################################################################
+###########################################################################
+
 country_event = {
 	id = 95533
 	title = "EVTNAME95533"
@@ -146,7 +205,9 @@ country_event = {
 		money = 5000
 		prestige = 10
 		any_pop = {
-			limit = { culture = north_german }
+			limit = {
+				culture = north_german
+			}
 			militancy = -2
 			consciousness = 1
 		}
