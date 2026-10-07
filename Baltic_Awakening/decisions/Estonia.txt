@@ -733,6 +733,9 @@ political_decisions = {
 		allow = {
 			money = 25000
 			battleship_column_doctrine = 1
+			NOT = {
+				349 = { naval_base = 2 }
+			}
 		}
 
 		effect = {
