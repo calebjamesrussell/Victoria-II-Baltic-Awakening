@@ -123,7 +123,7 @@ country_migration_target =
 		vote_franschise = universal_voting
 	}
 	modifier = {
-		factor = 4.0
+		factor = 2.0
 		OR = { 
 			continent = north_america
 			continent = south_america
@@ -161,66 +161,142 @@ country_migration_target =
 		NOT = { average_militancy = 4 }
 	}
 	modifier = {
-		factor = 1.5
-		continent = europe
-		is_secondary_power = yes
-	}
-	modifier = {
 		factor = 1.2
 		continent = europe
 		citizenship_policy = full_citizenship
 	}
 	modifier = {
-		factor = 1.2
-		continent = europe
-		OR = {
-			religion = THIS
-			religion = protestant
-			religion = orthodox
-		}
-	}
-	modifier = {
 		factor = 1.1
 		continent = europe
 		war = no
-		NOT = { unemployment = 0.1 }
+		NOT = { unemployment = 0.25 }
 	}
-
-	# Baltic Awakening (#41): refugees flee war and occupation. A stable,
-	# well-reformed European state is the natural first destination for the
-	# subjects of a warring neighbor - not a transatlantic crossing.
+	# Baltic Awakening: literacy draw. Literacy roughly follows the
+	# (1 + literacy) ideal via cumulative brackets: 0.4 -> x1.40,
+	# 0.6 -> x1.61, 0.8 -> x1.80, 0.9 -> x1.89. Educated destinations
+	# attract immigrants; below 40% literacy there is no bonus.
 	modifier = {
-		factor = 1.5
-		continent = europe
+		factor = 1.40
+		literacy = 0.4
+	}
+	modifier = {
+		factor = 1.15
+		literacy = 0.6
+	}
+	modifier = {
+		factor = 1.12
+		literacy = 0.8
+	}
+	modifier = {
+		factor = 1.05
+		literacy = 0.9
+	}
+	# Baltic Awakening: mild sphere-of-influence draw. Moving within
+	# the sphere of one's homeland is the path of least resistance.
+	modifier = {
+		factor = 1.15
+		in_sphere = THIS
+	}
+	# Baltic Awakening (#41): graded social-reform ladder. Every level of
+	# every social reform makes a well-governed state a stronger
+	# destination; a full package of good reforms rivals the New World.
+	modifier = {
+		factor = 1.05
 		war = no
-		NOT = { political_reform_want = 0.05 }
-		unemployment_subsidies = good_subsidies
+		health_care = trinket_health_care
 	}
 	modifier = {
-		factor = 1.5
-		continent = europe
+		factor = 1.12
 		war = no
-		wage_reform = good_minimum_wage
+		health_care = low_health_care
 	}
 	modifier = {
-		factor = 1.3
-		continent = europe
+		factor = 1.20
+		war = no
+		health_care = acceptable_health_care
+	}
+	modifier = {
+		factor = 1.35
 		war = no
 		health_care = good_health_care
 	}
 	modifier = {
-		factor = 1.3
-		continent = europe
+		factor = 1.05
+		war = no
+		pensions = trinket_pensions
+	}
+	modifier = {
+		factor = 1.12
+		war = no
+		pensions = low_pensions
+	}
+	modifier = {
+		factor = 1.20
+		war = no
+		pensions = acceptable_pensions
+	}
+	modifier = {
+		factor = 1.35
 		war = no
 		pensions = good_pensions
 	}
 	modifier = {
-		factor = 1.2
-		continent = europe
+		factor = 1.05
+		war = no
+		wage_reform = trinket_wage
+	}
+	modifier = {
+		factor = 1.12
+		war = no
+		wage_reform = low_minimum_wage
+	}
+	modifier = {
+		factor = 1.20
+		war = no
+		wage_reform = acceptable_minimum_wage
+	}
+	modifier = {
+		factor = 1.35
+		war = no
+		wage_reform = good_minimum_wage
+	}
+	modifier = {
+		factor = 1.05
+		war = no
+		unemployment_subsidies = trinket_subsidies
+	}
+	modifier = {
+		factor = 1.12
+		war = no
+		unemployment_subsidies = low_subsidies
+	}
+	modifier = {
+		factor = 1.20
+		war = no
+		unemployment_subsidies = acceptable_subsidies
+	}
+	modifier = {
+		factor = 1.35
+		war = no
+		unemployment_subsidies = good_subsidies
+	}
+	modifier = {
+		factor = 1.12
+		war = no
+		school_reforms = low_schools
+	}
+	modifier = {
+		factor = 1.20
 		war = no
 		school_reforms = acceptable_schools
 	}
+	modifier = {
+		factor = 1.35
+		war = no
+		school_reforms = good_schools
+	}
 }
+
 
 migration_target =
 {

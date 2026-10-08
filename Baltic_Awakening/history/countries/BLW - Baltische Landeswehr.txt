@@ -2,8 +2,6 @@
 # A Baltic German rump state of the estates and the Landeswehr.
 capital = 349
 primary_culture = north_german
-culture = estonian
-culture = latvian
 religion = protestant
 government = bourgeois_dictatorship
 plurality = 0.2
