@@ -1298,7 +1298,9 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { accepted_culture = swedish }
-			any_owned = {
+			# any_owned_province is the trigger scope; any_owned is an
+			# effect scope and always failed here, hiding the decision
+			any_owned_province = {
 				any_pop = {
 					limit = {
 						culture = swedish
