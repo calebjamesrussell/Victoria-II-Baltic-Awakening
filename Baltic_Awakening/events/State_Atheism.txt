@@ -15,16 +15,16 @@
 # state religion can be changed (country scope), per the note in
 # Estonia_Secularization.txt.
 #
-# IDs 95561-95565 reserved for this file.
+# IDs 95563-95565 reserved for this file.
 
 ###########################################################################
-# 95561 - Opium of the People?
+# 95563 - Opium of the People?
 ###########################################################################
 
 country_event = {
-	id = 95561
-	title = "EVTNAME95561"
-	desc = "EVTDESC95561"
+	id = 95563
+	title = "EVTNAME95563"
+	desc = "EVTDESC95563"
 	picture = "Riot"
 
 	trigger = {
@@ -39,7 +39,7 @@ country_event = {
 
 	# Option A - Declare State Atheism
 	option = {
-		name = "EVTOPTA95561"
+		name = "EVTOPTA95563"
 		religion = atheist
 		set_country_flag = state_atheism_decided
 		set_country_flag = state_atheism
@@ -77,7 +77,7 @@ country_event = {
 
 	# Option B - Religion Is a Private Matter
 	option = {
-		name = "EVTOPTB95561"
+		name = "EVTOPTB95563"
 		set_country_flag = state_atheism_decided
 		set_country_flag = religion_private_matter
 		# The faithful breathe easier under the tolerant revolution

@@ -400,7 +400,7 @@ province_event = {
 		owner = { OR = { tag = EST tag = UBD } }
 		year = 1900
 		any_pop = {
-			limit = { culture = swedish }
+			culture = swedish
 		}
 	}
 

@@ -29,8 +29,8 @@ country_event = {
 		}
 		war = yes
 		average_militancy = 6
-		any_pop = {
-			limit = {
+		any_owned_province = {
+			any_pop = {
 				culture = north_german
 				militancy = 6
 			}
@@ -84,9 +84,6 @@ country_event = {
 			}
 			secede_province = BLW
 		}
-		# Reval is lost with the boroughs: the government follows the
-		# university and the awakening's heart to Dorpat
-		capital = 352
 		BLW = {
 			capital = 349
 			leadership = 80
@@ -128,9 +125,6 @@ country_event = {
 			}
 			secede_province = BLW
 		}
-		# Reval is lost with the boroughs: the government follows the
-		# university and the awakening's heart to Dorpat
-		capital = 352
 		BLW = {
 			capital = 349
 			leadership = 80

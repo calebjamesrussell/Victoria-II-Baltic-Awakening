@@ -488,7 +488,7 @@ province_event = {
 	trigger = {
 		owner = { OR = { tag = EST tag = UBD } }
 		any_pop = {
-			limit = { culture = swedish }
+			culture = swedish
 		}
 	}
 
@@ -838,18 +838,14 @@ country_event = {
 			tag = UBD
 		}
 		vote_franschise = universal_voting
-		any_owned = {
+		any_owned_province = {
 			any_pop = {
-				limit = {
-					culture = swedish
-				}
+				culture = swedish
 			}
 		}
-		any_owned = {
+		any_owned_province = {
 			any_pop = {
-				limit = {
-					culture = north_german
-				}
+				culture = north_german
 			}
 		}
 		NOT = { has_country_flag = minorities_petition_answered }

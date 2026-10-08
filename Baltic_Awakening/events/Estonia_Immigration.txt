@@ -22,8 +22,8 @@ country_event = {
 		year = 1840
 		not = { has_country_flag = open_to_settlers }
 		not = { has_country_flag = borders_closed_to_settlers }
-		any_owned = {
-			limit = { OR = { is_core = EST is_core = UBD } }
+		any_owned_province = {
+			OR = { is_core = EST is_core = UBD }
 			average_militancy = 3
 		}
 	}
