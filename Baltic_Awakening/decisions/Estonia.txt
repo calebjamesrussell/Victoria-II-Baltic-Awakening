@@ -733,6 +733,9 @@ political_decisions = {
 		allow = {
 			money = 25000
 			battleship_column_doctrine = 1
+			NOT = {
+				349 = { naval_base = 3 }
+			}
 		}
 
 		effect = {
@@ -742,7 +745,7 @@ political_decisions = {
 				name = estonian_shipyards
 				duration = 3650
 			}
-			349 = { naval_base = 2 }
+			349 = { naval_base = 3 }
 		}
 
 		ai_will_do = {
