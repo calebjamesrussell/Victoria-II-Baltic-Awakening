@@ -37,32 +37,6 @@ political_decisions = {
 		}
 	}
 
-	# UBD claims Latvian lands (redundant with formation but useful when
-	# UBD formed from Estonia alone while Latvia remains unowned)
-	ubd_claim_latvia = {
-		picture = "baltic_entente"
-		potential = {
-			tag = UBD
-			NOT = { has_country_flag = latvia_claimed }
-			owns = 355 # Riga
-		}
-		allow = {
-			nationalism_n_imperialism = 1
-			prestige = 10
-		}
-		effect = {
-			set_country_flag = latvia_claimed
-			add_accepted_culture = latvian
-			354 = { add_core = UBD }
-			355 = { add_core = UBD }
-			357 = { add_core = UBD }
-			prestige = 3
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	# Cultural patronage over the kindred Finnish people: an UBD that
 	# dominates the eastern gulf shore speaks for the Finnic world.
 	ubd_finnic_patronage = {
