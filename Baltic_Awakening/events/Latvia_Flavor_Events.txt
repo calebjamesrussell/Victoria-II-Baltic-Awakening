@@ -398,7 +398,7 @@ country_event = {
 			tag = LAT
 			tag = UBD
 		}
-		year = 1905
+			revolution_n_counterrevolution = 1
 	}
 	mean_time_to_happen = {
 		months = 4

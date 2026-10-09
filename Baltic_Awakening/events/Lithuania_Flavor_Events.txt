@@ -126,7 +126,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = LIT
-		year = 1905
+			revolution_n_counterrevolution = 1
 	}
 	mean_time_to_happen = {
 		months = 6

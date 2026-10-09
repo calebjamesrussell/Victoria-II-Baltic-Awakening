@@ -349,7 +349,7 @@ country_event = {
 			tag = EST
 			tag = UBD
 		}
-		year = 1905
+			revolution_n_counterrevolution = 1
 		average_militancy = 4
 	}
 
@@ -359,7 +359,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA95528"
-		set_country_flag = revolution_1905_conceded
+		set_country_flag = revolution_conceded
 		any_pop = {
 			limit = {
 				culture = estonian
@@ -371,7 +371,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB95528"
-		set_country_flag = revolution_1905_repressed
+		set_country_flag = revolution_repressed
 		any_pop = {
 			limit = {
 				culture = estonian
@@ -448,8 +448,8 @@ country_event = {
 			tag = EST
 			tag = UBD
 		}
-		year = 1905
-		has_country_flag = revolution_1905_conceded
+			revolution_n_counterrevolution = 1
+		has_country_flag = revolution_conceded
 	}
 
 	mean_time_to_happen = {
