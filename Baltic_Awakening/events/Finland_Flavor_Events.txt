@@ -1,0 +1,584 @@
+# Finland Flavor Events
+# The Finnish national movement under the Russian crown: fennomania,
+# language struggle, cultural revival, and the road to independence.
+# IDs 95600-95699 are reserved for this file.
+
+##########################################################################
+# 95600 - The Kalevala is published (Lönnrot's epic)
+#########################################################################
+country_event = {
+	id = 95600
+	title = "EVTNAME95600"
+	desc = "EVTDESC95600"
+	picture = "publishers"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1849
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95600"
+		ai_chance = {
+			factor = 1
+		}
+		prestige = 2
+		any_pop = {
+			limit = {
+				culture = finnish
+			}
+			consciousness = 2
+		}
+	}
+	option = {
+		name = "EVTOPTB95600"
+		ai_chance = {
+			factor = 0
+		}
+		prestige = 1
+	}
+}
+
+##########################################################################
+# 95601 - The Language Strife: Finnish vs Swedish
+#########################################################################
+country_event = {
+	id = 95601
+	title = "EVTNAME95601"
+	desc = "EVTDESC95601"
+	picture = "meeting"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1863
+	}
+	mean_time_to_happen = {
+		months = 18
+	}
+	option = {
+		name = "EVTOPTA95601"
+		ai_chance = {
+			factor = 1
+		}
+		any_pop = {
+			limit = {
+				culture = finnish
+			}
+			consciousness = 2
+			militancy = -1
+		}
+		any_pop = {
+			limit = {
+				culture = swedish
+			}
+			militancy = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB95601"
+		ai_chance = {
+			factor = 1
+		}
+		any_pop = {
+			limit = {
+				culture = swedish
+			}
+			consciousness = -1
+			militancy = -2
+		}
+		any_pop = {
+			limit = {
+				culture = finnish
+			}
+			militancy = 2
+		}
+	}
+}
+
+##########################################################################
+# 95602 - The Diet of Porvoo tradition / regular Estates summoned
+#########################################################################
+country_event = {
+	id = 95602
+	title = "EVTNAME95602"
+	desc = "EVTDESC95602"
+	picture = "Finepeople"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1863
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95602"
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = finnish_diet_support
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB95602"
+		ai_chance = {
+			factor = 0.5
+		}
+		any_pop = {
+			limit = {
+				culture = finnish
+			}
+			militancy = 2
+			consciousness = 1
+		}
+	}
+}
+
+##########################################################################
+# 95603 - Finnish rail gauge: the Helsinki-Hämeenlinna line
+#########################################################################
+country_event = {
+	id = 95603
+	title = "EVTNAME95603"
+	desc = "EVTDESC95603"
+	picture = "railway_company"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1862
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA95603"
+		ai_chance = {
+			factor = 1
+		}
+		354 = {
+			railroad = 1
+		}
+		prestige = 1
+	}
+}
+
+##########################################################################
+# 95604 - Suomen Guard: the Finnish Guard battalion
+#########################################################################
+country_event = {
+	id = 95604
+	title = "EVTNAME95604"
+	desc = "EVTDESC95604"
+	picture = "Recruits"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1878
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95604"
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = suomen_guard
+			duration = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95604"
+		ai_chance = {
+			factor = 0
+		}
+		any_pop = {
+			limit = {
+				culture = finnish
+			}
+			militancy = 1
+		}
+	}
+}
+
+##########################################################################
+# 95605 - The Finnish Markka and the Bank of Finland
+#########################################################################
+country_event = {
+	id = 95605
+	title = "EVTNAME95605"
+	desc = "EVTDESC95605"
+	picture = "central_bank_money_bill_printing"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1865
+	}
+	mean_time_to_happen = {
+		months = 18
+	}
+	option = {
+		name = "EVTOPTA95605"
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = markka_stability
+			duration = 3650
+		}
+	}
+}
+
+##########################################################################
+# 95606 - The February Manifesto and passive resistance
+#########################################################################
+country_event = {
+	id = 95606
+	title = "EVTNAME95606"
+	desc = "EVTDESC95606"
+	picture = "Demonstration"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1899
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA95606"
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = february_manifesto_resisted
+		any_pop = {
+			limit = {
+				culture = finnish
+			}
+			consciousness = 3
+			militancy = 2
+		}
+		prestige = 3
+	}
+	option = {
+		name = "EVTOPTB95606"
+		ai_chance = {
+			factor = 0.5
+		}
+		any_pop = {
+			limit = {
+				culture = finnish
+			}
+			consciousness = 1
+			militancy = 4
+		}
+	}
+}
+
+##########################################################################
+# 95607 - Jean Sibelius and the national tone
+#########################################################################
+country_event = {
+	id = 95607
+	title = "EVTNAME95607"
+	desc = "EVTDESC95607"
+	picture = "Dresdenopera"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1892
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95607"
+		ai_chance = {
+			factor = 1
+		}
+		prestige = 3
+		any_pop = {
+			limit = {
+				culture = finnish
+			}
+			consciousness = 1
+			militancy = -1
+		}
+	}
+}
+
+##########################################################################
+# 95608 - The Sortavala teachers' seminars / folk high schools
+#########################################################################
+country_event = {
+	id = 95608
+	title = "EVTNAME95608"
+	desc = "EVTDESC95608"
+	picture = "School"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1880
+	}
+	mean_time_to_happen = {
+		months = 30
+	}
+	option = {
+		name = "EVTOPTA95608"
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = finnish_folk_schools
+			duration = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95608"
+		ai_chance = {
+			factor = 0
+		}
+		money = 5000
+	}
+}
+
+##########################################################################
+# 95609 - Emigration fever: America letters
+#########################################################################
+country_event = {
+	id = 95609
+	title = "EVTNAME95609"
+	desc = "EVTDESC95609"
+	picture = "emigration"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1890
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95609"
+		ai_chance = {
+			factor = 1
+		}
+		any_pop = {
+			limit = {
+				culture = finnish
+				is_primary_culture = yes
+			}
+			militancy = -1
+		}
+		money = 10000
+	}
+	option = {
+		name = "EVTOPTB95609"
+		ai_chance = {
+			factor = 0.5
+		}
+		any_pop = {
+			limit = {
+				culture = finnish
+				is_primary_culture = yes
+			}
+			consciousness = 1
+			militancy = 1
+		}
+	}
+}
+
+##########################################################################
+# 95610 - The Suomenlinna sea fortress works
+#########################################################################
+country_event = {
+	id = 95610
+	title = "EVTNAME95610"
+	desc = "EVTDESC95610"
+	picture = "coastal_defence"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1860
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	option = {
+		name = "EVTOPTA95610"
+		ai_chance = {
+			factor = 1
+		}
+		343 = {
+			fort = 2
+		}
+	}
+	option = {
+		name = "EVTOPTB95610"
+		ai_chance = {
+			factor = 1
+		}
+		343 = {
+			fort = 1
+		}
+		money = 5000
+	}
+}
+
+##########################################################################
+# 95611 - Kansakoulu: the primary school law
+#########################################################################
+country_event = {
+	id = 95611
+	title = "EVTNAME95611"
+	desc = "EVTDESC95611"
+	picture = "Western_education"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1866
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95611"
+		ai_chance = {
+			factor = 1
+		}
+		money = -25000
+		add_country_modifier = {
+			name = kansakoulu_reform
+			duration = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95611"
+		ai_chance = {
+			factor = 0
+		}
+		any_pop = {
+			limit = {
+				culture = finnish
+			}
+			consciousness = 1
+		}
+	}
+}
+
+##########################################################################
+# 95612 - The sauna and the peasant stubbornness (flavor)
+#########################################################################
+country_event = {
+	id = 95612
+	title = "EVTNAME95612"
+	desc = "EVTDESC95612"
+	picture = "countryside"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1870
+	}
+	mean_time_to_happen = {
+		months = 40
+	}
+	option = {
+		name = "EVTOPTA95612"
+		ai_chance = {
+			factor = 1
+		}
+		any_pop = {
+			limit = {
+				culture = finnish
+			}
+			militancy = -2
+		}
+	}
+}
+
+##########################################################################
+# 95613 - Russification of the University: the purge
+#########################################################################
+country_event = {
+	id = 95613
+	title = "EVTNAME95613"
+	desc = "EVTDESC95613"
+	picture = "Policeaction"
+	trigger = {
+		tag = FIN
+		has_country_flag = february_manifesto_resisted
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95613"
+		ai_chance = {
+			factor = 1
+		}
+		any_pop = {
+			limit = {
+				culture = finnish
+			}
+			consciousness = 2
+			militancy = 2
+		}
+		remove_country_modifier = finnish_folk_schools
+	}
+	option = {
+		name = "EVTOPTB95613"
+		ai_chance = {
+			factor = 0
+		}
+		prestige = -1
+	}
+}
+
+##########################################################################
+# 95614 - Evacuations and seditious newspapers ( underground press )
+#########################################################################
+province_event = {
+	id = 95614
+	title = "EVTNAME95614"
+	desc = "EVTDESC95614"
+	picture = "publishing_industry"
+	trigger = {
+		owner = {
+			tag = FIN
+			has_country_flag = february_manifesto_resisted
+		}
+		is_coastal = yes
+	}
+	mean_time_to_happen = {
+		months = 30
+	}
+	option = {
+		name = "EVTOPTA95614"
+		ai_chance = {
+			factor = 1
+		}
+		add_province_modifier = {
+			name = underground_press
+			duration = 1095
+		}
+	}
+	option = {
+		name = "EVTOPTB95614"
+		ai_chance = {
+			factor = 0
+		}
+		owner = {
+			any_pop = {
+				limit = {
+					culture = finnish
+				}
+				militancy = 1
+			}
+		}
+	}
+}

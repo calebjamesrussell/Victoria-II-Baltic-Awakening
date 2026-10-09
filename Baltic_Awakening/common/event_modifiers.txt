@@ -948,7 +948,120 @@ religious_tolerance = {
 # Kreenholm boom: the expanded manufactury transforms Narva -
 # the waterfall works draw workers and the town grows with them
 kreenholm_boom = {
-	rgo_output = 0.10
+	local_rgo_output = 0.10
 	immigrant_attract = 1
 	icon = 9
+}
+
+# ---- Nordic relations: Finland, Sweden, Baltic ties ----
+
+# Support for the Finnish estates tradition
+finnish_diet_support = {
+	prestige = 0.01
+	icon = 4
+}
+
+# The Finnish Guard battalion tradition
+suomen_guard = {
+	land_organisation = 0.05
+	icon = 6
+}
+
+# The Finnish markka and bank stability
+markka_stability = {
+	tax_efficiency = 0.03
+	icon = 7
+}
+
+# Finnish folk high school movement
+finnish_folk_schools = {
+	research_points_modifier = 0.03
+	icon = 5
+}
+
+# Kansakoulu: primary schools for the whole people
+kansakoulu_reform = {
+	research_points_modifier = 0.02
+	core_pop_consciousness_modifier = 0.01
+	icon = 5
+}
+
+# Underground press during the russification years
+underground_press = {
+	pop_consciousness_modifier = 0.02
+	icon = 3
+}
+
+# Gulf ferry route: Tallinn-Helsinki crossing
+gulf_crossing_boom = {
+	local_rgo_output = 0.05
+	immigrant_attract = 1
+	icon = 9
+}
+
+# Finnish literature society patronage
+suomalainen_kirjallisuus = {
+	research_points_modifier = 0.02
+	icon = 5
+}
+
+# Tornio valley border trade
+tornio_valley_trade = {
+	local_rgo_output = 0.05
+	icon = 9
+}
+
+# Baltic sea commerce with Sweden
+baltic_sea_commerce = {
+	tax_efficiency = 0.03
+	icon = 7
+}
+
+# Young Latvians press network
+jaunlatviesi_press = {
+	core_pop_consciousness_modifier = 0.02
+	icon = 3
+}
+
+# Riga Polytechnic
+riga_polytechnic = {
+	research_points_modifier = 0.05
+	icon = 5
+}
+
+# Riga harbor boom
+riga_harbor_boom = {
+	local_rgo_output = 0.10
+	immigrant_attract = 1
+	icon = 9
+}
+
+# Latvian riflemen tradition
+latvian_rifles = {
+	land_organisation = 0.10
+	icon = 6
+}
+
+# Latvian dairy cooperatives
+latvian_dairy_coops = {
+	local_rgo_output = 0.05
+	icon = 9
+}
+
+# Ausra press network during the press ban
+ausra_press = {
+	core_pop_consciousness_modifier = 0.02
+	icon = 3
+}
+
+# Zemes bankas: land buyout credit
+zemestady_bank = {
+	tax_efficiency = 0.03
+	icon = 7
+}
+
+# Lithuanian science society
+lithuanian_science_society = {
+	research_points_modifier = 0.05
+	icon = 5
 }

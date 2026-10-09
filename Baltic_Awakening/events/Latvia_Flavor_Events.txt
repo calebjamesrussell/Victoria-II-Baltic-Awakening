@@ -1,0 +1,438 @@
+# Latvia Flavor Events
+# The Latvian national awakening: the Young Latvians, song and press,
+# Riga's growth, and the New Current radicalism.
+# IDs 95700-95799 are reserved for this file.
+
+##########################################################################
+# 95700 - The First Latvian Song Festival
+#########################################################################
+country_event = {
+	id = 95700
+	title = "EVTNAME95700"
+	desc = "EVTDESC95700"
+	picture = "Celebration"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = LAT
+			tag = UBD
+		}
+		year = 1873
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95700"
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = latvian_song_festival
+		prestige = 2
+		any_pop = {
+			limit = {
+				culture = latvian
+			}
+			consciousness = 2
+			militancy = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95700"
+		ai_chance = {
+			factor = 0
+		}
+		money = 2000
+	}
+}
+
+##########################################################################
+# 95701 - The Young Latvians and the newspaper Dienas Lapa
+#########################################################################
+country_event = {
+	id = 95701
+	title = "EVTNAME95701"
+	desc = "EVTDESC95701"
+	picture = "publishers"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = LAT
+			tag = UBD
+		}
+		year = 1877
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95701"
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = jaunlatviesi_press
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB95701"
+		ai_chance = {
+			factor = 0.5
+		}
+		any_pop = {
+			limit = {
+				culture = latvian
+			}
+			militancy = 2
+		}
+	}
+}
+
+##########################################################################
+# 95702 - Krišjanis Barons and the Dainas
+#########################################################################
+country_event = {
+	id = 95702
+	title = "EVTNAME95702"
+	desc = "EVTDESC95702"
+	picture = "Dresdenopera"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = LAT
+			tag = UBD
+		}
+		year = 1880
+	}
+	mean_time_to_happen = {
+		months = 30
+	}
+	option = {
+		name = "EVTOPTA95702"
+		ai_chance = {
+			factor = 1
+		}
+		prestige = 2
+		any_pop = {
+			limit = {
+				culture = latvian
+			}
+			consciousness = 2
+			militancy = -1
+		}
+	}
+}
+
+##########################################################################
+# 95703 - Riga Polytechnic and the modern city
+#########################################################################
+country_event = {
+	id = 95703
+	title = "EVTNAME95703"
+	desc = "EVTDESC95703"
+	picture = "School"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = LAT
+			tag = UBD
+		}
+		year = 1862
+		owns = 355
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95703"
+		ai_chance = {
+			factor = 1
+		}
+		money = -15000
+		add_country_modifier = {
+			name = riga_polytechnic
+			duration = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95703"
+		ai_chance = {
+			factor = 0
+		}
+		money = 3000
+	}
+}
+
+##########################################################################
+# 95704 - The New Current and socialist ferment
+#########################################################################
+country_event = {
+	id = 95704
+	title = "EVTNAME95704"
+	desc = "EVTDESC95704"
+	picture = "Workers"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = LAT
+			tag = UBD
+		}
+		year = 1893
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95704"
+		ai_chance = {
+			factor = 1
+		}
+		any_pop = {
+			limit = {
+				culture = latvian
+			}
+			consciousness = 3
+			militancy = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB95704"
+		ai_chance = {
+			factor = 1
+		}
+		money = -5000
+		any_pop = {
+			limit = {
+				culture = latvian
+			}
+			militancy = -2
+		}
+	}
+}
+
+##########################################################################
+# 95705 - The Riga harbor and the grain export boom
+#########################################################################
+country_event = {
+	id = 95705
+	title = "EVTNAME95705"
+	desc = "EVTDESC95705"
+	picture = "Factoryattack"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = LAT
+			tag = UBD
+		}
+		year = 1860
+		owns = 355
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	option = {
+		name = "EVTOPTA95705"
+		ai_chance = {
+			factor = 1
+		}
+		355 = {
+			add_province_modifier = {
+				name = riga_harbor_boom
+				duration = -1
+			}
+		}
+	}
+}
+
+##########################################################################
+# 95706 - The Latvian rifleman tradition begins
+#########################################################################
+country_event = {
+	id = 95706
+	title = "EVTNAME95706"
+	desc = "EVTDESC95706"
+	picture = "Recruits"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = LAT
+			tag = UBD
+		}
+		year = 1915
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA95706"
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = latvian_rifles
+			duration = 1825
+		}
+	}
+}
+
+##########################################################################
+# 95707 - Andrejs Pumpurs and the Lāčplēsis epic
+#########################################################################
+country_event = {
+	id = 95707
+	title = "EVTNAME95707"
+	desc = "EVTDESC95707"
+	picture = "publishers"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = LAT
+			tag = UBD
+		}
+		year = 1888
+	}
+	mean_time_to_happen = {
+		months = 30
+	}
+	option = {
+		name = "EVTOPTA95707"
+		ai_chance = {
+			factor = 1
+		}
+		prestige = 2
+		any_pop = {
+			limit = {
+				culture = latvian
+			}
+			consciousness = 2
+		}
+	}
+}
+
+##########################################################################
+# 95708 - Auseklis and the folk-costume revival
+#########################################################################
+country_event = {
+	id = 95708
+	title = "EVTNAME95708"
+	desc = "EVTDESC95708"
+	picture = "Finepeople"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = LAT
+			tag = UBD
+		}
+		year = 1870
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	option = {
+		name = "EVTOPTA95708"
+		ai_chance = {
+			factor = 1
+		}
+		prestige = 1
+		any_pop = {
+			limit = {
+				culture = latvian
+			}
+			militancy = -1
+			consciousness = 1
+		}
+	}
+}
+
+##########################################################################
+# 95709 - Latvian dairy cooperatives
+#########################################################################
+country_event = {
+	id = 95709
+	title = "EVTNAME95709"
+	desc = "EVTDESC95709"
+	picture = "dairy_coops"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = LAT
+			tag = UBD
+		}
+		year = 1900
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	option = {
+		name = "EVTOPTA95709"
+		ai_chance = {
+			factor = 1
+		}
+		money = -5000
+		add_country_modifier = {
+			name = latvian_dairy_coops
+			duration = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95709"
+		ai_chance = {
+			factor = 0
+		}
+		money = 1000
+	}
+}
+
+##########################################################################
+# 95710 - The 1905 revolution in the Baltic provinces
+#########################################################################
+country_event = {
+	id = 95710
+	title = "EVTNAME95710"
+	desc = "EVTDESC95710"
+	picture = "Revolution"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = LAT
+			tag = UBD
+		}
+		year = 1905
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA95710"
+		ai_chance = {
+			factor = 1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = latvian
+					culture = estonian
+				}
+			}
+			consciousness = 3
+			militancy = 3
+		}
+	}
+	option = {
+		name = "EVTOPTB95710"
+		ai_chance = {
+			factor = 0.5
+		}
+		money = -20000
+		any_pop = {
+			limit = {
+				OR = {
+					culture = latvian
+					culture = estonian
+				}
+			}
+			militancy = -2
+		}
+	}
+}

@@ -1,0 +1,552 @@
+# Nordic Relations Events
+# The ties across the Gulf of Finland and the Bothnian sea: Estonian-Finnish
+# brotherhood, Swedish-Finnish nostalgia, and Swedish-Estonian old-shore ties.
+# IDs 95900-95999 are reserved for this file.
+
+##########################################################################
+# 95900 - The Kindred Peoples: Finno-Ugric brotherhood congress
+#########################################################################
+country_event = {
+	id = 95900
+	title = "EVTNAME95900"
+	desc = "EVTDESC95900"
+	picture = "meeting"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+			tag = FIN
+		}
+		year = 1888
+	}
+	mean_time_to_happen = {
+		months = 30
+	}
+	option = {
+		name = "EVTOPTA95900"
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = kindred_peoples_movement
+		prestige = 2
+		any_pop = {
+			limit = {
+				OR = {
+					culture = estonian
+					culture = finnish
+				}
+			}
+			consciousness = 2
+			militancy = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95900"
+		ai_chance = {
+			factor = 0
+		}
+		money = 2000
+	}
+}
+
+##########################################################################
+# 95901 - Across the Gulf: the Tallinn-Helsinki steam ferry
+#########################################################################
+country_event = {
+	id = 95901
+	title = "EVTNAME95901"
+	desc = "EVTDESC95901"
+	picture = "railway_company"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1880
+		exists = FIN
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95901"
+		ai_chance = {
+			factor = 1
+		}
+		money = -10000
+		set_country_flag = gulf_ferry_route
+		relation = {
+			who = FIN
+			value = 50
+		}
+		add_country_modifier = {
+			name = gulf_crossing_boom
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB95901"
+		ai_chance = {
+			factor = 0
+		}
+		money = 2000
+	}
+}
+
+##########################################################################
+# 95902 - Finnish volunteers cross the gulf (War of Independence aid)
+#########################################################################
+country_event = {
+	id = 95902
+	title = "EVTNAME95902"
+	desc = "EVTDESC95902"
+	picture = "Recruits"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1917
+		exists = FIN
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = "EVTOPTA95902"
+		ai_chance = {
+			factor = 1
+		}
+		relation = {
+			who = FIN
+			value = 50
+		}
+		351 = {
+			add_core = THIS
+		}
+	}
+}
+
+##########################################################################
+# 95903 - The Åland Question
+#########################################################################
+country_event = {
+	id = 95903
+	title = "EVTNAME95903"
+	desc = "EVTDESC95903"
+	picture = "meeting3"
+	fire_only_once = yes
+	trigger = {
+		tag = SWE
+		year = 1918
+		exists = FIN
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "EVTOPTA95903"
+		ai_chance = {
+			factor = 0.5
+		}
+		relation = {
+			who = FIN
+			value = -40
+		}
+		prestige = 1
+		any_pop = {
+			limit = {
+				culture = swedish
+			}
+			consciousness = 2
+		}
+	}
+	option = {
+		name = "EVTOPTB95903"
+		ai_chance = {
+			factor = 1
+		}
+		relation = {
+			who = FIN
+			value = 40
+		}
+		prestige = 2
+	}
+}
+
+##########################################################################
+# 95904 - The Swedish-speaking minority and the old shore
+#########################################################################
+country_event = {
+	id = 95904
+	title = "EVTNAME95904"
+	desc = "EVTDESC95904"
+	picture = "Finepeople"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1860
+		NOT = { accepted_culture = swedish }
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	option = {
+		name = "EVTOPTA95904"
+		ai_chance = {
+			factor = 1
+		}
+		any_pop = {
+			limit = {
+				culture = swedish
+			}
+			consciousness = 1
+			militancy = -3
+		}
+		relation = {
+			who = SWE
+			value = 20
+		}
+	}
+	option = {
+		name = "EVTOPTB95904"
+		ai_chance = {
+			factor = 1
+		}
+		any_pop = {
+			limit = {
+				culture = swedish
+			}
+			militancy = 2
+		}
+	}
+}
+
+##########################################################################
+# 95905 - Scandinavism: the student meetings at Uppsala
+#########################################################################
+country_event = {
+	id = 95905
+	title = "EVTNAME95905"
+	desc = "EVTDESC95905"
+	picture = "Celebration"
+	fire_only_once = yes
+	trigger = {
+		tag = SWE
+		year = 1843
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95905"
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = scandinavist_movement
+		relation = {
+			who = DEN
+			value = 40
+		}
+		relation = {
+			who = NOR
+			value = 40
+		}
+		prestige = 2
+	}
+	option = {
+		name = "EVTOPTB95905"
+		ai_chance = {
+			factor = 0.5
+		}
+		prestige = -1
+	}
+}
+
+##########################################################################
+# 95906 - The Finnish Society of Literature / common literary market
+#########################################################################
+country_event = {
+	id = 95906
+	title = "EVTNAME95906"
+	desc = "EVTDESC95906"
+	picture = "publishers"
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		year = 1881
+	}
+	mean_time_to_happen = {
+		months = 30
+	}
+	option = {
+		name = "EVTOPTA95906"
+		ai_chance = {
+			factor = 1
+		}
+		money = -5000
+		prestige = 2
+		add_country_modifier = {
+			name = suomalainen_kirjallisuus
+			duration = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95906"
+		ai_chance = {
+			factor = 0
+		}
+		money = 1000
+	}
+}
+
+##########################################################################
+# 95907 - Sweden recognizes Finnish independence
+#########################################################################
+country_event = {
+	id = 95907
+	title = "EVTNAME95907"
+	desc = "EVTDESC95907"
+	picture = "news"
+	fire_only_once = yes
+	trigger = {
+		tag = SWE
+		year = 1917
+		exists = FIN
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA95907"
+		ai_chance = {
+			factor = 1
+		}
+		relation = {
+			who = FIN
+			value = 100
+		}
+		FIN = {
+			set_country_flag = swedish_recognition
+		}
+		prestige = 2
+	}
+}
+
+##########################################################################
+# 95908 - The Tornio Valley / Swedish-Finnish border trade
+#########################################################################
+country_event = {
+	id = 95908
+	title = "EVTNAME95908"
+	desc = "EVTDESC95908"
+	picture = "countryside"
+	fire_only_once = yes
+	trigger = {
+		tag = SWE
+		owns = 338
+		exists = FIN
+	}
+	mean_time_to_happen = {
+		months = 40
+	}
+	option = {
+		name = "EVTOPTA95908"
+		ai_chance = {
+			factor = 1
+		}
+		relation = {
+			who = FIN
+			value = 20
+		}
+		338 = {
+			add_province_modifier = {
+				name = tornio_valley_trade
+				duration = 1825
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB95908"
+		ai_chance = {
+			factor = 0
+		}
+		money = 1000
+	}
+}
+
+##########################################################################
+# 95909 - Swedish aid and the Narva dairy loans (Baltic sea economic ties)
+#########################################################################
+country_event = {
+	id = 95909
+	title = "EVTNAME95909"
+	desc = "EVTDESC95909"
+	picture = "dairy_coops"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1900
+		exists = SWE
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	option = {
+		name = "EVTOPTA95909"
+		ai_chance = {
+			factor = 1
+		}
+		relation = {
+			who = SWE
+			value = 25
+		}
+		add_country_modifier = {
+			name = baltic_sea_commerce
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB95909"
+		ai_chance = {
+			factor = 0
+		}
+		money = 5000
+	}
+}
+
+##########################################################################
+# 95910 - Suomi-sarna: the Finnish-speaking congregations in Estonia
+#########################################################################
+country_event = {
+	id = 95910
+	title = "EVTNAME95910"
+	desc = "EVTDESC95910"
+	picture = "churchmexico"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1870
+		has_country_flag = finnish_brotherhood
+	}
+	mean_time_to_happen = {
+		months = 30
+	}
+	option = {
+		name = "EVTOPTA95910"
+		ai_chance = {
+			factor = 1
+		}
+		prestige = 1
+		any_pop = {
+			limit = {
+				culture = estonian
+			}
+			consciousness = 1
+		}
+		relation = {
+			who = FIN
+			value = 25
+		}
+	}
+	option = {
+		name = "EVTOPTB95910"
+		ai_chance = {
+			factor = 0
+		}
+		money = 1000
+	}
+}
+
+##########################################################################
+# 95911 - The Nordic winter games: skate and ski brotherhood
+#########################################################################
+country_event = {
+	id = 95911
+	title = "EVTNAME95911"
+	desc = "EVTDESC95911"
+	picture = "Olympics"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = SWE
+			tag = FIN
+			tag = EST
+			tag = UBD
+		}
+		year = 1901
+	}
+	mean_time_to_happen = {
+		months = 30
+	}
+	option = {
+		name = "EVTOPTA95911"
+		ai_chance = {
+			factor = 1
+		}
+		prestige = 2
+		any_pop = {
+			militancy = -1
+		}
+	}
+}
+
+##########################################################################
+# 95912 - Stockholm endorses the Estonian song festivals
+#########################################################################
+country_event = {
+	id = 95912
+	title = "EVTNAME95912"
+	desc = "EVTDESC95912"
+	picture = "Celebration"
+	fire_only_once = yes
+	trigger = {
+		tag = SWE
+		year = 1880
+		OR = {
+			exists = EST
+			exists = UBD
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	option = {
+		name = "EVTOPTA95912"
+		ai_chance = {
+			factor = 1
+		}
+		any_country = {
+			limit = {
+				OR = {
+					tag = EST
+					tag = UBD
+				}
+			}
+			relation = {
+				who = THIS
+				value = 25
+			}
+		}
+		prestige = 1
+	}
+	option = {
+		name = "EVTOPTB95912"
+		ai_chance = {
+			factor = 0
+		}
+		money = 2000
+	}
+}

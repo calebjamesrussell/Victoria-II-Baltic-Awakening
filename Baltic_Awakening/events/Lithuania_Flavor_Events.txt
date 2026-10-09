@@ -1,0 +1,378 @@
+# Lithuania Flavor Events
+# The Lithuanian national revival: the press ban and its smugglers,
+# the book carriers, Vilnius and the national question.
+# IDs 95800-95899 are reserved for this file.
+
+##########################################################################
+# 95800 - The press ban and the book smugglers
+#########################################################################
+country_event = {
+	id = 95800
+	title = "EVTNAME95800"
+	desc = "EVTDESC95800"
+	picture = "publishing_industry"
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+		year = 1865
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTA95800"
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = knygnesys_smugglers
+		any_pop = {
+			limit = {
+				culture = lithuanian
+			}
+			consciousness = 3
+			militancy = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB95800"
+		ai_chance = {
+			factor = 0.5
+		}
+		any_pop = {
+			limit = {
+				culture = lithuanian
+			}
+			consciousness = 1
+			militancy = -1
+		}
+	}
+}
+
+##########################################################################
+# 95801 - Aušra: the dawn of the Lithuanian press
+#########################################################################
+country_event = {
+	id = 95801
+	title = "EVTNAME95801"
+	desc = "EVTDESC95801"
+	picture = "news"
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+		has_country_flag = knygnesys_smugglers
+	}
+	mean_time_to_happen = {
+		months = 18
+	}
+	option = {
+		name = "EVTOPTA95801"
+		ai_chance = {
+			factor = 1
+		}
+		add_country_modifier = {
+			name = ausra_press
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB95801"
+		ai_chance = {
+			factor = 0
+		}
+		money = 1000
+	}
+}
+
+##########################################################################
+# 95802 - Jonas Basanavičius and the national revival committee
+#########################################################################
+country_event = {
+	id = 95802
+	title = "EVTNAME95802"
+	desc = "EVTDESC95802"
+	picture = "meeting"
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+		year = 1890
+	}
+	mean_time_to_happen = {
+		months = 30
+	}
+	option = {
+		name = "EVTOPTA95802"
+		ai_chance = {
+			factor = 1
+		}
+		prestige = 2
+		any_pop = {
+			limit = {
+				culture = lithuanian
+			}
+			consciousness = 2
+			militancy = -1
+		}
+	}
+}
+
+##########################################################################
+# 95803 - The Great Vilnius Seimas
+#########################################################################
+country_event = {
+	id = 95803
+	title = "EVTNAME95803"
+	desc = "EVTDESC95803"
+	picture = "Finepeople"
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+		year = 1905
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "EVTOPTA95803"
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = vilnius_seimas_held
+		prestige = 3
+		any_pop = {
+			limit = {
+				culture = lithuanian
+			}
+			consciousness = 3
+			militancy = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95803"
+		ai_chance = {
+			factor = 0.5
+		}
+		any_pop = {
+			limit = {
+				culture = lithuanian
+			}
+			militancy = 2
+		}
+	}
+}
+
+##########################################################################
+# 95804 - The Lithuanian State Bank and the land buyouts
+#########################################################################
+country_event = {
+	id = 95804
+	title = "EVTNAME95804"
+	desc = "EVTDESC95804"
+	picture = "bank_inspection_board"
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+		year = 1890
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	option = {
+		name = "EVTOPTA95804"
+		ai_chance = {
+			factor = 1
+		}
+		money = -10000
+		add_country_modifier = {
+			name = zemestady_bank
+			duration = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95804"
+		ai_chance = {
+			factor = 0
+		}
+		money = 2000
+	}
+}
+
+##########################################################################
+# 95805 - The žemaitija dialect and the press standard
+#########################################################################
+country_event = {
+	id = 95805
+	title = "EVTNAME95805"
+	desc = "EVTDESC95805"
+	picture = "School"
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+		year = 1880
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	option = {
+		name = "EVTOPTA95805"
+		ai_chance = {
+			factor = 1
+		}
+		any_pop = {
+			limit = {
+				culture = lithuanian
+			}
+			consciousness = 1
+			militancy = -1
+		}
+	}
+}
+
+##########################################################################
+# 95806 - The cholera comes up the roads
+#########################################################################
+country_event = {
+	id = 95806
+	title = "EVTNAME95806"
+	desc = "EVTDESC95806"
+	picture = "churchmexico"
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+		year = 1890
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA95806"
+		ai_chance = {
+			factor = 1
+		}
+		money = -15000
+		any_pop = {
+			limit = {
+				culture = lithuanian
+			}
+			militancy = -2
+		}
+	}
+	option = {
+		name = "EVTOPTB95806"
+		ai_chance = {
+			factor = 0.5
+		}
+		any_pop = {
+			limit = {
+				culture = lithuanian
+			}
+			militancy = 2
+		}
+	}
+}
+
+##########################################################################
+# 95807 - Basanavičius's return: the science society
+#########################################################################
+country_event = {
+	id = 95807
+	title = "EVTNAME95807"
+	desc = "EVTDESC95807"
+	picture = "Dresdenopera"
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+		has_country_flag = vilnius_seimas_held
+	}
+	mean_time_to_happen = {
+		months = 18
+	}
+	option = {
+		name = "EVTOPTA95807"
+		ai_chance = {
+			factor = 1
+		}
+		prestige = 2
+		add_country_modifier = {
+			name = lithuanian_science_society
+			duration = -1
+		}
+	}
+}
+
+##########################################################################
+# 95808 - The Tautiška giesmė: an anthem for the nation
+#########################################################################
+country_event = {
+	id = 95808
+	title = "EVTNAME95808"
+	desc = "EVTDESC95808"
+	picture = "Celebration"
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+		year = 1898
+	}
+	mean_time_to_happen = {
+		months = 30
+	}
+	option = {
+		name = "EVTOPTA95808"
+		ai_chance = {
+			factor = 1
+		}
+		prestige = 2
+		any_pop = {
+			limit = {
+				culture = lithuanian
+			}
+			consciousness = 2
+			militancy = -1
+		}
+	}
+}
+
+##########################################################################
+# 95809 - Emigration: the America boats from Memel
+#########################################################################
+country_event = {
+	id = 95809
+	title = "EVTNAME95809"
+	desc = "EVTDESC95809"
+	picture = "emigration"
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+		year = 1895
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "EVTOPTA95809"
+		ai_chance = {
+			factor = 1
+		}
+		money = 10000
+		any_pop = {
+			limit = {
+				culture = lithuanian
+				is_primary_culture = yes
+			}
+			militancy = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95809"
+		ai_chance = {
+			factor = 0.5
+		}
+		any_pop = {
+			limit = {
+				culture = lithuanian
+				is_primary_culture = yes
+			}
+			consciousness = 1
+			militancy = 1
+		}
+	}
+}
