@@ -599,6 +599,7 @@ country_event = {
 			inherit = THIS
 		}
 		change_tag = SCA
+		capital = 322
 		add_accepted_culture = estonian
 		add_accepted_culture = latvian
 		set_country_flag = vana_hea_rootsi_union
