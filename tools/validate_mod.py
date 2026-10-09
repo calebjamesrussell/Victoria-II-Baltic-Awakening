@@ -113,6 +113,11 @@ def check_ids(event_files, vanilla_ids):
     for f in event_files:
         for lineno, line in read(f):
             for m in re.finditer(r"\bid\s*=\s*(\d+)", line):
+                # skip id references inside triggered-event calls, e.g.
+                # country_event = { id = 95914 days = 0 }
+                before = line[: m.start()]
+                if re.search(r"(?:country_event|province_event)\s*=\s*\{[^}]*$", before):
+                    continue
                 eid = int(m.group(1))
                 if eid in seen:
                     error(f, lineno, f"duplicate event id {eid} (also defined in {seen[eid]})")
