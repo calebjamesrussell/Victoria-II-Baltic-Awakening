@@ -948,7 +948,7 @@ religious_tolerance = {
 # Kreenholm boom: the expanded manufactury transforms Narva -
 # the waterfall works draw workers and the town grows with them
 kreenholm_boom = {
-	local_rgo_output = 0.10
+	rgo_output = 0.10
 	immigrant_attract = 1
 	icon = 9
 }
