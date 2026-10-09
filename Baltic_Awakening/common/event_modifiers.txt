@@ -988,7 +988,8 @@ kansakoulu_reform = {
 
 # Underground press during the russification years
 underground_press = {
-	pop_consciousness_modifier = 0.02
+	life_rating = 0.01
+	pop_militancy_modifier = -0.02
 	icon = 3
 }
 

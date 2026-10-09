@@ -124,9 +124,13 @@ country_event = {
 			who = FIN
 			value = 50
 		}
-		351 = {
-			add_core = THIS
+		FIN = {
+			relation = {
+				who = THIS
+				value = 50
+			}
 		}
+		prestige = 2
 	}
 }
 

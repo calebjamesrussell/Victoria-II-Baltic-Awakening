@@ -150,6 +150,7 @@ country_event = {
 	trigger = {
 		tag = FIN
 		year = 1862
+		owns = 343 # Helsinki
 	}
 	mean_time_to_happen = {
 		months = 12
@@ -159,8 +160,8 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		354 = {
-			railroad = 1
+		343 = {
+			infrastructure = 1
 		}
 		prestige = 1
 	}
