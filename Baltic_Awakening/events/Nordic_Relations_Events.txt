@@ -647,9 +647,6 @@ country_event = {
 			attacker_goal = {
 				casus_belli = conquest
 			}
-			defender_goal = {
-				casus_belli = status_quo
-			}
 		}
 		add_casus_belli = {
 			target = UBD
