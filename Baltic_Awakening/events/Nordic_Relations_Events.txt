@@ -554,3 +554,117 @@ country_event = {
 		money = 2000
 	}
 }
+
+###########################################################################
+# 95913 - The Stockholm Proposal: Scandinavia courts the United Baltic
+# Provinces. If Scandinavia has UBD in its sphere and UBD has Swedish as
+# an accepted culture, the estates of Stockholm propose the old dream:
+# union of the North, with the Baltic shores in it. UBD may accept -
+# inheriting Scandinavia and continuing as her - or refuse, in which
+# case the North takes it badly and war follows.
+##########################################################################
+country_event = {
+	id = 95913
+	title = "EVTNAME95913"
+	desc = "EVTDESC95913"
+	picture = "Finepeople"
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = UBD
+		exists = SCA
+		SCA = {
+			in_sphere = THIS
+		}
+		accepted_culture = swedish
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	# Option A - the union: UBD inherits Scandinavia and the player
+	# continues as the united North
+	option = {
+		name = "EVTOPTA95913"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				war = yes
+			}
+		}
+		SCA = {
+			inherit = THIS
+		}
+		change_tag = SCA
+		add_accepted_culture = estonian
+		add_accepted_culture = latvian
+		set_country_flag = vana_hea_rootsi_union
+	}
+
+	# Option B - refusal: Scandinavia is overstepping, and says so with armies
+	option = {
+		name = "EVTOPTB95913"
+		ai_chance = {
+			factor = 0
+		}
+		SCA = {
+			country_event = { id = 95914 days = 0 }
+		}
+		relation = {
+			who = SCA
+			value = -100
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = estonian
+					culture = latvian
+				}
+			}
+			consciousness = 1
+		}
+		set_country_flag = refused_stockholm_proposal
+	}
+}
+
+###########################################################################
+# 95914 - Scandinavia answers the refusal (triggered by 95913 option B)
+##########################################################################
+country_event = {
+	id = 95914
+	title = "EVTNAME95914"
+	desc = "EVTDESC95914"
+	picture = "Parade"
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA95914"
+		war = {
+			target = UBD
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		add_casus_belli = {
+			target = UBD
+			type = acquire_state
+			months = 24
+		}
+		set_country_flag = baltic_overstep_declared
+	}
+
+	option = {
+		name = "EVTOPTB95914"
+		relation = {
+			who = UBD
+			value = -50
+		}
+		prestige = -2
+	}
+}
