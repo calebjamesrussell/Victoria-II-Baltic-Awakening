@@ -1,0 +1,109 @@
+##########################################################################
+# Baltic Awakening: Finland decisions
+# The Finnish national movement's political milestones.
+#########################################################################
+
+political_decisions = {
+
+	# Fennoman program: Finnish as the language of state and school
+	fennoman_language_program = {
+		picture = "sakala"
+		potential = {
+			tag = FIN
+			NOT = { has_country_flag = fennoman_program }
+		}
+		allow = {
+			year = 1860
+			money = 10000
+		}
+		effect = {
+			set_country_flag = fennoman_program
+			money = -10000
+			any_pop = {
+				limit = {
+					culture = finnish
+				}
+				consciousness = 2
+				militancy = -1
+			}
+			any_pop = {
+				limit = {
+					culture = swedish
+				}
+				militancy = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# The sauna is the Finnish parliament: folk culture patronage
+	finnish_folk_culture = {
+		picture = "vaikiv_ajastu"
+		potential = {
+			tag = FIN
+			NOT = { has_country_flag = finnish_folk_patronage }
+		}
+		allow = {
+			year = 1870
+			money = 5000
+		}
+		effect = {
+			set_country_flag = finnish_folk_patronage
+			money = -5000
+			prestige = 2
+			any_pop = {
+				limit = {
+					culture = finnish
+				}
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Suomen independence declaration
+	declare_finnish_independence = {
+		picture = "eesti_pank"
+		potential = {
+			tag = FIN
+			NOT = { has_country_flag = independence_declared }
+		}
+		allow = {
+			year = 1917
+			prestige = 15
+			NOT = {
+				AND = {
+					tag = FIN
+					in_sphere = RUS
+				}
+			}
+		}
+		effect = {
+			set_country_flag = independence_declared
+			prestige = 10
+			any_pop = {
+				limit = {
+					culture = finnish
+				}
+				consciousness = 2
+				militancy = -2
+			}
+			relation = {
+				who = SWE
+				value = 50
+			}
+			relation = {
+				who = EST
+				value = 50
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
