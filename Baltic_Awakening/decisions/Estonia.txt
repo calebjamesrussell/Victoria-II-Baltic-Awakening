@@ -1312,14 +1312,10 @@ political_decisions = {
 				tag = UBD
 			}
 			not = { accepted_culture = swedish }
-			# any_owned_province is the trigger scope; any_owned is an
-			# effect scope and always failed here, hiding the decision
+			# a coastal Swedish population is required; has_pop_culture
+			# is the province-scope trigger (see vanilla AUS.txt potential)
 			any_owned_province = {
-				any_pop = {
-					limit = {
-						culture = swedish
-					}
-				}
+				has_pop_culture = swedish
 			}
 		}
 		allow = {

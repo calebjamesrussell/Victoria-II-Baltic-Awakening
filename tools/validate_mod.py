@@ -187,6 +187,44 @@ def load_mod_modifiers():
     return names
 
 
+def check_trigger_blocks(files):
+    """any_pop/any_owned_province blocks whose body contains ONLY a limit
+    sub-block (no condition/effect besides it) are invalid as triggers -
+    vanilla never does this - and can break the engine's parser."""
+    pat = re.compile(r"(any_pop|any_owned_province)\s*=\s*\{")
+    for f in files:
+        text = f.read_text(encoding="utf-8", errors="replace")
+        stripped_lines = [l for _, l in read(f)]
+        stripped = "\n".join(stripped_lines)
+        for m in pat.finditer(stripped):
+            # walk to the matching closing brace
+            i = m.end()
+            d = 1
+            while i < len(stripped) and d > 0:
+                c = stripped[i]
+                if c == "{":
+                    d += 1
+                elif c == "}":
+                    d -= 1
+                i += 1
+            body = stripped[m.end():i-1]
+            # remove the limit sub-block if present
+            lm = re.search(r"limit\s*=\s*\{", body)
+            if lm:
+                j = lm.end()
+                d2 = 1
+                while j < len(body) and d2 > 0:
+                    c = body[j]
+                    if c == "{":
+                        d2 += 1
+                    elif c == "}":
+                        d2 -= 1
+                    j += 1
+                body = body[:lm.start()] + body[j:]
+            if not body.strip():
+                error(f, 0, f"{m.group(1)} trigger block has only a limit and no condition")
+
+
 def check_modifiers(files, mod_mods, vanilla_mods):
     # Two forms:
     #   add_country_modifier = { name = foo ... }   (name on a following line)
@@ -241,6 +279,7 @@ def main():
     mod_mods = load_mod_modifiers()
     vanilla_mods = set((VANILLA / "vanilla_modifiers.txt").read_text().splitlines())
     check_modifiers(all_files, mod_mods, vanilla_mods)
+    check_trigger_blocks(all_files)
 
     for w in WARNINGS:
         print(f"WARN  {w}")
