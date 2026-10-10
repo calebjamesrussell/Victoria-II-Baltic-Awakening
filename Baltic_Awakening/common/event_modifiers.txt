@@ -930,6 +930,15 @@ baltic_settler_influx = {
 	icon = 9
 }
 
+# Companion to baltic_settler_influx for countries at maximum
+# unemployment subsidies: the dole makes joblessness no deterrent,
+# offsetting the engine's unemployment penalty on immigrant destination
+# choice so migrants come regardless of the local unemployment rate
+settlers_do_not_fear_idleness = {
+	immigrant_attract = 1
+	icon = 12
+}
+
 # State atheism campaign: the League lectures, the schools secularize,
 # but the pews empty and the world takes note
 state_atheism_campaign = {
