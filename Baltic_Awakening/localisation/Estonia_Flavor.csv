@@ -210,25 +210,25 @@ secular_schools_mod;Secular Schools;French;German;Polish;Spanish;Italian;Swedish
 desc_secular_schools_mod;Schools run without religious instruction gently loosen old certainties.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 quiet_congregations;Quiet Congregations;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_quiet_congregations;Neighbors keep the old forms but fewer and fewer believe.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-desc_soomusrong_corps;Armored train crews drill with the army; their attached infantry hits harder and arrives in fighting shape.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-desc_soomusrong_morale;The armored trains are the pride of the front; defenders hold firm knowing the Soomusrong stands with them.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+desc_soomusrong_corps;Armored train crews drill with the army, their attached infantry hits harder and arrives in fighting shape.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+desc_soomusrong_morale;The armored trains are the pride of the front, defenders hold firm knowing the Soomusrong stands with them.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_estonian_cultural_awakening;Songs, newspapers and letters in the mother tongue quicken the national mind.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_estonian_national_unity;A shared sense of nationhood steadies the people.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_baltic_student_body;The student corporations at Dorpat rival the old universities of Europe.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_estonian_folk_high_schools;Evening schools carry literacy and new ideas to every parish.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_russian_minority_conciliation;Fair dealing with the Russian-speaking towns settles old grievances.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-desc_estonian_volunteer_spirit;The landsturm tradition runs deep; volunteers muster quickly and willingly.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-desc_vaps_movement;The veterans league marches in the streets; order holds, barely.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+desc_estonian_volunteer_spirit;The landsturm tradition runs deep, volunteers muster quickly and willingly.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+desc_vaps_movement;The veterans league marches in the streets, order holds, barely.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_baltic_handelsvertrag;The Baltic trade accord fills Riga and Tallinn harbors alike.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_estonian_shipyards;The yards on the Kopli bay lay down hulls for the Baltic fleet.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_defence_league_hq;A permanent staff coordinates the Kaitseliit districts.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_kalevipoeg_legacy;The national epic reminds every soldier whose son he is.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 laulupidu_tradition;Laulupidu Tradition;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 finnish_nationalist_fervor;Finnish Nationalist Fervor;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-desc_finnish_nationalist_fervor;Estonian rifles and money are at work; the kindred people grow restless under the occupier.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-desc_laulupidu_tradition;The song festival returns every five years; a nation that sings together stands together.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+desc_finnish_nationalist_fervor;Estonian rifles and money are at work, the kindred people grow restless under the occupier.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+desc_laulupidu_tradition;The song festival returns every five years, a nation that sings together stands together.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_estonian_choral_tradition;The song festivals bind a nation of singers together.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-desc_estonian_depression;The world depression bites deep; factories idle and credit dries up.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+desc_estonian_depression;The world depression bites deep, factories idle and credit dries up.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_estonian_national_stage;The Estonia theatre stages opera and drama in the mother tongue.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_peasant_credit_unions;Cooperative credit frees the smallholder from the moneylender.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 desc_volunteer_fire_brigades;Parish fire brigades save towns and timber alike.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
@@ -249,14 +249,14 @@ EVTDESC95555;The revolution has its own church now: the League of the Godless, w
 EVTOPTA95555;The League shall have its way.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTB95555;Win them with bread, not decrees.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTNAME95553;The Minorities' Franchise Petition;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-EVTDESC95553;With every man's vote now equal before the law, the Swedish fishermen of the coast and the German burghers of the towns have sent a joint petition to Tallinn: if our voices count at the ballot box, let our tongues and our churches count in the nation. The old estates warn of division; the new parties court them eagerly.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95553;With every man's vote now equal before the law, the Swedish fishermen of the coast and the German burghers of the towns have sent a joint petition to Tallinn: if our voices count at the ballot box, let our tongues and our churches count in the nation. The old estates warn of division, the new parties court them eagerly.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTA95553;The franchise belongs to all who live here;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 EVTOPTB95553;A petition is not a policy;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-EVTNAME95562;Rifles Across the Gulf;;;;;;;;;;;;;;x
-EVTDESC95562;Across the gulf, Finland groans under a foreign yoke - her language suppressed, her newspapers censored. Now men in Stockholm and Tampere ask Tallinn for money, rifles and volunteers. Helping them would strike a blow for the cause of small nations and win us glory among the awakened peoples of Europe. But the empire that rules Helsinki would notice, and it would not forgive.;;;;;;;;;;;;;;x
-EVTOPTA95562;The cause of nations knows no borders;;;;;;;;;;;;;;x
-EVTNAME95561;A Knock at the Door;;;;;;;;;;;;;;x
-EVTDESC95561;The tollbooks of the Baltic ports tell their own story. Peasants from the inner governorates of the Russian Empire, hearing of wages paid in hard currency and homesteads on free land, arrive at Narva and Reval with their families and their few possessions. The Russian Empire may lose thousands of subjects a year to the New World, but more and more of them are instead choosing the shorter road west, to Estonia.;;;;;;;;;;;;;;x
-EVTOPTA95561;Let them come;;;;;;;;;;;;;;x
-EVTOPTB95562;Not our fight;;;;;;;;;;;;;;x
-EVTOPTB95561;Estonia for Estonians - close the border;;;;;;;;;;;;;;x
+EVTNAME95562;Rifles Across the Gulf,;;;;;;;;;;;;;x
+EVTDESC95562;Across the gulf, Finland groans under a foreign yoke - her language suppressed, her newspapers censored. Now men in Stockholm and Tampere ask Tallinn for money, rifles and volunteers. Helping them would strike a blow for the cause of small nations and win us glory among the awakened peoples of Europe. But the empire that rules Helsinki would notice, and it would not forgive.,;;;;;;;;;;;;;x
+EVTOPTA95562;The cause of nations knows no borders,;;;;;;;;;;;;;x
+EVTNAME95561;A Knock at the Door,;;;;;;;;;;;;;x
+EVTDESC95561;The tollbooks of the Baltic ports tell their own story. Peasants from the inner governorates of the Russian Empire, hearing of wages paid in hard currency and homesteads on free land, arrive at Narva and Reval with their families and their few possessions. The Russian Empire may lose thousands of subjects a year to the New World, but more and more of them are instead choosing the shorter road west, to Estonia.,;;;;;;;;;;;;;x
+EVTOPTA95561;Let them come,;;;;;;;;;;;;;x
+EVTOPTB95562;Not our fight,;;;;;;;;;;;;;x
+EVTOPTB95561;Estonia for Estonians - close the border,;;;;;;;;;;;;;x
