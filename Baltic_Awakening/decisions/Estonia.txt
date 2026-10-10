@@ -822,6 +822,9 @@ political_decisions = {
 			set_country_flag = tartu_estified
 			prestige = 5
 			research_points = 1000
+			# The Estonian names return to the map
+			349 = { change_province_name = "Tallinn" }
+			352 = { change_province_name = "Tartu" }
 			add_country_modifier = {
 				name = estonian_folk_high_schools
 				duration = 3650
@@ -831,6 +834,18 @@ political_decisions = {
 					culture = estonian
 					type = clergymen
 				}
+				consciousness = 1
+			}
+			# The Baltic German estates read the new signposts with cold fury
+			any_pop = {
+				limit = {
+					culture = north_german
+					OR = {
+						type = aristocrats
+						type = officers
+					}
+				}
+				militancy = 2
 				consciousness = 1
 			}
 		}
