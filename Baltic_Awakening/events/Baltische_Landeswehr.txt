@@ -54,6 +54,11 @@ country_event = {
 			factor = 4.0
 			has_country_flag = baltic_germans_integrated
 		}
+		# The Estonian names on the map are an insult the estates cannot bear
+		modifier = {
+			factor = 0.5
+			has_country_flag = tartu_estified
+		}
 	}
 
 	# Option A - the estates rise; the provinces rise with them, and war
