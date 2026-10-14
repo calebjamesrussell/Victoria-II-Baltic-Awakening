@@ -199,33 +199,31 @@ political_decisions = {
 		}
 	}
 
+	# Põlevkivi ("burning stone"): the oil shale beds of Ida-Viru.
+	# With the chemistry of clean coal, the shale near Narva can first be
+	# worked as a low-grade coal - fuel for the railways and the mills.
 	exploit_polevkivi = {
 		picture = "polevkivi"
-
 		potential = {
-			owns = 350 # Narva / Ida-Viru
-			NOT = { has_global_flag = polevkivi_exploited }
-			inorganic_chemistry = 1
+			towns = 350 # Narva / Ida-Viru
+			NOT = { has_global_flag = polevkivi_worked_as_coal }
+			clean_coal = 1
 		}
-
 		allow = {
-			inorganic_chemistry = 1
+			clean_coal = 1
 		}
-
 		effect = {
 			prestige = 5
-			set_global_flag = polevkivi_exploited
+			set_global_flag = polevkivi_worked_as_coal
 			350 = {
-				trade_goods = oil
+				trade_goods = coal
 				life_rating = 2
-
-				# Turn local farmers into miners to staff the new coal mines
+				# Turn local farmers into miners to staff the new shale pits
 				any_pop = {
 					limit = { type = farmers }
 					pop_type = labourers
 					factor = 0.25
 				}
-
 				# Bonus to the mining population
 				any_pop = {
 					limit = { type = labourers }
@@ -233,7 +231,33 @@ political_decisions = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
+	# Shale oil: retorting the põlevkivi into crude is a separate, later
+	# enterprise for the age of inorganic chemistry, building on the pits
+	# opened when the reserves were first worked as coal.
+	retort_polevkivi_shale_oil = {
+		picture = "polevkivi"
+		potential = {
+			towns = 350 # Narva / Ida-Viru
+			has_global_flag = polevkivi_worked_as_coal
+			NOT = { has_global_flag = polevkivi_retorted }
+			inorganic_chemistry = 1
+		}
+		allow = {
+			inorganic_chemistry = 1
+		}
+		effect = {
+			prestige = 5
+			set_global_flag = polevkivi_retorted
+			350 = {
+				trade_goods = oil
+				life_rating = 2
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
