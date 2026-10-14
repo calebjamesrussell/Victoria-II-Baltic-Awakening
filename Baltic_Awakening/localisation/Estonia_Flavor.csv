@@ -260,3 +260,16 @@ EVTDESC95561;The tollbooks of the Baltic ports tell their own story. Peasants fr
 EVTOPTA95561;Let them come,;;;;;;;;;;;;;x
 EVTOPTB95562;Not our fight,;;;;;;;;;;;;;x
 EVTOPTB95561;Estonia for Estonians - close the border,;;;;;;;;;;;;;x
+desc_baltic_settler_influx;Settlers arrive from the inner provinces of the empire, drawn by Baltic wages and Baltic schools.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95590;The Late Awakening;;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95590;The newspapers were never really stopped - they simply moved to the farmhouse evenings and the township houses, read aloud by lantern light. A movement scolded as peasant sentiment has kept its own accounts, and now the reading circles are ready to say aloud what was only whispered. The awakening arrives late, but it arrives harder.;;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95590;Let it be said aloud, then.;;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95590;There is no movement - keep the ledger closed.;;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95591;The Coastal Swedes Remember;;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95591;War has come, and the old fishing villages of the coast and islands have not forgotten the republic that guarded their tongue. From Ruhnu to Noarootsi the parish elders call the young men to the colours of the Kaitseliit - not as strangers granted leave to stay, but as sons of the land. The Defence League musters stronger than its rolls alone would suggest.;;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95591;The shore people stand with us - as they always have.;;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTNAME95592;Stockholm Writes Again;;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTDESC95592;Years have passed, and the council in Stockholm has had time to reread the refusal. The new note is longer than the old proposal, and humbler with it: no union, no crown - a treaty of equals, trade and friendship across the gulf, each nation under its own flag. The same shores that said no to one crown may now say yes to another kind of agreement.;;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTA95592;A treaty of equals - sign it, and let the gulf bind rather than divide.;;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+EVTOPTB95592;We will keep our own counsel, as ever.;;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+desc_settlers_do_not_fear_idleness;The dole is generous and certain: no settler fears the workless months, and the roads stay open.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x

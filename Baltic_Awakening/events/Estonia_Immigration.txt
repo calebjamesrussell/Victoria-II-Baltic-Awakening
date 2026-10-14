@@ -50,6 +50,15 @@ country_event = {
 			}
 		}
 		set_country_flag = open_to_settlers
+		# With full unemployment subsidies the state absorbs the risk of
+		# joblessness, so settlers come regardless of local unemployment
+		if = {
+			limit = { unemployment_subsidies = good_subsidies }
+			add_country_modifier = {
+				name = settlers_do_not_fear_idleness
+				duration = 3650
+			}
+		}
 		any_pop = {
 			limit = {
 				type = farmers
