@@ -9,7 +9,7 @@ publish_kalevipoeg_desc;Compiled by Friedrich Reinhold Kreutzwald, the Kalevipoe
 found_eus_title;Found the Estonian Students' Society;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 found_eus_desc;The establishment of the Eesti Üliõpilaste Selts (EÜS) will provide an intellectual bedrock for our national movement. Their blue, black, and white tricolor will soon become the symbol of our people.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 exploit_polevkivi_title;Exploit the Põlevkivi Reserves;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
-exploit_polevkivi_desc;Vast reserves of oil shale (Põlevkivi) lie dormant in the northeast. By applying modern mining techniques, we can transition this region into an industrial powerhouse fueled by coal and shale.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
+exploit_polevkivi_desc;Vast reserves of oil shale (Põlevkivi) lie dormant in the northeast. By applying modern mining techniques, we can transition this region into an industrial powerhouse fueled by shale oil.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 radical_land_reform_title;Enact the Land Reform (Maareform);French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 radical_land_reform_desc;For centuries, Baltic German nobles have controlled the vast majority of our arable land. Maaseadus will expropriate these manor estates and distribute the land to the Estonian peasantry, breaking aristocratic power forever.;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
 expand_baltic_railway_title;Expand the Baltic Railway;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;x
@@ -31,3 +31,5 @@ soomusrong_deployment_desc;By mounting naval guns and machine guns on armored ra
 EVTNAME95501;The Soomusrong;;;;;;;;;;;;x
 EVTDESC95501;Our engineers have bolted guns and armor onto railway carriages to create the soomusrong - the armored train. On the broad-gauge rails of the Baltic, these iron beasts can carry heavy firepower wherever the army needs it, striking deep and fast along the lines.;;;;;;;;;;;;x
 EVTOPTA95501;All aboard!;;;;;;;;;;;;x
+mine_maardu_phosphorite_title;Open the Maardu Phosphorite Pits;;;;;;;;;;;;;;x
+mine_maardu_phosphorite_desc;Beneath the thin soils east of Tallinn lie the pale beds of phosphorite - the promise of superphosphate for fields across the Baltic. With the new organic chemistry, the fertilizer of the future can be cooked from stone. The pits will scar the land at Maardu, but the harvests of a hundred farms will rise from them.;;;;;;;;;;;;;;x

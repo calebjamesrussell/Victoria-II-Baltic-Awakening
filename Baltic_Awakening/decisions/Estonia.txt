@@ -205,18 +205,18 @@ political_decisions = {
 		potential = {
 			owns = 350 # Narva / Ida-Viru
 			NOT = { has_global_flag = polevkivi_exploited }
-			clean_coal = 1
+			inorganic_chemistry = 1
 		}
 
 		allow = {
-			clean_coal = 1
+			inorganic_chemistry = 1
 		}
 
 		effect = {
 			prestige = 5
 			set_global_flag = polevkivi_exploited
 			350 = {
-				trade_goods = coal
+				trade_goods = oil
 				life_rating = 2
 
 				# Turn local farmers into miners to staff the new coal mines
@@ -239,6 +239,45 @@ political_decisions = {
 		}
 	}
 
+	# Maardu phosphorite: the fertilizer beds of Tallinn's doorstep.
+	# Historically mined from the Soviet era (the Phosphorite Wars of 1987
+	# began as protests against open-pit mining near Maardu); here the
+	# organic chemistry of the 1870s unlocks superphosphate for the fields.
+	mine_maardu_phosphorite = {
+		picture = "polevkivi"
+
+		potential = {
+			owns = 349 # Reval / Tallinn - the Maardu deposit
+			NOT = { has_global_flag = maardu_phosphorite_mined }
+			organic_chemistry = 1
+		}
+
+		allow = {
+			organic_chemistry = 1
+		}
+
+		effect = {
+			prestige = 5
+			set_global_flag = maardu_phosphorite_mined
+			349 = {
+				trade_goods = sulphur
+				# Turn local farmers into labourers to work the open pits
+				any_pop = {
+					limit = { type = farmers }
+					pop_type = labourers
+					factor = 0.20
+				}
+				any_pop = {
+					limit = { type = labourers }
+					money = 100
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	radical_land_reform = {
 		picture = "land_reform"
 
@@ -825,6 +864,7 @@ political_decisions = {
 			# The Estonian names return to the map
 			349 = { change_province_name = "Tallinn" }
 			352 = { change_province_name = "Tartu" }
+			353 = { change_province_name = "Saaremaa ja Hiiumaa" }
 			add_country_modifier = {
 				name = estonian_folk_high_schools
 				duration = 3650
