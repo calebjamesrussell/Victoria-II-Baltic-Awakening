@@ -205,7 +205,7 @@ political_decisions = {
 	exploit_polevkivi = {
 		picture = "polevkivi"
 		potential = {
-			towns = 350 # Narva / Ida-Viru
+			owns = 350 # Narva / Ida-Viru
 			NOT = { has_global_flag = polevkivi_worked_as_coal }
 			clean_coal = 1
 		}
@@ -242,7 +242,7 @@ political_decisions = {
 	retort_polevkivi_shale_oil = {
 		picture = "polevkivi"
 		potential = {
-			towns = 350 # Narva / Ida-Viru
+			owns = 350 # Narva / Ida-Viru
 			has_global_flag = polevkivi_worked_as_coal
 			NOT = { has_global_flag = polevkivi_retorted }
 			inorganic_chemistry = 1
@@ -675,7 +675,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = setomaa_organized
 			prestige = 3
-			plurality = 3
+			plurality = 0.03
 			352 = {
 				any_pop = {
 					limit = { is_primary_culture = yes }

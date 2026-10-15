@@ -5,6 +5,11 @@
 soomusrong_deployment = {
 	limit = {
 		infiltration = 1
+		OR = {
+			tag = EST
+			tag = UBD
+			primary_culture = estonian
+		}
 	}
 	chance = {
 		base = 1
