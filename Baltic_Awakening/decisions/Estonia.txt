@@ -205,6 +205,11 @@ political_decisions = {
 	exploit_polevkivi = {
 		picture = "polevkivi"
 		potential = {
+			OR = {
+				tag = EST
+				tag = UBD
+				primary_culture = estonian
+			}
 			owns = 350 # Narva / Ida-Viru
 			NOT = { has_global_flag = polevkivi_worked_as_coal }
 			clean_coal = 1
@@ -242,6 +247,11 @@ political_decisions = {
 	retort_polevkivi_shale_oil = {
 		picture = "polevkivi"
 		potential = {
+			OR = {
+				tag = EST
+				tag = UBD
+				primary_culture = estonian
+			}
 			owns = 350 # Narva / Ida-Viru
 			has_global_flag = polevkivi_worked_as_coal
 			NOT = { has_global_flag = polevkivi_retorted }
@@ -271,6 +281,11 @@ political_decisions = {
 		picture = "polevkivi"
 
 		potential = {
+			OR = {
+				tag = EST
+				tag = UBD
+				primary_culture = estonian
+			}
 			owns = 349 # Reval / Tallinn - the Maardu deposit
 			NOT = { has_global_flag = maardu_phosphorite_mined }
 			organic_chemistry = 1
