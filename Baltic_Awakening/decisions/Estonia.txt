@@ -205,7 +205,7 @@ political_decisions = {
 	exploit_polevkivi = {
 		picture = "polevkivi"
 		potential = {
-			towns = 350 # Narva / Ida-Viru
+			owns = 350 # Narva / Ida-Viru
 			NOT = { has_global_flag = polevkivi_worked_as_coal }
 			clean_coal = 1
 		}
@@ -242,7 +242,7 @@ political_decisions = {
 	retort_polevkivi_shale_oil = {
 		picture = "polevkivi"
 		potential = {
-			towns = 350 # Narva / Ida-Viru
+			owns = 350 # Narva / Ida-Viru
 			has_global_flag = polevkivi_worked_as_coal
 			NOT = { has_global_flag = polevkivi_retorted }
 			inorganic_chemistry = 1
@@ -255,7 +255,14 @@ political_decisions = {
 			set_global_flag = polevkivi_retorted
 			350 = {
 				trade_goods = oil
-				life_rating = 2
+				# The retorts foul the air and water of Ida-Viru
+				life_rating = -2
+				# Ash heaps and stench: the locals grumble
+				any_pop = {
+					limit = { type = labourers }
+					militancy = 1
+					consciousness = 1
+				}
 			}
 		}
 		ai_will_do = {
@@ -285,6 +292,8 @@ political_decisions = {
 			set_global_flag = maardu_phosphorite_mined
 			349 = {
 				trade_goods = sulphur
+				# The open pits scar the land and poison the wells
+				life_rating = -2
 				# Turn local farmers into labourers to work the open pits
 				any_pop = {
 					limit = { type = farmers }
@@ -294,6 +303,13 @@ political_decisions = {
 				any_pop = {
 					limit = { type = labourers }
 					money = 100
+				}
+				# The dust and the blasting rile the parish: the first
+				# murmurs of the Phosphorite Wars
+				any_pop = {
+					limit = { type = farmers }
+					militancy = 1
+					consciousness = 1
 				}
 			}
 		}
@@ -675,7 +691,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = setomaa_organized
 			prestige = 3
-			plurality = 3
+			plurality = 0.03
 			352 = {
 				any_pop = {
 					limit = { is_primary_culture = yes }
