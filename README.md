@@ -9,4 +9,4 @@ To install, copy the `Baltic_Awakening` folder and the `Baltic_Awakening.mod` fi
 ## Credits
 
 - Main menu background: AI-generated original artwork in the style of a 19th-century Baltic seascape painting, created for this mod. No third-party copyright applies.
-- Decision and event art: created for this mod and filtered to match the sepia tone of Victoria II's own event art. No third-party copyright applies.
+- Decision and event art: some are 19th century photos taken from Wikimedia Commons; others are created for this mod and filtered to match the sepia tone of Victoria II's own event art. No third-party copyright applies.
