@@ -673,16 +673,17 @@ country_event = {
 }
 
 #########################################################################
-# 95537 - The First Songs of the Land (Singing Revolution teaser)
+# 95537 - The First Environmental Protests (Phosphorite Wars teaser)
 #########################################################################
-# Late-game event: as environmental and national consciousness grows,
-# the people begin to gather and sing - the first stirrings of what
-# will one day be called the Singing Revolution.
+# Late-game event: as industrial pollution grows and political
+# consciousness rises, the people begin to organize against the
+# environmental destruction of their land - the first stirrings of
+# what history will one day call the Phosphorite Wars.
 country_event = {
 	id = 95537
 	title = "EVTNAME95537"
 	desc = "EVTDESC95537"
-	picture = "Celebration"
+	picture = "Strike"
 
 	fire_only_once = yes
 
@@ -691,9 +692,10 @@ country_event = {
 			tag = EST
 			tag = UBD
 		}
-		NOT = { has_country_flag = singing_revolution_teaser_seen }
+		NOT = { has_country_flag = environmental_protest_movement }
 		OR = {
 			has_country_flag = shale_environmental_protest
+			has_global_flag = maardu_phosphorite_mined
 			AND = {
 				average_consciousness = 5
 				average_militancy = 4
@@ -713,7 +715,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA95537"
-		set_country_flag = singing_revolution_teaser_seen
+		set_country_flag = environmental_protest_movement
 		prestige = 3
 		add_country_modifier = {
 			name = environmental_awakening
@@ -735,7 +737,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB95537"
-		set_country_flag = singing_revolution_teaser_seen
+		set_country_flag = environmental_protest_movement
 		prestige = -1
 		any_pop = {
 			limit = {
