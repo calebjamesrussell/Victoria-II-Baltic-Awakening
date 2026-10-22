@@ -392,7 +392,7 @@ country_event = {
 	id = 95909
 	title = "EVTNAME95909"
 	desc = "EVTDESC95909"
-	picture = "dairy_coops"
+	picture = "countryside"
 	fire_only_once = yes
 	trigger = {
 		OR = {
@@ -664,5 +664,135 @@ country_event = {
 			value = -50
 		}
 		prestige = -2
+	}
+}
+
+#########################################################################
+# 95915 - Sweden Offers to Sell the Aland Islands
+#########################################################################
+# Mirrors the Russian sale of Alaska to the USA. Sweden (or whoever
+# owns Aland) offers to sell the islands to Estonia/UBD. Requires
+# Swedish as an accepted culture and unrest in the islands.
+country_event = {
+	id = 95915
+	title = "EVTNAME95915"
+	desc = "EVTDESC95915"
+	picture = "SeaPower"
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA95915"
+		ai_chance = {
+			factor = 1
+		}
+		money = -50000
+		prestige = 5
+		relation = {
+			who = FROM
+			value = 30
+		}
+		348 = {
+			secede_province = THIS
+		}
+		set_country_flag = aland_purchased
+		add_country_modifier = {
+			name = aland_integration
+			duration = 3650
+		}
+		any_pop = {
+			limit = {
+				location = 348
+				culture = swedish
+			}
+			militancy = -2
+			consciousness = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95915"
+		ai_chance = {
+			factor = 1
+		}
+		prestige = -2
+		relation = {
+			who = FROM
+			value = -10
+		}
+	}
+}
+
+#########################################################################
+# 95916 - The Aland Islands Question (trigger for 95915)
+#########################################################################
+# Estonia/UBD considers purchasing the Aland Islands from their
+# current owner. Requires Swedish as an accepted culture and
+# unrest among the Swedish population of the islands.
+country_event = {
+	id = 95916
+	title = "EVTNAME95916"
+	desc = "EVTDESC95916"
+	picture = "SeaPower"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		NOT = { has_country_flag = aland_purchased }
+		NOT = { has_country_flag = aland_question_resolved }
+		accepted_culture = swedish
+		money = 50000
+		any_owned = {
+			num_of_ports = 1
+		}
+		348 = {
+			owner = {
+				NOT = { tag = THIS }
+			}
+			any_pop = {
+				culture = swedish
+				militancy = 4
+			}
+			OR = {
+				owner = { tag = SWE }
+				owner = { tag = FIN }
+				owner = { tag = RUS }
+			}
+		}
+		OR = {
+			invention = central_banking
+			invention = international_exchange_standard
+			is_greater_power = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "EVTOPTA95916"
+		set_country_flag = aland_question_resolved
+		348 = {
+			owner = {
+				country_event = { id = 95915 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB95916"
+		set_country_flag = aland_question_resolved
+		prestige = -1
+		any_pop = {
+			limit = {
+				culture = swedish
+			}
+			militancy = 1
+		}
 	}
 }

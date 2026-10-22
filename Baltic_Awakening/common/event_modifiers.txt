@@ -619,6 +619,139 @@ central_bank_established = {
 	icon = 11
 }
 
+tax_efficiency_boost = {
+	tax_efficiency = 0.05
+	icon = 11
+}
+
+baltic_trade_hub = {
+	trade_efficiency = 0.05
+	rgo_output = 0.03
+	icon = 11
+}
+
+tallinn_port_expansion = {
+	local_rgo_throughput = 0.10
+	local_trade_efficiency = 0.05
+	icon = 11
+}
+
+financial_center = {
+	local_rgo_throughput = 0.05
+	pop_militancy_modifier = -0.01
+	icon = 11
+}
+
+capitalist_expansion = {
+	factory_input = -0.05
+	factory_output = 0.05
+	icon = 11
+}
+
+merchant_decline = {
+	trade_efficiency = -0.05
+	icon = 11
+}
+
+export_boost = {
+	rgo_output = 0.05
+	icon = 11
+}
+
+industrial_loyalty = {
+	pop_militancy_modifier = -0.02
+	icon = 7
+}
+
+labor_reform = {
+	pop_militancy_modifier = -0.03
+	pop_consciousness_modifier = 0.01
+	icon = 7
+}
+
+intellectual_ferment = {
+	education_efficiency = 0.05
+	research_points_modifier = 0.05
+	icon = 9
+}
+
+bilingual_university = {
+	education_efficiency = 0.05
+	literacy_con = 0.05
+	icon = 9
+}
+
+kreenholm_company_town = {
+	local_rgo_throughput = 0.10
+	local_factory_throughput = 0.05
+	icon = 11
+}
+
+kreenholm_production_halted = {
+	local_rgo_output = -0.30
+	local_factory_throughput = -0.50
+	icon = 3
+}
+
+kreenholm_workers_gains = {
+	local_factory_throughput = 0.05
+	pop_militancy_modifier = -0.02
+	icon = 7
+}
+
+aland_integration = {
+	pop_militancy_modifier = -0.02
+	local_rgo_output = 0.05
+	icon = 9
+}
+
+oil_shale_pioneer = {
+	local_rgo_output = 0.05
+	research_points_modifier = 0.05
+	icon = 11
+}
+
+kohtla_jarve_mining_town = {
+	local_rgo_throughput = 0.15
+	local_factory_throughput = 0.05
+	icon = 11
+}
+
+shale_oil_environmental_cost = {
+	local_rgo_output = -0.10
+	pop_militancy_modifier = 0.03
+	icon = 3
+}
+
+kukersite_geological_survey = {
+	research_points_modifier = 0.10
+	icon = 9
+}
+
+gold_standard_adopted = {
+	loan_interest = -0.03
+	tax_efficiency = 0.03
+	icon = 11
+}
+
+sterling_area_member = {
+	trade_efficiency = 0.05
+	loan_interest = -0.02
+	icon = 11
+}
+
+kroon_stabilized = {
+	tax_efficiency = 0.05
+	pop_militancy_modifier = -0.02
+	icon = 11
+}
+
+environmental_awakening = {
+	pop_consciousness_modifier = 0.02
+	research_points_modifier = 0.05
+	icon = 9
+}
+
 local_stock_exchange = {
 	local_rgo_output = 0.05
 	pop_militancy_modifier = -0.02
