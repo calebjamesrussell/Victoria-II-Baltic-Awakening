@@ -472,3 +472,440 @@ country_event = {
 		}
 	}
 }
+
+#########################################################################
+# 95534 - The Kukersite Shale: A Geological Wonder
+#########################################################################
+# Geologists identify the Kukersite formation - the richest oil shale
+# deposit in the world - beneath the kukersite beds of northern Estonia.
+country_event = {
+	id = 95534
+	title = "EVTNAME95534"
+	desc = "EVTDESC95534"
+	picture = "Mining"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		owns = 350
+		has_global_flag = polevkivi_worked_as_coal
+		NOT = { has_country_flag = kukersite_surveyed }
+		OR = {
+			invention =organic_chemistry
+			invention =inorganic_chemistry
+			year = 1880
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	option = {
+		name = "EVTOPTA95534"
+		set_country_flag = kukersite_surveyed
+		prestige = 4
+		add_country_modifier = {
+			name = kukersite_geological_survey
+			duration = 3650
+		}
+		350 = {
+			any_pop = {
+				limit = { type = clergymen }
+				literacy = 0.05
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB95534"
+		prestige = 1
+	}
+}
+
+#########################################################################
+# 95535 - The Founding of Kohtla-Jarve (mining town)
+#########################################################################
+# As oil shale production expands in Ida-Viru, a purpose-built mining
+# town rises from the forest: Kohtla-Jarve.
+country_event = {
+	id = 95535
+	title = "EVTNAME95535"
+	desc = "EVTDESC95535"
+	picture = "Mining"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		owns = 350
+		has_global_flag = polevkivi_retorted
+		NOT = { has_country_flag = kohtla_jarve_founded }
+		invention =gaslighting_or_electric_lighting
+		350 = {
+			trade_goods = oil
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95535"
+		set_country_flag = kohtla_jarve_founded
+		prestige = 3
+		350 = {
+			add_province_modifier = {
+				name = kohtla_jarve_mining_town
+				duration = -1
+			}
+			any_pop = {
+				limit = { type = labourers }
+				militancy = -1
+				literacy = 0.03
+			}
+			any_pop = {
+				limit = { type = farmers }
+				pop_type = labourers
+				factor = 0.15
+			}
+		}
+		add_country_modifier = {
+			name = oil_shale_pioneer
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB95535"
+		350 = {
+			any_pop = {
+				limit = { type = labourers }
+				militancy = 1
+			}
+		}
+	}
+}
+
+#########################################################################
+# 95536 - The Environmental Cost of Shale Oil
+#########################################################################
+# The retorting of oil shale fouls the air and water of Ida-Viru.
+# Farmers and fishermen downstream begin to protest.
+country_event = {
+	id = 95536
+	title = "EVTNAME95536"
+	desc = "EVTDESC95536"
+	picture = "destroyed_forest"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		owns = 350
+		has_global_flag = polevkivi_retorted
+		has_country_flag = kohtla_jarve_founded
+		NOT = { has_country_flag = shale_environmental_protest }
+		350 = {
+			any_pop = {
+				limit = { type = labourers }
+				militancy = 3
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "EVTOPTA95536"
+		set_country_flag = shale_environmental_protest
+		prestige = 1
+		350 = {
+			add_province_modifier = {
+				name = shale_oil_environmental_cost
+				duration = 3650
+			}
+			any_pop = {
+				limit = { type = farmers }
+				militancy = 2
+				consciousness = 1
+			}
+			any_pop = {
+				limit = { type = labourers }
+				militancy = -1
+				consciousness = 1
+			}
+		}
+		add_country_modifier = {
+			name = environmental_awakening
+			duration = 1825
+		}
+	}
+	option = {
+		name = "EVTOPTB95536"
+		prestige = -2
+		350 = {
+			any_pop = {
+				limit = { type = farmers }
+				militancy = -1
+			}
+			any_pop = {
+				limit = { type = labourers }
+				militancy = -2
+			}
+			any_pop = {
+				limit = { type = capitalists }
+				militancy = -1
+			}
+		}
+	}
+}
+
+#########################################################################
+# 95537 - The First Environmental Protests (Phosphorite Wars teaser)
+#########################################################################
+# Late-game event: as industrial pollution grows and political
+# consciousness rises, the people begin to organize against the
+# environmental destruction of their land - the first stirrings of
+# what history will one day call the Phosphorite Wars.
+country_event = {
+	id = 95537
+	title = "EVTNAME95537"
+	desc = "EVTDESC95537"
+	picture = "Strike"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		NOT = { has_country_flag = environmental_protest_movement }
+		OR = {
+			has_country_flag = shale_environmental_protest
+			has_global_flag = maardu_phosphorite_mined
+			AND = {
+				average_consciousness = 5
+				average_militancy = 4
+			}
+		}
+		OR = {
+			ruling_party_ideology = socialist
+			ruling_party_ideology = liberal
+			ruling_party_ideology = communist
+		}
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95537"
+		set_country_flag = environmental_protest_movement
+		prestige = 3
+		add_country_modifier = {
+			name = environmental_awakening
+			duration = 3650
+		}
+		any_pop = {
+			limit = {
+				culture = estonian
+			}
+			consciousness = 1
+			militancy = -1
+		}
+		any_owned = {
+			any_pop = {
+				limit = { type = clergymen }
+				literacy = 0.02
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB95537"
+		set_country_flag = environmental_protest_movement
+		prestige = -1
+		any_pop = {
+			limit = {
+				culture = estonian
+			}
+			consciousness = -0.5
+		}
+	}
+}
+
+#########################################################################
+# 95538 - The Legacy of the Parish School Law (follow-up)
+#########################################################################
+# Years after the parish school law, its effects are visible:
+# literacy spreads through the countryside.
+country_event = {
+	id = 95538
+	title = "EVTNAME95538"
+	desc = "EVTDESC95538"
+	picture = "publishers"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = parish_school_law
+		NOT = { has_country_flag = parish_school_legacy }
+		any_owned = {
+			any_pop = {
+				limit = {
+					culture = estonian
+					type = farmers
+				}
+				literacy = 0.5
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "EVTOPTA95538"
+		set_country_flag = parish_school_legacy
+		prestige = 3
+		any_owned = {
+			any_pop = {
+				limit = {
+					culture = estonian
+					type = farmers
+				}
+				literacy = 0.05
+			}
+		}
+		add_country_modifier = {
+			name = intellectual_ferment
+			duration = 1825
+		}
+	}
+	option = {
+		name = "EVTOPTB95538"
+		set_country_flag = parish_school_legacy
+		prestige = 1
+	}
+}
+
+#########################################################################
+# 95539 - The Legacy of Peasant Land Purchases (follow-up)
+#########################################################################
+# After peasants purchase their land, a class of smallholders emerges,
+# transforming the countryside.
+country_event = {
+	id = 95539
+	title = "EVTNAME95539"
+	desc = "EVTDESC95539"
+	picture = "countryside"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = peasant_land_purchases
+		NOT = { has_country_flag = peasant_land_legacy }
+		invention =romanticism
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	option = {
+		name = "EVTOPTA95539"
+		set_country_flag = peasant_land_legacy
+		prestige = 4
+		add_country_modifier = {
+			name = export_boost
+			duration = 1825
+		}
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = farmers
+			}
+			militancy = -1
+			consciousness = 0.5
+		}
+	}
+	option = {
+		name = "EVTOPTB95539"
+		set_country_flag = peasant_land_legacy
+		prestige = 1
+	}
+}
+
+#########################################################################
+# 95540 - The Telegraph Connects the Nation (follow-up)
+#########################################################################
+# After the telegraph line is built, news travels faster than ever
+# between the capital and the countryside.
+country_event = {
+	id = 95540
+	title = "EVTNAME95540"
+	desc = "EVTDESC95540"
+	picture = "early_railroad"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = telegraph_line_built
+		NOT = { has_country_flag = telegraph_legacy }
+		any_owned = {
+			num_of_ports = 1
+		}
+		invention =telegraph
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95540"
+		set_country_flag = telegraph_legacy
+		prestige = 3
+		add_country_modifier = {
+			name = baltic_trade_hub
+			duration = 1825
+		}
+		any_pop = {
+			limit = { type = clerks }
+			literacy = 0.03
+		}
+	}
+	option = {
+		name = "EVTOPTB95540"
+		set_country_flag = telegraph_legacy
+		prestige = 1
+	}
+}

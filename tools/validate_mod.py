@@ -187,6 +187,53 @@ def load_mod_modifiers():
     return names
 
 
+EXPECTED_LANG_LABELS = [
+    "French", "German", "Polish", "Spanish", "Italian",
+    "Swedish", "Czech", "Hungarian", "Dutch", "Portuguese", "Russian",
+    "Finnish",
+]
+
+
+def check_csv_columns():
+    """Detect shifted columns in localisation CSV files.
+    Each line must have exactly 15 semicolon-separated fields:
+    key + English text + 12 language-label placeholders + x.
+    If a language label ('French', 'German', ...) appears in the
+    English column (column 2), semicolons in the English text have
+    shifted everything right."""
+    label_set = {l.lower() for l in EXPECTED_LANG_LABELS}
+    for f in sorted((MOD / "localisation").glob("*.csv")):
+        for lineno, line in enumerate(
+            f.read_text(encoding="latin-1", errors="replace").splitlines(), 1
+        ):
+            line = line.lstrip("\ufeff")
+            if not line.strip():
+                continue
+            cols = line.split(";")
+            key = cols[0].strip()
+            if len(cols) != 15:
+                error(f, lineno, f"CSV line has {len(cols)} columns (expected 15) - possible semicolon in text: {key}")
+                continue
+            english = cols[1].strip()
+            if english.lower() in label_set:
+                error(
+                    f, lineno,
+                    f"CSV column shift detected: language label '{english}' found in English column - "
+                    f"semicolon in English text? key={key}",
+                )
+                continue
+            for i, label in enumerate(EXPECTED_LANG_LABELS):
+                col_idx = i + 2
+                actual = cols[col_idx].strip()
+                if actual and actual.lower() in label_set and actual.lower() != label.lower():
+                    error(
+                        f, lineno,
+                        f"CSV column shift detected: found '{actual}' where '{label}' expected "
+                        f"at column {col_idx + 1} - semicolon in earlier column? key={key}",
+                    )
+                    break
+
+
 def check_trigger_blocks(files):
     """any_pop/any_owned_province blocks whose body contains ONLY a limit
     sub-block (no condition/effect besides it) are invalid as triggers -
@@ -280,6 +327,7 @@ def main():
     vanilla_mods = set((VANILLA / "vanilla_modifiers.txt").read_text().splitlines())
     check_modifiers(all_files, mod_mods, vanilla_mods)
     check_trigger_blocks(all_files)
+    check_csv_columns()
 
     for w in WARNINGS:
         print(f"WARN  {w}")

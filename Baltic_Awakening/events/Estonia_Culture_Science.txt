@@ -198,3 +198,104 @@ country_event = {
 		money = 1000
 	}
 }
+
+#########################################################################
+# 95551 - The Legacy of the Struve Arc (follow-up to struve_arc_completed)
+#########################################################################
+# After the Struve Geodetic Arc is completed, the scientific community
+# celebrates the achievement and its legacy for Estonian science.
+country_event = {
+	id = 95551
+	title = "EVTNAME95551"
+	desc = "EVTDESC95551"
+	picture = "publishers"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = struve_arc_completed
+		NOT = { has_country_flag = struve_arc_legacy }
+		invention =empirical_thought
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95551"
+		set_country_flag = struve_arc_legacy
+		prestige = 5
+		add_country_modifier = {
+			name = intellectual_ferment
+			duration = 1825
+		}
+		any_pop = {
+			limit = { type = clergymen }
+			literacy = 0.03
+		}
+		any_pop = {
+			limit = { culture = estonian }
+			consciousness = 0.5
+		}
+	}
+	option = {
+		name = "EVTOPTB95551"
+		set_country_flag = struve_arc_legacy
+		prestige = 1
+	}
+}
+
+#########################################################################
+# 95552 - Tammsaare's Vision (follow-up to tammsaare_published)
+#########################################################################
+# After Tammsaare publishes his great novel, the literary world
+# takes notice of Estonian literature.
+country_event = {
+	id = 95552
+	title = "EVTNAME95552"
+	desc = "EVTDESC95552"
+	picture = "theatre"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = tammsaare_published
+		NOT = { has_country_flag = tammsaare_legacy }
+		invention =romanticism
+	}
+
+	mean_time_to_happen = {
+		months = 18
+	}
+
+	option = {
+		name = "EVTOPTA95552"
+		set_country_flag = tammsaare_legacy
+		prestige = 4
+		add_country_modifier = {
+			name = estonian_cultural_awakening
+			duration = 1825
+		}
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = clergymen
+			}
+			literacy = 0.05
+		}
+	}
+	option = {
+		name = "EVTOPTB95552"
+		set_country_flag = tammsaare_legacy
+		prestige = 1
+	}
+}

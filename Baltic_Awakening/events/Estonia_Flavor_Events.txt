@@ -1034,3 +1034,515 @@ country_event = {
 		prestige = 1
 	}
 }
+
+#########################################################################
+# 95593 - The Port of Tallinn: Gateway of the Baltic (trade hub event)
+#########################################################################
+# Tallinn's ice-free harbor makes it the natural entrepot of the
+# eastern Baltic. When Estonia controls Reval and has built up
+# trade infrastructure, the city's merchant guilds push for
+# formal recognition as a regional trade hub.
+country_event = {
+	id = 95593
+	title = "EVTNAME95593"
+	desc = "EVTDESC95593"
+	picture = "stocks"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		owns = 349
+		NOT = { has_country_flag = tallinn_trade_hub }
+		OR = {
+			invention =canza_system
+			invention = central_banking
+			invention = international_exchange_standard
+		}
+		num_of_ports = 1
+		OR = {
+			is_greater_power = yes
+			year = 1880
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = {
+		name = "EVTOPTA95593"
+		set_country_flag = tallinn_trade_hub
+		prestige = 5
+		349 = {
+			add_province_modifier = {
+				name = tallinn_port_expansion
+				duration = 3650
+			}
+		}
+		add_country_modifier = {
+			name = baltic_trade_hub
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB95593"
+		prestige = -2
+		any_pop = {
+			limit = {
+				location = 349
+				type = capitalists
+			}
+			militancy = 1
+		}
+	}
+}
+
+#########################################################################
+# 95594 - The Tallinn Stock Exchange (economic modernization)
+#########################################################################
+# With the port thriving, merchants and industrialists demand a
+# formal stock exchange to finance Baltic trade ventures.
+country_event = {
+	id = 95594
+	title = "EVTNAME95594"
+	desc = "EVTDESC95594"
+	picture = "stock_exchange"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = tallinn_trade_hub
+		NOT = { has_country_flag = tallinn_stock_exchange_founded }
+		invention = central_banking
+		num_of_ports = 1
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "EVTOPTA95594"
+		set_country_flag = tallinn_stock_exchange_founded
+		prestige = 8
+		money = 25000
+		add_country_modifier = {
+			name = local_stock_exchange
+			duration = -1
+		}
+		add_country_modifier = {
+			name = capitalist_expansion
+			duration = 1825
+		}
+		349 = {
+			add_province_modifier = {
+				name = financial_center
+				duration = -1
+			}
+		}
+		any_pop = {
+			limit = {
+				location = 349
+				type = capitalists
+			}
+			militancy = -2
+			consciousness = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95594"
+		prestige = -3
+		add_country_modifier = {
+			name = merchant_decline
+			duration = 1825
+		}
+		any_pop = {
+			limit = {
+				location = 349
+				type = capitalists
+			}
+			militancy = 2
+		}
+	}
+}
+
+#########################################################################
+# 95595 - Estonia's Place in Baltic Trade (follow-up reflection)
+#########################################################################
+# Once both the port and the exchange are established, Estonia
+# reflects on its role as a bridge between East and West.
+country_event = {
+	id = 95595
+	title = "EVTNAME95595"
+	desc = "EVTDESC95595"
+	picture = "stocks"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = tallinn_trade_hub
+		has_country_flag = tallinn_stock_exchange_founded
+		NOT = { has_country_flag = baltic_trade_reflection }
+		num_of_ports = 1
+		OR = {
+			great_wars_enabled = yes
+			is_greater_power = yes
+			year = 1900
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95595"
+		set_country_flag = baltic_trade_reflection
+		prestige = 5
+		add_country_modifier = {
+			name = baltic_trade_hub
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = export_boost
+			duration = 1825
+		}
+		any_owned = {
+			limit = { has_building = railroad }
+			any_pop = {
+				limit = { type = craftsmen }
+				militancy = -0.5
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB95595"
+		prestige = 1
+	}
+}
+
+#########################################################################
+# 95596 - The Kreenholm Workers' Quarter (company town expansion)
+#########################################################################
+# The Kreenholm Manufacture in Narva is the largest industrial
+# complex in the Baltic. Its workers live in company housing,
+# forming a distinct industrial community.
+country_event = {
+	id = 95596
+	title = "EVTNAME95596"
+	desc = "EVTDESC95596"
+	picture = "Workers"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		owns = 350
+		has_country_flag = kreenholm_expanded
+		NOT = { has_country_flag = kreenholm_workers_quarter }
+		invention =gaslighting_or_electric_lighting
+		350 = {
+			trade_goods = coal
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	option = {
+		name = "EVTOPTA95596"
+		set_country_flag = kreenholm_workers_quarter
+		prestige = 3
+		350 = {
+			add_province_modifier = {
+				name = kreenholm_company_town
+				duration = -1
+			}
+			any_pop = {
+				limit = { type = craftsmen }
+				militancy = -1
+				consciousness = -0.5
+				literacy = 0.05
+			}
+		}
+		add_country_modifier = {
+			name = industrial_loyalty
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB95596"
+		350 = {
+			any_pop = {
+				limit = { type = craftsmen }
+				militancy = 1
+			}
+		}
+	}
+}
+
+#########################################################################
+# 95597 - Labor Unrest at the Kreenholm Mills (strike event)
+#########################################################################
+# The Kreenholm workers, concentrated in the company town, are
+# among the most organized laborers in the region. When working
+# conditions deteriorate, they strike.
+country_event = {
+	id = 95597
+	title = "EVTNAME95597"
+	desc = "EVTDESC95597"
+	picture = "Strike"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = kreenholm_workers_quarter
+		NOT = { has_country_flag = kreenholm_strike_occurred }
+		war = no
+		OR = {
+			AND = {
+				liberal = 15
+				NOT = { has_country_flag = kreenholm_strike_suppressed }
+			}
+			year = 1905
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 18
+	}
+
+	option = {
+		name = "EVTOPTA95597"
+		set_country_flag = kreenholm_strike_occurred
+		set_country_flag = kreenholm_strike_suppressed
+		prestige = -2
+		350 = {
+			any_pop = {
+				limit = { type = craftsmen }
+				militancy = -2
+				consciousness = -1
+			}
+			add_province_modifier = {
+				name = kreenholm_production_halted
+				duration = 365
+			}
+		}
+		any_pop = {
+			limit = { type = socialists }
+			militancy = -1
+		}
+	}
+	option = {
+		name = "EVTOPTB95597"
+		set_country_flag = kreenholm_strike_occurred
+		set_country_flag = kreenholm_strike_conceded
+		prestige = 3
+		350 = {
+			any_pop = {
+				limit = { type = craftsmen }
+				militancy = -3
+				consciousness = 1
+				literacy = 0.03
+			}
+			add_province_modifier = {
+				name = kreenholm_workers_gains
+				duration = 1825
+			}
+		}
+		add_country_modifier = {
+			name = labor_reform
+			duration = 1825
+		}
+		any_pop = {
+			limit = { type = socialists }
+			militancy = 1
+		}
+	}
+	option = {
+		name = "EVTOPTC95597"
+		any_pop = {
+			limit = { type = craftsmen }
+			militancy = 2
+		}
+		any_pop = {
+			limit = { type = capitalists }
+			militancy = -1
+		}
+	}
+}
+
+#########################################################################
+# 95598 - The Tartu University Language Question (flashpoint)
+#########################################################################
+# The University of Tartu, founded as a German-language institution,
+# becomes a flashpoint for the national question. Estonian intellectuals
+# demand instruction in the vernacular while conservatives and
+# Russification pressures push back.
+country_event = {
+	id = 95598
+	title = "EVTNAME95598"
+	desc = "EVTDESC95598"
+	picture = "publishers"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		owns = 352
+		NOT = { has_country_flag = tartu_language_question }
+		OR = {
+			invention =empirical_thought
+			invention =romanticism
+			NOT = { has_country_flag = national_awakening_begun }
+		}
+		any_owned = {
+			any_pop = {
+				limit = { culture = estonian }
+				literacy = 0.5
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "EVTOPTA95598"
+		set_country_flag = tartu_language_question
+		set_country_flag = tartu_language_reform_demanded
+		prestige = 2
+		352 = {
+			any_pop = {
+				limit = { culture = estonian }
+				consciousness = 1
+				literacy = 0.02
+			}
+			any_pop = {
+				limit = { culture = north_german }
+				militancy = 1
+			}
+		}
+		add_country_modifier = {
+			name = intellectual_ferment
+			duration = 1825
+		}
+	}
+	option = {
+		name = "EVTOPTB95598"
+		set_country_flag = tartu_language_question
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 1
+		}
+		any_pop = {
+			limit = { culture = north_german }
+			consciousness = -0.5
+		}
+	}
+}
+
+#########################################################################
+# 95599 - Russification Pressures at Tartu (escalation)
+#########################################################################
+# As the Russian Empire tightens its grip, the University of Tartu
+# faces direct pressure to abandon German in favor of Russian.
+# Estonian intellectuals see this as a threat to their cultural gains.
+country_event = {
+	id = 95599
+	title = "EVTNAME95599"
+	desc = "EVTDESC95599"
+	picture = "Riot"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		owns = 352
+		has_country_flag = tartu_language_question
+		NOT = { has_country_flag = tartu_russification_crisis }
+		OR = {
+			ruling_party_ideology = reactionary
+			ruling_party_ideology = conservative
+			AND = {
+				is_civilized = yes
+				year = 1885
+			}
+		}
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA95599"
+		set_country_flag = tartu_russification_crisis
+		set_country_flag = tartu_language_reform_demanded
+		prestige = -1
+		352 = {
+			any_pop = {
+				limit = { culture = estonian }
+				militancy = 2
+				consciousness = 1
+			}
+			any_pop = {
+				limit = { culture = north_german }
+				militancy = 1
+			}
+			any_pop = {
+				limit = { type = clergymen }
+				militancy = 1
+			}
+		}
+		add_country_modifier = {
+			name = intellectual_ferment
+			duration = 1825
+		}
+	}
+	option = {
+		name = "EVTOPTB95599"
+		set_country_flag = tartu_russification_crisis
+		set_country_flag = tartu_compromise_reached
+		prestige = 3
+		352 = {
+			any_pop = {
+				limit = { culture = estonian }
+				militancy = -1
+				consciousness = 0.5
+			}
+			add_province_modifier = {
+				name = bilingual_university
+				duration = 3650
+			}
+		}
+	}
+}
