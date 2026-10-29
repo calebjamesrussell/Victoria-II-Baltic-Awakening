@@ -1208,3 +1208,20 @@ lithuanian_science_society = {
 	research_points_modifier = 0.05
 	icon = 5
 }
+
+# War of Independence - the republic fights for its life
+war_of_independence = {
+	land_organisation = 0.10
+	war_exhaustion = -0.05
+	icon = 8
+}
+
+
+
+
+
+
+
+
+
+

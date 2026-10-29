@@ -1580,4 +1580,313 @@ political_decisions = {
 			factor = 1
 		}
 	}
+
+	# Declare independence while the Russian Empire is in chaos (1917-1918)
+	declare_estonian_independence = {
+		picture = "emancipation_proclamation"
+
+		potential = {
+			OR = {
+				tag = EST
+				tag = UBD
+			}
+			not = { has_country_flag = estonian_independence_declared }
+			war = no
+			OR = {
+				year = 1917
+				year = 1918
+			}
+			any_owned_province = {
+				is_core = EST
+			}
+		}
+
+		allow = {
+			OR = {
+				government = democracy
+				government = hms_government
+			}
+			prestige = 20
+			war = no
+		}
+
+		effect = {
+			set_country_flag = estonian_independence_declared
+			prestige = 25
+			add_country_modifier = {
+				name = war_of_independence
+				duration = 1095
+			}
+			any_pop = {
+				limit = { culture = estonian }
+				consciousness = 2
+				militancy = -2
+			}
+			any_pop = {
+				limit = { culture = north_german }
+				militancy = 2
+			}
+			any_country = {
+				limit = {
+					OR = {
+						tag = BLW
+					}
+					exists = yes
+				}
+				relation = {
+					who = THIS
+					value = -50
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# The War of Independence: the Baltische Landeswehr and the Red Army
+	# threaten the young republic. Win the war to secure the state.
+	defend_the_republic = {
+		picture = "fatherland_volunteers"
+
+		potential = {
+			OR = {
+				tag = EST
+				tag = UBD
+			}
+			has_country_flag = estonian_independence_declared
+			not = { has_country_flag = war_of_independence_won }
+			war = yes
+			any_country = {
+				limit = {
+					OR = {
+						tag = BLW
+						tag = RUS
+					}
+					war_with = THIS
+				}
+			}
+		}
+
+		allow = {
+			money = 20000
+		}
+
+		effect = {
+			money = -20000
+			prestige = 10
+			leadership = 40
+			add_country_modifier = {
+				name = war_of_independence
+				duration = 1825
+			}
+			any_pop = {
+				limit = { type = soldiers }
+				militancy = -3
+				consciousness = 1
+			}
+			any_pop = {
+				limit = { culture = estonian }
+				militancy = -1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Invite the Finnish Volunteers across the Gulf of Finland
+	finnish_volunteers = {
+		picture = "form_kellys_irish_brigade"
+
+		potential = {
+			OR = {
+				tag = EST
+				tag = UBD
+			}
+			has_country_flag = estonian_independence_declared
+			not = { has_country_flag = finnish_volunteers_arrived }
+			exists = FIN
+			war = yes
+		}
+
+		allow = {
+			money = 30000
+			FIN = {
+				relation = {
+					who = THIS
+					value = 50
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = finnish_volunteers_arrived
+			money = -30000
+			prestige = 8
+			leadership = 50
+			add_country_modifier = {
+				name = estonian_volunteer_spirit
+				duration = 1825
+			}
+			any_pop = {
+				limit = { type = soldiers }
+				militancy = -2
+			}
+			FIN = {
+				relation = {
+					who = THIS
+					value = 30
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = no
+			}
+		}
+	}
+
+	# After victory: settle the War of Independence veterans on the land
+	settle_independence_veterans = {
+		picture = "abolish_serfdom"
+
+		potential = {
+			OR = {
+				tag = EST
+				tag = UBD
+			}
+			has_country_flag = treaty_of_tartu
+			not = { has_country_flag = veterans_settled }
+		}
+
+		allow = {
+			money = 40000
+			owns = 352
+		}
+
+		effect = {
+			set_country_flag = veterans_settled
+			money = -40000
+			prestige = 5
+			any_owned_province = {
+				limit = { is_core = EST }
+				any_pop = {
+					limit = { type = farmers }
+					money = 100
+				}
+			}
+			any_pop = {
+				limit = { type = soldiers }
+				militancy = -3
+				consciousness = 1
+			}
+			add_country_modifier = {
+				name = estonian_national_unity
+				duration = 3650
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# The Vaps Movement: veterans' league rises in the 1930s crisis
+	confront_the_vaps = {
+		picture = "manifest_destiny"
+
+		potential = {
+			OR = {
+				tag = EST
+				tag = UBD
+			}
+			has_country_flag = vaps_movement_rising
+			not = { has_country_flag = vaps_confronted }
+			year = 1930
+		}
+
+		allow = {
+			OR = {
+				government = democracy
+				is_secondary_power = yes
+			}
+			money = 10000
+		}
+
+		effect = {
+			set_country_flag = vaps_confronted
+			money = -10000
+			any_pop = {
+				limit = { culture = estonian }
+				militancy = 1
+			}
+			any_pop = {
+				limit = {
+					ideology = {
+						OR = {
+							ideology = reactionary
+							ideology = fascist
+						}
+					}
+				}
+				militancy = 3
+				consciousness = 1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+
+	# The Era of Silence, constitutionally: restore order after the crisis
+	restore_constitutional_order = {
+		picture = "danmarks_riges_grundlov"
+
+		potential = {
+			OR = {
+				tag = EST
+				tag = UBD
+			}
+			has_country_flag = vaps_confronted
+			not = { has_country_flag = constitutional_order_restored }
+			OR = {
+				government = presidential_dictatorship
+				has_country_modifier = conservative_reaction
+			}
+		}
+
+		allow = {
+			government = democracy
+			war = no
+		}
+
+		effect = {
+			set_country_flag = constitutional_order_restored
+			prestige = 5
+			plurality = 0.05
+			any_pop = {
+				limit = { culture = estonian }
+				militancy = -2
+				consciousness = 1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# The Molotov-Ribbentrop Pact: the great powers carve up the Baltics
+	# Forest Brothers: arm the guerrillas in the woods (WWII occupation)
+	# The Singing Revolution: mass demonstrations for independence (1988)
+	# Restore independence after the Soviet collapse (1991)
+	# Join NATO and the EU: anchor the republic in the West (post-1991)
+	# The Tallinn tech boom: e-Estonia, the digital republic
 }
