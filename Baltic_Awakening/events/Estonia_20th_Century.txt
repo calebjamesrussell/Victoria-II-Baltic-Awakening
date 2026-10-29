@@ -1,0 +1,665 @@
+# Estonia: the long twentieth century.
+# From the collapse of the Russian Empire to the digital republic:
+# the War of Independence, the interwar republic, the Molotov-Ribbentrop
+# Pact, the occupations, the Singing Revolution, and rebirth.
+# IDs 96000-96099 are reserved for this mod.
+
+##########################################################################
+# 96000 - The Empire Collapses: the February Revolution reaches Reval
+##########################################################################
+country_event = {
+	id = 96000
+	title = "EVTNAME96000"
+	desc = "EVTDESC96000"
+	picture = "revolution_02_news_image"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1917
+		owns = 349
+		war = yes
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.5
+			any_country = {
+				limit = { tag = RUS }
+				war_exhaustion = 0.9
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA96000"
+		set_country_flag = february_revolution_reached_estonia
+		prestige = 2
+		any_pop = {
+			limit = {
+				culture = estonian
+				OR = {
+					type = labourers
+					type = soldiers
+				}
+			}
+			consciousness = 2
+			militancy = 1
+		}
+		any_pop = {
+			limit = { culture = north_german }
+			militancy = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB96000"
+		set_country_flag = february_revolution_reached_estonia
+		any_pop = {
+			limit = { culture = estonian }
+			consciousness = 1
+		}
+	}
+}
+
+##########################################################################
+# 96001 - The Manifesto to All Peoples of Estonia (24 February 1918)
+##########################################################################
+country_event = {
+	id = 96001
+	title = "EVTNAME96001"
+	desc = "EVTDESC96001"
+	picture = "threehurrahs"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = estonian_independence_declared
+		year = 1918
+		war = no
+		owns = 349
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "EVTOPTA96001"
+		set_country_flag = independence_manifesto_read
+		prestige = 10
+		add_country_modifier = {
+			name = estonian_national_unity
+			duration = 1825
+		}
+		any_pop = {
+			limit = { culture = estonian }
+			consciousness = 3
+			militancy = -2
+		}
+		any_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = 15
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB96001"
+		set_country_flag = independence_manifesto_read
+		any_pop = {
+			limit = { culture = estonian }
+			consciousness = 1
+		}
+	}
+}
+
+##########################################################################
+# 96002 - The Red Army Advances: the War of Independence begins in earnest
+##########################################################################
+country_event = {
+	id = 96002
+	title = "EVTNAME96002"
+	desc = "EVTDESC96002"
+	picture = "war_03_news_image"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = estonian_independence_declared
+		war = yes
+		NOT = { has_country_flag = war_of_independence_started }
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	option = {
+		name = "EVTOPTA96002"
+		set_country_flag = war_of_independence_started
+		add_country_modifier = {
+			name = war_of_independence
+			duration = 1460
+		}
+		any_pop = {
+			limit = { type = soldiers }
+			militancy = -2
+			consciousness = 1
+		}
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB96002"
+		set_country_flag = war_of_independence_started
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 2
+		}
+	}
+}
+
+##########################################################################
+# 96003 - The Baltische Landeswehr: White Russians and Baltic Germans
+# march against the young republic
+##########################################################################
+country_event = {
+	id = 96003
+	title = "EVTNAME96003"
+	desc = "EVTDESC96003"
+	picture = "Oldsoldiers"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = estonian_independence_declared
+		exists = BLW
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA96003"
+		set_country_flag = landeswehr_confronted
+		prestige = 3
+		add_country_modifier = {
+			name = landeswehr_threat
+			duration = 730
+		}
+		BLW = {
+			relation = {
+				who = THIS
+				value = -40
+			}
+		}
+		any_pop = {
+			limit = { culture = north_german }
+			militancy = 2
+		}
+	}
+	option = {
+		name = "EVTOPTB96003"
+		set_country_flag = landeswehr_confronted
+		BLW = {
+			relation = {
+				who = THIS
+				value = 20
+			}
+		}
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 1
+		}
+	}
+}
+
+##########################################################################
+# 96004 - Victory in the War of Independence (1920)
+##########################################################################
+country_event = {
+	id = 96004
+	title = "EVTNAME96004"
+	desc = "EVTDESC96004"
+	picture = "peace_01_news_image"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = war_of_independence_started
+		has_country_flag = estonian_independence_declared
+		war = no
+		NOT = { has_country_flag = war_of_independence_won }
+		year = 1919
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	option = {
+		name = "EVTOPTA96004"
+		set_country_flag = war_of_independence_won
+		prestige = 15
+		clr_country_flag = war_of_independence_started
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = -3
+			consciousness = 1
+		}
+		any_pop = {
+			limit = { type = soldiers }
+			militancy = -2
+		}
+	}
+}
+
+##########################################################################
+# 96005 - The Great Depression hits the young republic (1929-1933)
+##########################################################################
+country_event = {
+	id = 96005
+	title = "EVTNAME96005"
+	desc = "EVTDESC96005"
+	picture = "Poor"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = war_of_independence_won
+		NOT = { has_country_flag = estonian_depression_survived }
+		year = 1929
+	}
+
+	mean_time_to_happen = {
+		months = 18
+		modifier = {
+			factor = 0.5
+			any_owned_province = {
+				trade_goods = grain
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA96005"
+		set_country_flag = estonian_depression_survived
+		add_country_modifier = {
+			name = estonian_depression
+			duration = 1825
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					type = labourers
+					type = farmers
+				}
+			}
+			militancy = 2
+		}
+		any_pop = {
+			limit = { type = capitalists }
+			militancy = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB96005"
+		set_country_flag = estonian_depression_survived
+		money = 10000
+		add_country_modifier = {
+			name = estonian_depression
+			duration = 1095
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					type = labourers
+					type = farmers
+				}
+			}
+			militancy = 1
+		}
+	}
+}
+
+##########################################################################
+# 96006 - The Vaps Movement: veterans demand a stronger state (1933-34)
+##########################################################################
+country_event = {
+	id = 96006
+	title = "EVTNAME96006"
+	desc = "EVTDESC96006"
+	picture = "political_party_01_news_image"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		has_country_flag = estonian_depression_survived
+		NOT = { has_country_flag = vaps_movement_rising }
+		year = 1932
+		average_militancy = 4
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA96006"
+		set_country_flag = vaps_movement_rising
+		add_country_modifier = {
+			name = vaps_movement
+			duration = 1825
+		}
+		any_pop = {
+			limit = { type = soldiers }
+			consciousness = 2
+		}
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB96006"
+		set_country_flag = vaps_suppressed
+		any_pop = {
+			limit = { type = soldiers }
+			militancy = -1
+		}
+	}
+}
+
+##########################################################################
+# 96007 - The Molotov-Ribbentrop Pact: the Baltics are carved up (1939)
+##########################################################################
+country_event = {
+	id = 96007
+	title = "EVTNAME96007"
+	desc = "EVTDESC96007"
+	picture = "treaty"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1939
+		NOT = { has_country_flag = molotov_ribbentrop_reacted }
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA96007"
+		set_country_flag = molotov_ribbentrop_reacted
+		add_country_modifier = {
+			name = ribbentrop_pact
+			duration = 1095
+		}
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 2
+			consciousness = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB96007"
+		set_country_flag = molotov_ribbentrop_reacted
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 1
+		}
+	}
+}
+
+##########################################################################
+# 96008 - The June Deportations: 14 June 1941
+##########################################################################
+country_event = {
+	id = 96008
+	title = "EVTNAME96008"
+	desc = "EVTDESC96008"
+	picture = "prisoners"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1941
+		NOT = { has_country_flag = june_deportations }
+		any_owned_province = {
+			is_core = EST
+			controller = {
+				NOT = { tag = THIS }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "EVTOPTA96008"
+		set_country_flag = june_deportations
+		add_country_modifier = {
+			name = june_deportations
+			duration = 1825
+		}
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 3
+			consciousness = 2
+		}
+		any_owned_province = {
+			limit = { is_core = EST }
+			add_province_modifier = {
+				name = baltic_settler_influx
+				duration = -1
+			}
+		}
+	}
+}
+
+##########################################################################
+# 96009 - The Forest Brothers: armed resistance in the woods (1944-1953)
+##########################################################################
+country_event = {
+	id = 96009
+	title = "EVTNAME96009"
+	desc = "EVTDESC96009"
+	picture = "Rebellion"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1944
+		NOT = { has_country_flag = forest_brothers_resistance }
+		any_owned_province = {
+			is_core = EST
+			controller = {
+				NOT = { tag = THIS }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA96009"
+		set_country_flag = forest_brothers_resistance
+		add_country_modifier = {
+			name = forest_brothers
+			duration = 3650
+		}
+		any_pop = {
+			limit = {
+				culture = estonian
+				type = soldiers
+			}
+			consciousness = 3
+			militancy = -1
+		}
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB96009"
+		set_country_flag = forest_brothers_resistance
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 2
+		}
+	}
+}
+
+##########################################################################
+# 96010 - The Singing Revolution: hundreds of thousands in the streets (1988)
+##########################################################################
+country_event = {
+	id = 96010
+	title = "EVTNAME96010"
+	desc = "EVTDESC96010"
+	picture = "Celebration"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1988
+		NOT = { has_country_flag = singing_revolution }
+		average_consciousness = 4
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA96010"
+		set_country_flag = singing_revolution
+		prestige = 8
+		add_country_modifier = {
+			name = singing_revolution
+			duration = 1095
+		}
+		any_pop = {
+			limit = { culture = estonian }
+			consciousness = 3
+			militancy = -3
+		}
+	}
+	option = {
+		name = "EVTOPTB96010"
+		set_country_flag = singing_revolution
+		any_pop = {
+			limit = { culture = estonian }
+			militancy = 1
+		}
+	}
+}
+
+##########################################################################
+# 96011 - Independence restored: the blue, black and white rises again (1991)
+##########################################################################
+country_event = {
+	id = 96011
+	title = "EVTNAME96011"
+	desc = "EVTDESC96011"
+	picture = "threehurrahs"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = EST
+			tag = UBD
+		}
+		year = 1991
+		NOT = { has_country_flag = independence_restored }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "EVTOPTA96011"
+		set_country_flag = independence_restored
+		prestige = 20
+		add_country_modifier = {
+			name = restored_independence
+			duration = 3650
+		}
+		any_pop = {
+			limit = { culture = estonian }
+			consciousness = 2
+			militancy = -3
+		}
+		any_country = {
+			limit = {
+				is_greater_power = yes
+			}
+			relation = {
+				who = THIS
+				value = 40
+			}
+		}
+	}
+}

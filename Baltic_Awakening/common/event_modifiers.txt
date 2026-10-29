@@ -1208,3 +1208,75 @@ lithuanian_science_society = {
 	research_points_modifier = 0.05
 	icon = 5
 }
+
+# War of Independence - the republic fights for its life
+war_of_independence = {
+	land_organisation = 0.10
+	war_exhaustion = -0.05
+	icon = 8
+}
+
+# The White Army of the Baltische Landeswehr marches on Riga
+landeswehr_threat = {
+	land_organisation = -0.05
+	suppress = -0.05
+	icon = 13
+}
+
+# Forest Brothers - guerrilla resistance in the woods
+forest_brothers = {
+	land_unit_start_experience = 0.10
+	org_regain = 0.05
+	icon = 6
+}
+
+# Singing Revolution - choirs in the squares
+singing_revolution = {
+	core_pop_consciousness_modifier = 0.05
+	core_pop_militancy_modifier = -0.02
+	prestige = 0.03
+	icon = 4
+}
+
+# The June deportations - terror from Moscow
+june_deportations = {
+	population_growth = -0.01
+	core_pop_militancy_modifier = 0.05
+	icon = 17
+}
+
+# Molotov-Ribbentrop - the pact that doomed the republic
+ribbentrop_pact = {
+	core_pop_militancy_modifier = 0.04
+	prestige = -0.05
+	icon = 19
+}
+
+# Soviet occupation - the republic falls
+soviet_occupation = {
+	tax_efficiency = -0.10
+	factory_throughput = -0.10
+	icon = 16
+}
+
+# Re-establishment of independence - the flag rises again
+restored_independence = {
+	prestige = 0.10
+	core_pop_militancy_modifier = -0.05
+	core_pop_consciousness_modifier = 0.05
+	icon = 1
+}
+
+# NATO and EU membership - anchored in the West
+western_anchoring = {
+	prestige = 0.08
+	diplomatic_influence_modifier = 0.10
+	icon = 2
+}
+
+# Tallinn tech boom - the digital republic
+tallinn_tech_boom = {
+	research_points_modifier = 0.10
+	tax_efficiency = 0.05
+	icon = 10
+}
